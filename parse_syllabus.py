@@ -1,7 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 import re
-#  import pprint
 import json
 
 
@@ -21,6 +20,8 @@ def parse_syllabus(url):
     title_en = title.split("\xa0\xa0\xa0")[1]
     dic['講義名'] = {}
     dic['講義名']['日本語'] = title_jp
+    if "学士特定" in title_jp or "研究プロジェクト" in title_jp:
+        return None
     dic['講義名']['英語'] = title_en
 
     # 講義の概要
@@ -72,23 +73,44 @@ def parse_syllabus(url):
             subjects = syl.select("ul > li")
             for subject in subjects:
                 sub = {}
-                sub['科目コード'] = subject.text.split(" ： ")[0]
-                sub['講義名'] = subject.text.split(" ： ")[1]
+                if len(subject.text.split(" ： ")) == 2:
+                    sub['科目コード'] = subject.text.split(" ： ")[0]
+                    sub['講義名'] = subject.text.split(" ： ")[1]
+                else:
+                    sub['講義名'] = subject.text.split(" ： ")[0]
                 dic['関連する科目'].append(sub)
         else:
             dic[h3.text] = syl.select_one("p").text
     return dic
 
 
-lectures = {
-    'DataStructures': 'http://www.ocw.titech.ac.jp/index.php?module=General&action=T0300&GakubuCD=4&GakkaCD=342300&KeiCD=23&KougiCD=202002429&Nendo=2020&lang=JA&vid=03',
-    'ProcProg': 'http://www.ocw.titech.ac.jp/index.php?module=General&action=T0300&GakubuCD=4&GakkaCD=342300&KeiCD=23&KougiCD=202002417&Nendo=2020&lang=JA&vid=03',
-    'Circuit': 'http://www.ocw.titech.ac.jp/index.php?module=General&action=T0300&GakubuCD=4&GakkaCD=342300&KeiCD=23&KougiCD=202002421&Nendo=2020&lang=JA&vid=03',
-    'AI': 'http://www.ocw.titech.ac.jp/index.php?module=General&action=T0300&GakubuCD=4&GakkaCD=342300&KeiCD=23&KougiCD=202002430&Nendo=2020&lang=JA&vid=03'
-}
+def get_lecture_urls(url):
+    res = requests.get(url)
+    if res.status_code != 200:
+        print("Error:", res.status_code)
+    res.encoding = res.apparent_encoding
+    soup = BeautifulSoup(res.text, "html.parser")
 
-for key, url in lectures.items():
-    dic = parse_syllabus(url)
-    f = open(key + '.json', 'w')
-    json.dump(dic, f, ensure_ascii=False, indent=4)
+    tables = soup.select_one("#tab2_scroll")
+    lectures = tables.select("td.course_title")
+    hrefs = []
+    for lecture in lectures:
+        link = lecture.select_one("a")
+        hrefs.append("http://www.ocw.titech.ac.jp" + link['href'])
+    return hrefs
+
+
+if __name__ == "__main__":
+    # 情工の科目一覧
+    url = "http://www.ocw.titech.ac.jp/index.php?module=General&action=T0200&GakubuCD=4&GakkaCD=342300&KeiCD=23&tab=2&focus=200&lang=JA"
+    hrefs = get_lecture_urls(url)
+    lectures = []
+    for href in hrefs:
+        lecture = parse_syllabus(href)
+        if lecture is not None:
+            print(lecture['講義名']['日本語'])
+            lectures.append(lecture)
+
+    f = open('output.json', 'w')
+    json.dump(lectures, f, ensure_ascii=False, indent=4)
     f.close()
