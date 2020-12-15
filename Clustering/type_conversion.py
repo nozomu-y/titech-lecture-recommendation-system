@@ -24,9 +24,19 @@ for lecture in lectures:
             for _ in range(5):
                 chunk += subject['講義名']
     if '授業計画・課題' in lecture.keys():
+        planbef=''
+        plan=''
+        taskbef=''
+        task=''
         for lesson in lecture['授業計画・課題'].values():
-            chunk += lesson['授業計画']
-            chunk += lesson['課題']
+            plan=lesson['授業計画']
+            if plan!=planbef:
+                chunk += plan
+            planbef=lesson['授業計画']
+            task=lesson['課題']
+            if task!=taskbef:
+                chunk += task
+            taskbef=lesson['課題']
     output[lecture['科目コード']] = chunk
 
 f = open('chunk.json', 'w')
