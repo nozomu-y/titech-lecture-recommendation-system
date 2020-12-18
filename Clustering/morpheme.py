@@ -3,7 +3,7 @@ logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)  #DEBUG を INFOに変えるとlogging.debugが出力されなくなる
 
 from natto import MeCab
-import pandas as pd 
+import pandas as pd
 
 # sysdicの初期値は環境によって書き換えること
 # 辞書のパス(適用されている辞書のパス）はコマンドラインで　`medab -D`で調べられる
@@ -24,7 +24,7 @@ def parse2df(text,sysdic="/usr/local/lib/mecab/dic/naist-jdic"):
     
     parser = MeCab("-d "+sysdic)
 
-    for index,sentence in enumerate(text): 
+    for index,sentence in enumerate(text):
         logging.debug(sentence)
         nodes = parser.parse(sentence,as_nodes=True)
         for node in nodes:
@@ -36,26 +36,44 @@ def parse2df(text,sysdic="/usr/local/lib/mecab/dic/naist-jdic"):
                     index,          #文番号
                     node.surface,   #表層
                     feature[0],     #品詞1
-                    feature[1],     #品詞2     
+                    feature[1],     #品詞2
                     feature[2],     #品詞3
                     feature[3],     #品詞4
                     feature[6],     #原型
                     node.posid      #品詞番号
                 ], index=df.columns)
                 df = df.append(series, ignore_index = True)
-    logging.debug("End : parse2df")            
+    logging.debug("End : parse2df")
     return df
    
-
+text=''
+output = {}
+#syllabus_path = '../DataCollection/output.json'
+syllabus_path = 'chunk.json'
+with open(syllabus_path) as f:
+    lectures = json.load(f)
+    
+for leckey in lectures.keys():
+    #print(leckey)
+    text=lectures[leckey]
+    #print(text)
+    #df = parse2df(text)
+    """
+    df2 = df[df["posID"].isin([36,37,38,40,41,42,43,44,45,46,47,50,51,52,66,67,2,31,10,34])]
+    stop_words = ["する","課題","授業","*","."]
+    df2 = df2[~df2["原型"].isin(stop_words )]  # ~df.isin(list) で listに含まれないもの となる
+    df2["原型"]
+    df2["原型"].to_csv("data/"+leckey+".csv")
+    """
+    output[leckey] = "data/"+leckey+".csv"
+    
+    
+f = open('path_clustering.json', 'w')
+json.dump(output, f, ensure_ascii=False, indent=4)
+f.close()
+"""
 f = open('chunk.json') #青空文庫の文字コードはshiftjis
 text = f.read()  #ファイル終端まで全て読んだデータを返す
 f.close()
+"""
 
-df = parse2df(text)
-df
-df2 = df[df["posID"].isin([36,37,38,40,41,42,43,44,45,46,47,50,51,52,66,67,2,31,10,34])]
-stop_words = ["する","課題","授業","*","."]
-df2 = df2[~df2["原型"].isin(stop_words )]  # ~df.isin(list) で listに含まれないもの となる
-df2
-df2["原型"]
-df2["原型"].to_csv("siravas.csv") 
