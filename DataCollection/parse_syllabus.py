@@ -1,15 +1,20 @@
-import requests
 from bs4 import BeautifulSoup
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+import time
 import re
 import json
 
 
 def parse_syllabus(url):
-    res = requests.get(url)
-    if res.status_code != 200:
-        print("Error:", res.status_code)
-    res.encoding = res.apparent_encoding
-    soup = BeautifulSoup(res.text, "html.parser")
+    options = Options()
+    # do not open browser window
+    options.headless = True
+    driver = webdriver.Chrome(options=options)
+    driver.get(url)
+    time.sleep(3)
+    html = driver.page_source.encode('utf-8')
+    soup = BeautifulSoup(html, "html.parser")
 
     dic = {}
 
@@ -85,32 +90,59 @@ def parse_syllabus(url):
 
 
 def get_lecture_urls(url):
-    res = requests.get(url)
-    if res.status_code != 200:
-        print("Error:", res.status_code)
-    res.encoding = res.apparent_encoding
-    soup = BeautifulSoup(res.text, "html.parser")
+    options = Options()
+    # do not open browser window
+    options.headless = True
+    driver = webdriver.Chrome(options=options)
+    driver.get(url)
+    time.sleep(3)
+    html = driver.page_source
+    soup = BeautifulSoup(html, "html.parser")
 
     tables = soup.select_one("#tab2_scroll")
     lectures = tables.select("td.course_title")
-    hrefs = []
+    hrefs = {}
     for lecture in lectures:
         link = lecture.select_one("a")
-        hrefs.append("http://www.ocw.titech.ac.jp" + link['href'])
+        if "http://www.ocw.titech.ac.jp" not in link['href']:
+            hrefs[link.text] = "http://www.ocw.titech.ac.jp" + link['href']
+        else:
+            hrefs[link.text] = link['href']
     return hrefs
 
 
 if __name__ == "__main__":
     # 情工の科目一覧
-    url = "http://www.ocw.titech.ac.jp/index.php?module=General&action=T0200&GakubuCD=4&GakkaCD=342300&KeiCD=23&tab=2&focus=200&lang=JA"
-    hrefs = get_lecture_urls(url)
-    lectures = []
-    for href in hrefs:
-        lecture = parse_syllabus(href)
-        if lecture is not None:
-            print(lecture['講義名']['日本語'])
-            lectures.append(lecture)
+    urls = {
+        '2020': 'http://www.ocw.titech.ac.jp/index.php?module=General&action=T0200&GakubuCD=4&GakkaCD=342300&KeiCD=23&tab=2&focus=200&lang=JA'
+        #  '2019': './data/csc_2019.html',
+        #  '2018': './data/csc_2018.html',
+        #  '2017': './data/csc_2017.html',
+        #  '2016': './data/csc_2016.html'
+    }
+    path = __file__.replace('parse_syllabus.py', '')
+    for year, url in urls.items():
+        print(year)
+        if 'http' not in url:
+            url = 'file://' + path + url
+        print(url)
+        hrefs = get_lecture_urls(url)
+        lectures = []
+        for title, href in hrefs.items():
+            if "学士特定" in title or "研究プロジェクト" in title:
+                continue
+            print(href)
+            while True:
+                try:
+                    lecture = parse_syllabus(href)
+                    break
+                except AttributeError:
+                    continue
 
-    f = open('output.json', 'w')
-    json.dump(lectures, f, ensure_ascii=False, indent=4)
-    f.close()
+            if lecture is not None:
+                print(lecture['講義名']['日本語'])
+                lectures.append(lecture)
+
+        f = open('output/csc_' + year + '.json', 'w')
+        json.dump(lectures, f, ensure_ascii=False, indent=4)
+        f.close()
