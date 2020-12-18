@@ -49,7 +49,7 @@ def parse2df(text,sysdic="/usr/local/lib/mecab/dic/naist-jdic"):
 text=''
 output = {}
 #syllabus_path = '../DataCollection/output.json'
-syllabus_path = 'chunk.json'
+syllabus_path = 'chunk2.json'
 with open(syllabus_path) as f:
     lectures = json.load(f)
     
@@ -57,14 +57,12 @@ for leckey in lectures.keys():
     #print(leckey)
     text=lectures[leckey]
     #print(text)
-    #df = parse2df(text)
-    """
+    df = parse2df(text)
     df2 = df[df["posID"].isin([36,37,38,40,41,42,43,44,45,46,47,50,51,52,66,67,2,31,10,34])]
     stop_words = ["する","課題","授業","*","."]
     df2 = df2[~df2["原型"].isin(stop_words )]  # ~df.isin(list) で listに含まれないもの となる
     df2["原型"]
     df2["原型"].to_csv("data/"+leckey+".csv")
-    """
     output[leckey] = "data/"+leckey+".csv"
     
     
