@@ -3,14 +3,14 @@ import pandas as pd
 from sklearn.model_selection import GridSearchCV
 from sklearn import model_selection
 
-def vbgmm(df, df_input):
-    gmm = mixture.BayesianGaussianMixture(n_components=1000).fit(df)
-    results = gmm.predict(df_input)
+def vbgmm(vecs, vecs_input):
+    gmm = mixture.BayesianGaussianMixture(n_components=1000).fit(vecs)
+    results = gmm.predict(vecs_input)
     print(results)
 
-def meanshift(df, df_input):
-    ms = cluster.MeanShift().fit(df)
-    results = ms.predict(df_input)
+def meanshift(vecs, vecs_input):
+    ms = cluster.MeanShift().fit(vecs)
+    results = ms.predict(vecs_input)
     print(results)
 
 # def vbgmm_tuning(df):
