@@ -46,16 +46,21 @@ Assessment = [["試験","テスト"],["レポート","report"],["プレゼン","
 
 #入力で与えられるbit列、初期化。
 #1は許容。0は検索範囲外なので消去
+
+#########初期値############
 bit_Academic_unit_or_major= 0 #情報工学系のみを許容
 bit_Day=[0,1,1,1,1,1,1]#月曜以外を許容
 bit_Period=[0,1,1,1,1]#1限以外を許容
+
 bit_Quarter=[0,0,1,1]#3Q,4Q,3-4Qのみを許容
-<<<<<<< HEAD
+
 bit_Textbooks= 1 #教科書なしを認めない
 bit_Assessment=[1,1,0]
-=======
+
 bit_Textbooks= 1 #教科書なしを認めない。ありを認めないのが0,どちらも認めるのがそれ以外。
 bit_Assessment=[1,1,0]##試験、レポートは認めるがプレゼンは認めない
+
+#############################
 
 input_bit_Academic_unit_or_major = input("学系選択(番号)")
 bit_Academic_unit_or_major = int(input_bit_Academic_unit_or_major)
@@ -73,7 +78,7 @@ while(flag_Quarter):
                 bit_Quarter[i]=int(input_bit_Quarter[i])
                 if(i==3):
                     flag_Quarter=0
->>>>>>> fix/kouginator/masatoshi
+
 
 ##################main##################
 #開講元が情報工学系以外のとき、bit_Academic_unit_or_major[0]=0で、開講元が情報工学系のものを一掃
@@ -115,16 +120,9 @@ elif bit_Textbooks == 1:
 
 for i in range(len(bit_Assessment)):
     if bit_Assessment[i]==0:
-<<<<<<< HEAD
         for x in reversed(nums):
             if("成績評価の基準及び方法" not in d[x] or (Assessment[i][0] in d[x]["成績評価の基準及び方法"] or Assessment[i][1] in d[x]["成績評価の基準及び方法"])):
                 nums.remove(x)
 
-=======
-        for j in range(len(Assessment[i])):
-            for x in reversed(nums):
-                if("成績評価の基準及び方法" not in d[x] or (Assessment[i][j] in d[x]["成績評価の基準及び方法"])):
-                    nums.remove(x)
->>>>>>> fix/kouginator/masatoshi
 for x in nums:
     print(x,d[x]["講義名"])
