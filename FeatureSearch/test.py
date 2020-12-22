@@ -16,6 +16,7 @@
 import numpy as np
 import pandas as pd
 import json
+import sys
 # import matplotlib.pyplot as plt
 # import matplotlib.ticker as ticker
 # import seaborn as sns
@@ -37,8 +38,8 @@ nums = list(range(len(d)))#出力するdのindex
 
 Academic_unit_or_major = ["情報工学系","数理・計算化学系","情報通信系","システム制御系","電気電子系"]
 Day = ["月","火","水","木","金","土","日"]
-Period = [["1-","-2"],["3-","-4"],["5-","-6"],["7-","-8"],["9-","-10"]]#講義室の番号と被らないためのハイフン
-Quarter = ["1","2","3","4"]
+Period = ["1-","2-","3-","4-","5-","6-","7-","8-","9-","10-"]#講義室の番号と被らないためのハイフン
+Quarter = ["1","2","3","4","1-2","3-4","2-3","2・4","2-4","1-4"]
 Textbooks = ["なし","ない","配布", "スライド", "資料"]
 Assessment = [["試験","テスト"],["レポート","report"],["プレゼン","発表"]]
 
@@ -46,43 +47,74 @@ Assessment = [["試験","テスト"],["レポート","report"],["プレゼン","
 #1は許容。0は検索範囲外なので消去
 
 #########初期値############
-bit_Academic_unit_or_major= 0 #情報工学系のみを許容
+courseNum= 0 #情報工学系のみを許容
 bit_Day=[0,1,1,1,1,1,1]#月曜以外を許容
-bit_Period=[0,1,1,1,1]#1限以外を許容
+bit_Period=[0,1,1,1,1,1,1,1,1,1]#1限以外を許容
 
-bit_Quarter=[0,0,1,1]#3Q,4Q,3-4Qのみを許容
-
-bit_Textbooks= 1 #教科書なしを認めない
-bit_Assessment=[1,1,0]
+bit_Quarter=[0,0,1,1,0,1,0,0,0,0]#3Q,4Q,3-4Qのみを許容
 
 bit_Textbooks= 1 #教科書なしを認めない。ありを認めないのが0,どちらも認めるのがそれ以外。
 bit_Assessment=[1,1,0]##試験、レポートは認めるがプレゼンは認めない
 
 #############標準入力################
+print("開講元選択(数字を入力)")
+print(str(-1) + ":" + "選択しない")
+for i in range(len(Academic_unit_or_major)):
+    print(str(i) + ":" + Academic_unit_or_major[i])
+courseNum = int(input())
+if(courseNum < -1 or len(Academic_unit_or_major) < courseNum):
+    print("入力が不正です。")
+    sys.exit(1)
 
-input_bit_Academic_unit_or_major = input("学系選択(番号)")
-bit_Academic_unit_or_major = int(input_bit_Academic_unit_or_major)
+print("開講クォーター(10bitで答える 1:選択, 0:選択しない)")
+for i in range(len(Quarter)-1):
+    print(" " + Quarter[i] + "Q", end = ',')
+print(" " + Quarter[len(Quarter)-1] + "Q")
 flag_Quarter=1
 while(flag_Quarter):
-    input_bit_Quarter=input("クオーター選択(4bit number)")
-    if(len(input_bit_Quarter)!=4):
+    input_bit_Quarter=input()
+    if(len(input_bit_Quarter)!=len(Quarter)):
         print("入力サイズが不正です。")
+        sys.exit(1)
     else:
-        for i in range(4):
+        for i in range(len(Quarter)):
             if(input_bit_Quarter[i]!="0" and input_bit_Quarter[i]!="1"):
                 print("入力文字の種類が不正です")
-                break
+                sys.exit(1)
             else:
                 bit_Quarter[i]=int(input_bit_Quarter[i])
                 if(i==3):
                     flag_Quarter=0
 
+print("教科書の有無  1:あり, 0:なし, -1:選択しない")
+bit_Textbooks = int(input())
+if(not(bit_Textbooks == 0 or bit_Textbooks == 1 or bit_Textbooks == -1)):
+    print("入力が不正です。")
+    sys.exit(1)
+
+print("試験の有無  1:あり, 0:なし, -1:選択しない")
+bit_Assessment[0] = int(input())
+if(not(bit_Assessment[0] == 0 or bit_Assessment[0] == 1 or bit_Assessment[0] == -1)):
+    print("入力が不正です。")
+    sys.exit(1)
+
+print("レポートの有無  1:あり, 0:なし, -1:選択しない")
+bit_Assessment[1] = int(input())
+if(not(bit_Assessment[1] == 0 or bit_Assessment[1] == 1 or bit_Assessment[1] == -1)):
+    print("入力が不正です。")
+    sys.exit(1)
+
+print("プレゼン・発表の有無  1:あり, 0:なし, -1:選択しない")
+bit_Assessment[2] = int(input())
+if(not(bit_Assessment[2] == 0 or bit_Assessment[2] == 1 or bit_Assessment[2] == -1)):
+    print("入力が不正です。")
+    sys.exit(1)
 
 ##################main##################
-#開講元が情報工学系以外のとき、bit_Academic_unit_or_major[0]=0で、開講元が情報工学系のものを一掃
-if(bit_Academic_unit_or_major != -1) :
+#開講元が情報工学系以外のとき、courseNum[0]=0で、開講元が情報工学系のものを一掃
+if(courseNum != -1) :
     for x in reversed(nums):
-        if(Academic_unit_or_major[bit_Academic_unit_or_major] != d[x]["開講元"]):
+        if(Academic_unit_or_major[courseNum] != d[x]["開講元"]):
             nums.remove(x)
 newnums1 = []
 for i in range(len(bit_Day)):
@@ -94,7 +126,7 @@ nums=list(dict.fromkeys(newnums1))
 for i in range(len(bit_Period)):
     if bit_Period[i]==0:
         for x in reversed(nums):
-            if(Period[i][0] in d[x]["曜日・時限(講義室)"]):#7現開始ならそれ以外開始の授業を許さない
+            if(Period[i] in d[x]["曜日・時限(講義室)"]):#7現開始ならそれ以外開始の授業を許さない
                 nums.remove(x)
 newnums2 = []
 for i in range(len(bit_Quarter)):
@@ -119,6 +151,12 @@ for i in range(len(bit_Assessment)):
         for x in reversed(nums):
             if("成績評価の基準及び方法" not in d[x] or (Assessment[i][0] in d[x]["成績評価の基準及び方法"] or Assessment[i][1] in d[x]["成績評価の基準及び方法"])):
                 nums.remove(x)
-
+    elif bit_Assessment[i]==1:
+        for x in reversed(nums):
+            if("成績評価の基準及び方法" not in d[x] or (Assessment[i][0] in d[x]["成績評価の基準及び方法"] or Assessment[i][1] in d[x]["成績評価の基準及び方法"])):
+                nums.remove(x)
+print()
+print("----------該当講義一覧----------")
 for x in nums:
-    print(x,d[x]["講義名"])
+    print(d[x]["講義名"]["日本語"])
+print("--------------------------------")
