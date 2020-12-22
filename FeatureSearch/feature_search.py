@@ -56,6 +56,24 @@ class feature_search:
             print("入力が不正です。")
             sys.exit(1)
         
+        print("曜日(7bitで答える 1:選択, 0:選択しない")
+        print("ex.)0100100")
+        for i in range(len(self.day)-1):
+            print(self.day[i] + " ", end = ",")
+        print(self.day[len(self.day) - 1])
+        input_day_select = input()
+        if(len(input_day_select) != len(self.day)):
+            print("入力サイズが不正です。")
+            sys.exit(1)
+        else:
+            for i in range(len(self.day)):
+                if(input_day_select[i]!="0" and input_day_select[i]!="1"):
+                    print("入力文字が不正です")
+                    sys.exit(1)
+                else:
+                    self.day_select[i] = int(input_day_select[i])
+
+        
         print("開始時限(10bitで答える 1:選択, 0:選択しない)")
         print("ex.) 1010000000")
         for i in range(len(self.period)-1):
@@ -73,9 +91,9 @@ class feature_search:
                         print("入力文字の種類が不正です")
                         sys.exit(1)
                     else:
+                        self.period_select[i]=int(input_period_select[i])
                         if(i==len(self.period)-1):
                             flag_period=0
-                            self.period_select[i]=int(input_period_select[i])
                         
 
 
@@ -96,8 +114,8 @@ class feature_search:
                         print("入力文字の種類が不正です")
                         sys.exit(1)
                     else:
+                        self.quarter_select[i]=int(input_quarter_select[i])
                         if(i==len(self.quarter)-1):
-                            self.quarter_select[i]=int(input_quarter_select[i])
                             flag_quarter=0
 
         print("教科書の有無  1:あり, 0:なし, -1:選択しない")
@@ -152,24 +170,45 @@ class feature_search:
                         newnums2.append(x)
         self.nums=list(dict.fromkeys(newnums2))
         if self.is_need_textbook ==0:
-            for i in range(len(self.textbook)):
-                for x in reversed(self.nums):
-                    if("参考書、講義資料等" not in self.d[x] or (self.textbook[i] not in self.d[x]["参考書、講義資料等"])):
-                        self.nums.remove(x)
+            for x in reversed(self.nums):
+                is_remove = True
+                for i in range(len(self.textbook)):
+                    if("教科書" not in self.d[x]):
+                        break
+                    if((self.textbook[i] in self.d[x]["教科書"])):
+                        is_remove = False
+                        break
+                if(is_remove):
+                    self.nums.remove(x)
         elif self.is_need_textbook == 1:
-            for i in range(len(self.textbook)):
-                for x in reversed(self.nums):
-                    if("参考書、講義資料等" not in self.d[x] or (self.textbook[i] in self.d[x]["参考書、講義資料等"])):
-                        self.nums.remove(x)
+            for x in reversed(self.nums):
+                is_remove = False
+                for i in range(len(self.textbook)):
+                    if("教科書" not in self.d[x] or (self.textbook[i] in self.d[x]["教科書"])):
+                        is_remove = True
+                        break
+                if(is_remove):
+                    self.nums.remove(x)
 
         for i in range(len(self.is_need_assessment)):
             if self.is_need_assessment[i]==0:
                 for x in reversed(self.nums):
-                    if("成績評価の基準及び方法" not in self.d[x] or (self.assessment[i][0] in self.d[x]["成績評価の基準及び方法"] or self.assessment[i][1] in self.d[x]["成績評価の基準及び方法"])):
-                        self.nums.remove(x)
+                    is_remove = False
+                    for j in range(len(self.assessment[i])):
+                        if("成績評価の基準及び方法" not in self.d[x] or (self.assessment[i][j] in self.d[x]["成績評価の基準及び方法"] or self.assessment[i][j] in self.d[x]["成績評価の基準及び方法"])):
+                            is_remove = True
+                            break
+                    self.nums.remove(x)
             elif self.is_need_assessment[i]==1:
                 for x in reversed(self.nums):
-                    if("成績評価の基準及び方法" not in self.d[x] or (self.assessment[i][0] in self.d[x]["成績評価の基準及び方法"] or self.assessment[i][1] in self.d[x]["成績評価の基準及び方法"])):
+                    is_remove = True
+                    for j in range(len(self.assessment[i])):
+                        if("成績評価の基準及び方法" not in self.d[x]):
+                            break
+                        if((self.assessment[i][j] in self.d[x]["成績評価の基準及び方法"] or self.assessment[i][j] in self.d[x]["成績評価の基準及び方法"])):
+                            is_remove = False
+                            break
+                    if(is_remove):
                         self.nums.remove(x)
     
         return self.nums
