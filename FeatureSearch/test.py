@@ -67,6 +67,7 @@ if(courseNum < -1 or len(Academic_unit_or_major) < courseNum):
     sys.exit(1)
 
 print("開講クォーター(10bitで答える 1:選択, 0:選択しない)")
+print("ex.) 0011010000")
 for i in range(len(Quarter)-1):
     print(" " + Quarter[i] + "Q", end = ',')
 print(" " + Quarter[len(Quarter)-1] + "Q")
