@@ -5,13 +5,11 @@
 #実装していないもの
 #・一番下の同じ処理ばかりの部分を関数化したさ。
 #・例えば火曜3-4と金曜1-2の許容(2回検索してくれると信じたい)。火金と1-2,3-4の許容みたいな書き方しか現状できない
-#・火曜と金曜の授業を、火曜のみにチェックがついているときに部分一致のものとして出したりとか、関連度高い科目として出したりするとか
 #その他メモ
 #・(newnums=numsとかするとポインタの値が同じになる危険)
-#・reversedで後ろから要素削除が良さそう。要素0を削除してindex1に2がきて次は2を見るとかが起こらない
-#・プログラミング創造演習などが開講クォーター1-2Q。一部科目が1-4限表記
-#・火金の授業は火も金も許容していないとでてこない。一方3-4Qの授業は3Qでも4Qでも出てくる
-#・1-4の授業は1と4の数字があるからやはり1-2も3-4も許容していないとでてこない
+#・reversedで後ろから要素削除が良さそう。要素0を削除してindex1に2がきて次は2を見るとかが起こらない。setだとそういうforループ内での削除ができない
+#・火金の授業は火を入れている時も金を入れている時も出てくる。一方3-4Qの授業は3Qでも4Qでも出てくる
+#・Periodについては開始時限で管理。1限開始か、3か5かと考えるのみ。偶数時限開始授業には未対応。開始時限以外での管理もできそう
 #・参考書、講義資料等が空白の場合には出力しない。出力したいなら80,85行目not in d[x] orをin d[x] andに変更する
 
 #################settings#################
@@ -60,7 +58,7 @@ bit_Assessment=[1,1,0]
 bit_Textbooks= 1 #教科書なしを認めない。ありを認めないのが0,どちらも認めるのがそれ以外。
 bit_Assessment=[1,1,0]##試験、レポートは認めるがプレゼンは認めない
 
-#############################
+#############標準入力################
 
 input_bit_Academic_unit_or_major = input("学系選択(番号)")
 bit_Academic_unit_or_major = int(input_bit_Academic_unit_or_major)
@@ -86,27 +84,25 @@ if(bit_Academic_unit_or_major != -1) :
     for x in reversed(nums):
         if(Academic_unit_or_major[bit_Academic_unit_or_major] != d[x]["開講元"]):
             nums.remove(x)
-
+newnums1 = []
 for i in range(len(bit_Day)):
-    if bit_Day[i]==0:
-        for x in reversed(nums):
+    if bit_Day[i]==1:
+        for x in nums:
             if(Day[i] in d[x]["曜日・時限(講義室)"]):
-                nums.remove(x)
-
+                newnums1.append(x)
+nums=list(dict.fromkeys(newnums1))
 for i in range(len(bit_Period)):
     if bit_Period[i]==0:
         for x in reversed(nums):
-            if(Period[i][0] in d[x]["曜日・時限(講義室)"] or Period[i][1] in d[x]["曜日・時限(講義室)"]):
+            if(Period[i][0] in d[x]["曜日・時限(講義室)"]):#7現開始ならそれ以外開始の授業を許さない
                 nums.remove(x)
-
-newnums = []
+newnums2 = []
 for i in range(len(bit_Quarter)):
     if bit_Quarter[i]==1:
         for x in nums:
             if(Quarter[i] in d[x]["開講クォーター"]):
-                newnums.append(x)
-nums = newnums
-
+                newnums2.append(x)
+nums=list(dict.fromkeys(newnums2))
 if bit_Textbooks ==0:
     for i in range(len(Textbooks)):
         for x in reversed(nums):
