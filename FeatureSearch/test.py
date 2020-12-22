@@ -83,7 +83,7 @@ while(flag_Quarter):
                 sys.exit(1)
             else:
                 bit_Quarter[i]=int(input_bit_Quarter[i])
-                if(i==3):
+                if(i==len(Quarter)-1):
                     flag_Quarter=0
 
 print("教科書の有無  1:あり, 0:なし, -1:選択しない")
