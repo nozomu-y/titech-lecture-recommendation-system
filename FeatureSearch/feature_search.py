@@ -55,6 +55,29 @@ class feature_search:
         if(self.course_num < -1 or len(self.course) < self.course_num):
             print("入力が不正です。")
             sys.exit(1)
+        
+        print("開始時限(10bitで答える 1:選択, 0:選択しない)")
+        print("ex.) 1010000000")
+        for i in range(len(self.period)-1):
+            print(str(i+1) + "限 ", end = ",")
+        print(str(len(self.period)) + "限")
+        flag_period=1
+        while(flag_period):
+            input_period_select=input()
+            if(len(input_period_select)!=len(self.period)):
+                print("入力サイズが不正です。")
+                sys.exit(1)
+            else:
+                for i in range(len(self.period)):
+                    if(input_period_select[i]!="0" and input_period_select[i]!="1"):
+                        print("入力文字の種類が不正です")
+                        sys.exit(1)
+                    else:
+                        if(i==len(self.period)-1):
+                            flag_period=0
+                            self.period_select[i]=int(input_period_select[i])
+                        
+
 
         print("開講クォーター(10bitで答える 1:選択, 0:選択しない)")
         print("ex.) 0011010000")
@@ -73,8 +96,8 @@ class feature_search:
                         print("入力文字の種類が不正です")
                         sys.exit(1)
                     else:
-                        self.quarter_select[i]=int(input_quarter_select[i])
                         if(i==len(self.quarter)-1):
+                            self.quarter_select[i]=int(input_quarter_select[i])
                             flag_quarter=0
 
         print("教科書の有無  1:あり, 0:なし, -1:選択しない")
