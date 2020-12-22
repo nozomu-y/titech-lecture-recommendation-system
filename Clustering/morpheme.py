@@ -83,7 +83,7 @@ for leckey in lectures.keys():
     stop_words = ["する", "課題", "授業", "*", "."]
     df2 = df2[~df2["原型"].isin(stop_words)]  # ~df.isin(list) で listに含まれないもの となる
     df2["原型"]
-    df2["原型"].to_csv("data/" + leckey + ".csv")
+    df2.to_csv("data/" + leckey + ".csv")
     output[leckey] = "data/" + leckey + ".csv"
 
 
