@@ -78,6 +78,7 @@ for leckey in lectures.keys():
     #print(leckey)
     text = lectures[leckey]
     # print(text)
+    #df = parse2df(text,sysdic="/usr/local/lib/mecab/dic/mecab-ipadic-neologd")//辞書変更１
     df = parse2df(text)
     df2 = df[df["posID"].isin([36, 37, 38, 40, 41, 42, 43, 44, 45, 46, 47, 50, 51, 52, 66, 67, 2, 31, 10, 34])]
     stop_words = ["する", "課題", "授業", "*", "."]
