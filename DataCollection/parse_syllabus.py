@@ -1,18 +1,69 @@
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from selenium.common.exceptions import NoSuchElementException
 import time
 import re
 import json
+import os
+
+options = Options()
+# do not open browser window
+# options.headless = True
+driver = webdriver.Chrome(options=options)
+skip_major = ['文系教養科目', '英語科目', '第二外国語科目', '日本語・日本文化科目', '教職科目', '広域教養科目', '理工系教養科目']
+
+
+def get_major_urls():
+    # archived
+    url = "http://www.ocw.titech.ac.jp/index.php?module=Archive&action=ArchiveIndex&lang=JA"
+    driver.get(url)
+    wait_load()
+    html = driver.page_source.encode('utf-8')
+    soup = BeautifulSoup(html, "html.parser")
+    schools = soup.select("#left-body-1 > ul > li")  # 学院一覧
+    majors = {}
+    for school in schools:
+        if school.select_one("li > a").text == '初年次専門科目':
+            continue
+        links = school.select("li > ul > li > a")
+        for link in links:
+            if link.text == "共通専門科目":
+                continue
+            majors[link.text] = "http://www.ocw.titech.ac.jp/" + link['href']
+    f = open('syllabus_url_archived.json', 'w')
+    json.dump(majors, f, ensure_ascii=False, indent=4)
+    f.close()
+
+    # current
+    url = "http://www.ocw.titech.ac.jp/index.php?module=General&action=T0100&GakubuCD=10&lang=JA"
+    driver.get(url)
+    wait_load()
+    html = driver.page_source.encode('utf-8')
+    soup = BeautifulSoup(html, "html.parser")
+    schools = soup.select("#left-body-1 > ul > li")  # 学院一覧
+    majors = {}
+    for school in schools:
+        if school.select_one("li > a").text == '初年次専門科目':
+            continue
+        links = school.select("li > ul > li > a")
+        for link in links:
+            if link.text == "共通専門科目":
+                continue
+            majors[link.text] = "http://www.ocw.titech.ac.jp/" + link['href']
+    f = open('syllabus_url_current.json', 'w')
+    json.dump(majors, f, ensure_ascii=False, indent=4)
+    f.close()
 
 
 def parse_syllabus(url):
-    options = Options()
-    # do not open browser window
-    options.headless = True
-    driver = webdriver.Chrome(options=options)
+    # options = Options()
+    # # do not open browser window
+    # # options.headless = True
+    # driver = webdriver.Chrome(options=options)
     driver.get(url)
-    time.sleep(3)
+    # time.sleep(3)
+    wait_load()
     html = driver.page_source.encode('utf-8')
     soup = BeautifulSoup(html, "html.parser")
 
@@ -33,7 +84,8 @@ def parse_syllabus(url):
     overview = soup.select_one("#right-contents > div.gaiyo-data.clearfix").find_all("dl")
     for item in overview:
         if item.select_one("dt").text.strip() == "アクセスランキング":
-            dic[item.select_one("dt").text.strip()] = re.search(r'\d+', item.select_one("dd > img")['src']).group()
+            dic[item.select_one("dt").text.strip()] = re.search(
+                r'\d+', item.select_one("dd > img")['src']).group()
         elif item.select_one("dt").text.strip() == "担当教員名":
             teachers = item.select("dd > a")
             dic['担当教員名'] = []
@@ -49,7 +101,8 @@ def parse_syllabus(url):
             for f in forms:
                 dic['授業形態'].append(f)
         else:
-            dic[item.select_one("dt").text.strip()] = item.select_one("dd").text.strip().replace("\xa0\xa0", " ")
+            dic[item.select_one("dt").text.strip()] = item.select_one(
+                "dd").text.strip().replace("\xa0\xa0", " ")
 
     # シラバス
     syllabus = soup.select("#overview > div")
@@ -85,18 +138,17 @@ def parse_syllabus(url):
                     sub['講義名'] = subject.text.split(" ： ")[0]
                 dic['関連する科目'].append(sub)
         else:
-            dic[h3.text] = syl.select_one("p").text
+            try:
+                dic[h3.text] = syl.select_one("p").text
+            except BaseException:
+                pass
     return dic
 
 
-def get_lecture_urls(url):
-    options = Options()
-    # do not open browser window
-    options.headless = True
-    driver = webdriver.Chrome(options=options)
-    driver.get(url)
-    time.sleep(3)
-    html = driver.page_source
+def get_lecture_urls(html):
+    # driver.get(url)
+    # time.sleep(3)
+    # html = driver.page_source
     soup = BeautifulSoup(html, "html.parser")
 
     tables = soup.select_one("#tab2_scroll")
@@ -111,38 +163,86 @@ def get_lecture_urls(url):
     return hrefs
 
 
-if __name__ == "__main__":
-    # 情工の科目一覧
-    urls = {
-        '2020': 'http://www.ocw.titech.ac.jp/index.php?module=General&action=T0200&GakubuCD=4&GakkaCD=342300&KeiCD=23&tab=2&focus=200&lang=JA'
-        #  '2019': './data/csc_2019.html',
-        #  '2018': './data/csc_2018.html',
-        #  '2017': './data/csc_2017.html',
-        #  '2016': './data/csc_2016.html'
-    }
-    path = __file__.replace('parse_syllabus.py', '')
-    for year, url in urls.items():
+def wait_load():
+    while True:
+        try:
+            driver.find_element_by_id("wrapper")
+            break
+        except NoSuchElementException:
+            continue
+
+
+def hard_refresh():
+    driver.execute_script("location.reload(true);")
+
+
+def get_annual_list(url, major_name):
+    for year in range(2019, 2016, -1):
+        print(major_name)
         print(year)
-        if 'http' not in url:
-            url = 'file://' + path + url
-        print(url)
-        hrefs = get_lecture_urls(url)
-        lectures = []
-        for title, href in hrefs.items():
-            if "学士特定" in title or "研究プロジェクト" in title:
-                continue
-            print(href)
-            while True:
-                try:
-                    lecture = parse_syllabus(href)
-                    break
-                except AttributeError:
-                    continue
+        if major_name in skip_major:
+            print('skip:' + major_name)
+            continue
+        if os.path.exists('./output/' + major_name + '_' + str(year) + '.json'):
+            print('file exists: ./output/' + major_name + '_' + str(year) + '.json')
+            continue
+        driver.get(url)
+        wait_load()
+        driver.find_element_by_css_selector(
+            "#archive_nendo_tabs > ul > li:nth-child(" + str(2020 - year) + ") > a").click()
 
-            if lecture is not None:
-                print(lecture['講義名']['日本語'])
-                lectures.append(lecture)
+        wait_load()
+        hard_refresh()
+        wait_load()
 
-        f = open('output/csc_' + year + '.json', 'w')
-        json.dump(lectures, f, ensure_ascii=False, indent=4)
-        f.close()
+        html = driver.page_source.encode('utf-8')
+        save_syllabus(html, year, major_name)
+
+
+def save_syllabus(html, year, major_name):
+    lecture_urls = get_lecture_urls(html)
+    lectures = []
+    total = len(lecture_urls)
+    now = 0
+    for title, href in lecture_urls.items():
+        now += 1
+        if "学士特定" in title or "研究プロジェクト" in title:
+            continue
+        lecture = parse_syllabus(href)
+        if lecture is not None:
+            print(" * " + lecture['講義名']['日本語'] + "[" + str(now) + "/" + str(total) + "]")
+        lectures.append(lecture)
+    f = open('output/' + major_name + '_' + str(year) + '.json', 'w')
+    json.dump(lectures, f, ensure_ascii=False, indent=4)
+    f.close()
+
+
+if __name__ == "__main__":
+    if not (os.path.exists("./syllabus_url_current.json")
+            and os.path.exists("./syllabus_url_archived.json")):
+        get_major_urls()
+
+    f = open('syllabus_url_current.json', 'r')
+    urls = json.load(f)
+    for major_name, url in urls.items():
+        print(major_name)
+        print(2020)
+        if major_name in skip_major:
+            print('skip:' + major_name)
+            continue
+        if os.path.exists('./output/' + major_name + '_2020.json'):
+            print('file exists: ./output/' + major_name + '_2020.json')
+            continue
+        driver.get(url)
+        wait_load()
+        html = driver.page_source.encode('utf-8')
+        save_syllabus(html, 2020, major_name)
+    f.close()
+
+    f = open('syllabus_url_archived.json', 'r')
+    urls = json.load(f)
+    for major_name, url in urls.items():
+        get_annual_list(url, major_name)
+
+    driver.close()
+    driver.quit()
