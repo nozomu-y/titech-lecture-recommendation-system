@@ -57,7 +57,6 @@ syllabus_path = 'chunk.json'
 with open(syllabus_path) as f:
     lectures = json.load(f)
 for leckey in lectures.keys():
-
     #print(leckey)
     text = lectures[leckey]
     # print(text)
