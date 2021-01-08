@@ -2,7 +2,8 @@
 #科目コードから講義名(日本語)をえる
 def GetNameJ(code):
     import json
-    #syllabus_path = '../DataCollection/output.json'
+    syllabus_path = '../DataCollection/syllabus.json'
+    '''
     syllabus_paths = [
         '../DataCollection/output/csc_2020.json',
         '../DataCollection/output/csc_2019.json',
@@ -10,6 +11,7 @@ def GetNameJ(code):
         '../DataCollection/output/csc_2017.json',
         '../DataCollection/output/csc_2016.json'
     ]
+    '''
     str=''
     for path in syllabus_paths:
         with open(path) as f:
@@ -25,6 +27,8 @@ def GetNameJ(code):
 def GetNameE(code):
     import json
     #syllabus_path = '../DataCollection/output.json'
+    syllabus_path = '../DataCollection/syllabus.json'
+    '''
     syllabus_paths = [
         '../DataCollection/output/csc_2020.json',
         '../DataCollection/output/csc_2019.json',
@@ -32,6 +36,7 @@ def GetNameE(code):
         '../DataCollection/output/csc_2017.json',
         '../DataCollection/output/csc_2016.json'
     ]
+    '''
     str=''
     for path in syllabus_paths:
         with open(path) as f:
@@ -46,7 +51,9 @@ def GetNameE(code):
 #科目コードから、関連する科目の科目コードを得る
 def GetRelaSub(code):
     import json
+    syllabus_path = '../DataCollection/syllabus.json'
     #syllabus_path = '../DataCollection/output.json'
+    '''
     syllabus_paths = [
         '../DataCollection/output/csc_2020.json',
         '../DataCollection/output/csc_2019.json',
@@ -54,6 +61,7 @@ def GetRelaSub(code):
         '../DataCollection/output/csc_2017.json',
         '../DataCollection/output/csc_2016.json'
     ]
+    '''
     str=''
     for path in syllabus_paths:
         with open(path) as f:
