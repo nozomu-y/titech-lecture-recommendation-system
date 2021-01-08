@@ -11,6 +11,7 @@ options = Options()
 # do not open browser window
 # options.headless = True
 driver = webdriver.Chrome(options=options)
+skip_major = ['文系教養科目', '英語科目', '第二外国語科目', '日本語・日本文化科目', '教職科目', '広域教養科目', '理工系教養科目']
 
 
 def get_major_urls():
@@ -177,7 +178,14 @@ def hard_refresh():
 
 def get_annual_list(url, major_name):
     for year in range(2019, 2016, -1):
+        print(major_name)
         print(year)
+        if major_name in skip_major:
+            print('skip:' + major_name)
+            continue
+        if os.path.exists('./output/' + major_name + '_' + str(year) + '.json'):
+            print('file exists: ./output/' + major_name + '_' + str(year) + '.json')
+            continue
         driver.get(url)
         wait_load()
         driver.find_element_by_css_selector(
@@ -190,14 +198,8 @@ def get_annual_list(url, major_name):
         html = driver.page_source.encode('utf-8')
         save_syllabus(html, year, major_name)
 
-    driver.close()
-    driver.quit()
-
 
 def save_syllabus(html, year, major_name):
-    if os.path.exists('./output/' + major_name + '_' + str(year) + '.json'):
-        print('file exists: ./output/' + major_name + '_' + str(year) + '.json')
-        return
     lecture_urls = get_lecture_urls(html)
     lectures = []
     total = len(lecture_urls)
@@ -206,14 +208,7 @@ def save_syllabus(html, year, major_name):
         now += 1
         if "学士特定" in title or "研究プロジェクト" in title:
             continue
-        # print(href)
-        while True:
-            try:
-                lecture = parse_syllabus(href)
-                break
-            except AttributeError as e:
-                print(e)
-                continue
+        lecture = parse_syllabus(href)
         if lecture is not None:
             print(" * " + lecture['講義名']['日本語'] + "[" + str(now) + "/" + str(total) + "]")
         lectures.append(lecture)
@@ -223,10 +218,6 @@ def save_syllabus(html, year, major_name):
 
 
 if __name__ == "__main__":
-    # parse_syllabus("http://www.ocw.titech.ac.jp/index.php?module=General&action=T0300&GakubuCD=1&GakkaCD=311300&KeiCD=13&KougiCD=202001764&Nendo=2020&lang=JA&vid=03")
-
-    # exit()
-
     if not (os.path.exists("./syllabus_url_current.json")
             and os.path.exists("./syllabus_url_archived.json")):
         get_major_urls()
@@ -236,14 +227,22 @@ if __name__ == "__main__":
     for major_name, url in urls.items():
         print(major_name)
         print(2020)
+        if major_name in skip_major:
+            print('skip:' + major_name)
+            continue
+        if os.path.exists('./output/' + major_name + '_2020.json'):
+            print('file exists: ./output/' + major_name + '_2020.json')
+            continue
         driver.get(url)
         wait_load()
         html = driver.page_source.encode('utf-8')
         save_syllabus(html, 2020, major_name)
     f.close()
 
-    f = open('syllabus_url_archive.json', 'r')
+    f = open('syllabus_url_archived.json', 'r')
     urls = json.load(f)
     for major_name, url in urls.items():
-        print(major_name)
         get_annual_list(url, major_name)
+
+    driver.close()
+    driver.quit()
