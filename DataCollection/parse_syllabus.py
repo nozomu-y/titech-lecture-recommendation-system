@@ -177,7 +177,7 @@ def hard_refresh():
 
 
 def get_annual_list(url, major_name):
-    for year in range(2019, 2016, -1):
+    for year in range(2019, 2015, -1):
         print(major_name)
         print(year)
         if major_name in skip_major:
