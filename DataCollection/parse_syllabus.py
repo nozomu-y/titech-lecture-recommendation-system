@@ -11,7 +11,8 @@ options = Options()
 # do not open browser window
 # options.headless = True
 driver = webdriver.Chrome(options=options)
-skip_major = ['文系教養科目', '英語科目', '第二外国語科目', '日本語・日本文化科目', '教職科目', '広域教養科目', '理工系教養科目']
+#  skip_major = ['文系教養科目', '英語科目', '第二外国語科目', '日本語・日本文化科目', '教職科目', '広域教養科目', '理工系教養科目']
+skip_major = []
 
 
 def get_major_urls():
@@ -201,20 +202,44 @@ def get_annual_list(url, major_name):
 
 def save_syllabus(html, year, major_name):
     lecture_urls = get_lecture_urls(html)
-    lectures = []
+    #  lectures = []
     total = len(lecture_urls)
     now = 0
     for title, href in lecture_urls.items():
         now += 1
+        if os.path.exists('tmp_' + major_name + '_' + str(year) + '.json'):
+            tmp_f = open('tmp_' + major_name + '_' + str(year) + '.json', 'r')
+            tmp = json.load(tmp_f)
+            tmp_f.close()
+        else:
+            tmp = []
+        exists = False
+        for lec in tmp:
+            if lec['講義名']['日本語'] == title.strip():
+                exists = True
+                break
+        if exists:
+            print(" - " + title.strip() + "[" + str(now) + "/" + str(total) + "]")
+            continue
         if "学士特定" in title or "研究プロジェクト" in title:
             continue
-        lecture = parse_syllabus(href)
+        try:
+            lecture = parse_syllabus(href)
+        except KeyboardInterrupt:
+            exit()
+        except BaseException:
+            continue
         if lecture is not None:
             print(" * " + lecture['講義名']['日本語'] + "[" + str(now) + "/" + str(total) + "]")
-        lectures.append(lecture)
+        #  lectures.append(lecture)
+        tmp.append(lecture)
+        tmp_f = open('tmp_' + major_name + '_' + str(year) + '.json', 'w')
+        json.dump(tmp, tmp_f, ensure_ascii=False, indent=4)
+        tmp_f.close()
     f = open('output/' + major_name + '_' + str(year) + '.json', 'w')
-    json.dump(lectures, f, ensure_ascii=False, indent=4)
+    json.dump(tmp, f, ensure_ascii=False, indent=4)
     f.close()
+    os.unlink('tmp_' + major_name + '_' + str(year) + '.json')
 
 
 if __name__ == "__main__":
