@@ -25,13 +25,14 @@ for path in paths.values():
 #     print(path)
 vecs = vectorizer.fit_transform(docs)
 
-gmm = AffinityPropagation(random_state=0).fit_predict(vecs.toarray())  #最初の４文書をクラスタリング
-lis = []
-for doc, cls in zip(paths.keys(), gmm):
-#     print(cls, GetNameJ(doc))
-    if GetNameJ(doc) is None:
-        continue
-    lis.append((cls, GetNameJ(doc)))
+gmm = AffinityPropagation(random_state=0).fit(vecs.toarray())  #最初の４文書をクラスタリング
+
+lis = gmm.predict(vec.toarray())
+# for doc, cls in zip(paths.keys(), gmm):
+# #     print(cls, GetNameJ(doc))
+#     if GetNameJ(doc) is None:
+#         continue
+#     lis.append((cls, GetNameJ(doc)))
 
 lis.sort()
 print(lis)
