@@ -40,7 +40,7 @@ class feature_search:
     nums = None
 
     def __init__(self):
-        self.f = open("../DataCollection/output.json")
+        self.f = open("../DataCollection/syllabus_2020.json")
         self.d = json.load(self.f)
         self.nums = list(range(len(self.d)))#出力するdのindex
 
