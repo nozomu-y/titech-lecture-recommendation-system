@@ -57,6 +57,8 @@ import os
 with open(syllabus_path) as f:
     lectures = json.load(f)
 for leckey in lectures.keys():
+    output[leckey] = "data/" + leckey + ".csv"
+    '''
     os.mkdir("DetData/" + leckey)
     output[leckey] = "DetData/" + leckey + ".csv"
     text=lectures[leckey]['講義の概要とねらい']
@@ -97,6 +99,7 @@ for leckey in lectures.keys():
     stop_words = ["する", "課題", "授業", "*", "."]
     df2 = df2[~df2["原型"].isin(stop_words)]  # ~df.isin(list) で listに含まれないもの となる
     df2.to_csv("DetData/" + leckey + "/task.csv")
+    '''
 
 f = open('path_clustering.json', 'w')
 json.dump(output, f, ensure_ascii=False, indent=4)
