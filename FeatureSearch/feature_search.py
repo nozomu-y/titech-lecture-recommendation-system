@@ -237,6 +237,7 @@ class feature_search:
                 initnums.append(dict[x])
             self.nums = initnums
         return
+        
 if __name__ == "__main__":
     fs = feature_search()
     fs.make_init_index_list()
