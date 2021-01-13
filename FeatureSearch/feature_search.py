@@ -45,11 +45,20 @@ class feature_search:
     d = None
     nums = None
 
-    def __init__(self):
+    def __init__(self, subject_codes):
         self.f = open("../DataCollection/syllabus_2020.json")
         self.d = json.load(self.f)
-        self.nums = list(range(len(self.d)))#出力するdのindex
-        # self.args = input('キーワード検索で得た科目コードをスペース区切りで入力\n').split() #科目コードを標準入力で受け取る場合
+        #self.nums = list(range(len(self.d)))#出力するdのindex
+        index_dict = defaultdict(int)#各科目コードとindexの対応表
+        for i in range(len(self.d)):
+            index_dict[self.d[i]["科目コード"]]=i
+
+        initnums = []
+        for x in subject_codes:
+            initnums.append(index_dict[x])
+        self.nums = initnums
+        print("init")
+        print(self.nums)
 
     def get_features(self):
          #############標準入力################
@@ -219,33 +228,23 @@ class feature_search:
 
         return self.nums
 
-    def get_subject_codes(self):
+    def print_result(self):
         index_list = self.get_index_list()
-        subject_codes = []
-        for i in index_list:
-            subject_codes.append(self.d[i]["科目コード"])
-
-        return subject_codes
-
-    def make_init_index_list(self):
-        dict = defaultdict(int)#各科目コードとindexの対応表
-        for i in range(len(self.d)):
-            dict[self.d[i]["科目コード"]]=i
-        if(len(sys.argv)!=1):
-            initnums = []
-            for x in sys.argv:
-                initnums.append(dict[x])
-            self.nums = initnums
-        return
+        print("----------該当講義一覧----------")
+        for x in index_list:
+            print(self.d[x]["講義名"]["日本語"])
+        print("--------------------------------")
         
 if __name__ == "__main__":
-    fs = feature_search()
-    fs.make_init_index_list()
-    fs.get_features()
-    index_list = fs.get_index_list()
-    print("----------該当講義一覧----------")
-    for x in index_list:
-        print(fs.d[x]["講義名"]["日本語"])
-        # print(fs.d[x]["科目コード"])
-    print("--------------------------------")
+    f = open("../DataCollection/syllabus_2020.json")
+    d = json.load(f)
+    subject_codes = []
+    for i in range(len(d)):
+        if d[i]["開講元"] == "情報工学系":
+            subject_codes.append(d[i]["科目コード"])
+
+    fs = feature_search(subject_codes)  
+    fs.get_features()                   
+    fs.print_result()                   
+
     sys.exit(0)
