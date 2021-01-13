@@ -17,6 +17,8 @@ import numpy as np
 import pandas as pd
 import json
 import sys
+from collections import defaultdict
+
 
 class feature_search:
     course = ["数学系","物理学系","化学系","地球惑星科学系",
@@ -44,12 +46,13 @@ class feature_search:
     f = None
     d = None
     nums = None
+    args = None
 
     def __init__(self):
         self.f = open("../DataCollection/syllabus_2020.json")
         self.d = json.load(self.f)
         self.nums = list(range(len(self.d)))#出力するdのindex
-        
+        self.args = input('キーワード検索で得た科目コードをスペース区切りで入力\n').split()
 
     def get_features(self):
          #############標準入力################
@@ -61,7 +64,7 @@ class feature_search:
         if(self.course_num < -1 or len(self.course) < self.course_num):
             print("入力が不正です。")
             sys.exit(1)
-        
+
         print("曜日(7bitで答える 1:選択, 0:選択しない")
         print("ex.)0100100")
         for i in range(len(self.day)-1):
@@ -79,7 +82,7 @@ class feature_search:
                 else:
                     self.day_select[i] = int(input_day_select[i])
 
-        
+
         print("開始時限(10bitで答える 1:選択, 0:選択しない)")
         print("ex.) 1010000000")
         for i in range(len(self.period)-1):
@@ -100,7 +103,7 @@ class feature_search:
                         self.period_select[i]=int(input_period_select[i])
                         if(i==len(self.period)-1):
                             flag_period=0
-                        
+
 
 
         print("開講クォーター(10bitで答える 1:選択, 0:選択しない)")
@@ -166,7 +169,7 @@ class feature_search:
         for i in range(len(self.period_select)):
             if self.period_select[i]==0:
                 for x in reversed(self.nums):
-                    if(self.period[i] in self.d[x]["曜日・時限(講義室)"]):#7現開始ならそれ以外開始の授業を許さない
+                    if(self.period[i] in self.d[x]["曜日・時限(講義室)"]):#7限開始ならそれ以外開始の授業を許さない
                         self.nums.remove(x)
         newnums2 = []
         for i in range(len(self.quarter_select)):
@@ -216,7 +219,7 @@ class feature_search:
                             break
                     if(is_remove):
                         self.nums.remove(x)
-    
+
         return self.nums
 
     def get_subject_codes(self):
@@ -227,12 +230,24 @@ class feature_search:
 
         return subject_codes
 
+    def make_init_index_list(self):
+        dict = defaultdict(int)#各科目コードとindexの対応表
+        for i in range(len(self.d)):
+            dict[self.d[i]["科目コード"]]=i
+        if(len(self.args)!=0):
+            initnums = []
+            for x in self.args:
+                initnums.append(dict[x])
+            self.nums = initnums
+        return
 if __name__ == "__main__":
     fs = feature_search()
+    fs.make_init_index_list()
     fs.get_features()
     index_list = fs.get_index_list()
     print("----------該当講義一覧----------")
     for x in index_list:
         print(fs.d[x]["講義名"]["日本語"])
+        print(fs.d[x]["科目コード"])
     print("--------------------------------")
     sys.exit(0)
