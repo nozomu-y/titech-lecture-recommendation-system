@@ -1,14 +1,12 @@
 ##################memo##################
 #Description:
 #特徴量検索用コード。output.jsonを参照し、入力に完全一致する講義名を出力する。
-#Last update:12/22
-#実装していないもの
-#・一番下の同じ処理ばかりの部分を関数化したさ。
-#・例えば火曜3-4と金曜1-2の許容(2回検索してくれると信じたい)。火金と1-2,3-4の許容みたいな書き方しか現状できない
+#コマンドライン引数がない場合には全科目から、ある場合には引数の科目コードの中から検索して出力。
+#Last update:1/13
+#実装していないもの 残りはUIのみ
 #その他メモ
 #・(newnums=numsとかするとポインタの値が同じになる危険)
 #・reversedで後ろから要素削除が良さそう。要素0を削除してindex1に2がきて次は2を見るとかが起こらない。setだとそういうforループ内での削除ができない
-#・火金の授業は火を入れている時も金を入れている時も出てくる。一方3-4Qの授業は3Qでも4Qでも出てくる
 #・periodについては開始時限で管理。1限開始か、3か5かと考えるのみ。偶数時限開始授業には未対応。開始時限以外での管理もできそう
 #・参考書、講義資料等が空白の場合には出力しない。出力したいなら80,85行目not in d[x] orをin d[x] andに変更する
 
@@ -46,13 +44,12 @@ class feature_search:
     f = None
     d = None
     nums = None
-    args = None
 
     def __init__(self):
         self.f = open("../DataCollection/syllabus_2020.json")
         self.d = json.load(self.f)
         self.nums = list(range(len(self.d)))#出力するdのindex
-        self.args = input('キーワード検索で得た科目コードをスペース区切りで入力\n').split()
+        # self.args = input('キーワード検索で得た科目コードをスペース区切りで入力\n').split() #科目コードを標準入力で受け取る場合
 
     def get_features(self):
          #############標準入力################
@@ -234,9 +231,9 @@ class feature_search:
         dict = defaultdict(int)#各科目コードとindexの対応表
         for i in range(len(self.d)):
             dict[self.d[i]["科目コード"]]=i
-        if(len(self.args)!=0):
+        if(len(sys.argv)!=1):
             initnums = []
-            for x in self.args:
+            for x in sys.argv:
                 initnums.append(dict[x])
             self.nums = initnums
         return
@@ -248,6 +245,6 @@ if __name__ == "__main__":
     print("----------該当講義一覧----------")
     for x in index_list:
         print(fs.d[x]["講義名"]["日本語"])
-        print(fs.d[x]["科目コード"])
+        # print(fs.d[x]["科目コード"])
     print("--------------------------------")
     sys.exit(0)
