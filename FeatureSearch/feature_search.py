@@ -16,6 +16,7 @@ import pandas as pd
 import json
 import sys
 from collections import defaultdict
+import os
 
 
 class feature_search:
@@ -46,7 +47,9 @@ class feature_search:
     nums = None
 
     def __init__(self, subject_codes):
-        self.f = open("../DataCollection/syllabus_2020.json")
+        base = os.path.dirname(os.path.abspath(__file__))
+        filepath = os.path.normpath(os.path.join(base, "../DataCollection/syllabus_2020.json"))
+        self.f = open(filepath)
         self.d = json.load(self.f)
         #self.nums = list(range(len(self.d)))#出力するdのindex
         index_dict = defaultdict(int)#各科目コードとindexの対応表
