@@ -118,7 +118,7 @@ class classification:
             answers = ""
             for i in label_index:
                 if answers != "":
-                    answers = answers + "  "
+                    answers = answers + ","
                  
                 answers = answers + self.clf.classes_[i]
 

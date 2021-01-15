@@ -30,16 +30,6 @@ def main():
 
         print("ーーーーーーーーーーーーーーーーーーーー")
         print(queation)
-        print("￣￣￣￣￣￣￣￣￣∨￣￣￣￣￣￣￣￣￣￣")
-        print("　　　　　　　　∧_∧")
-        print("　　　　　　　 < ｀∀´>　")
-        print("　　　　　　　　(　∽) ")
-        print("　　　　　　　  )ノ")
-        print("　　　　　　　　（_　")
-        print("　　　　　　　[il=li]　")
-        print("　　　　　　　　)=(_") 
-        print("　　　　　　　(-==-)") 
-        print("　　　　　　　 `ｰ‐'' ") 
         print("┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓") 
         print("┃ 「YES」なら 5 、「NO」なら 1	┃")
         print("┃ 「わからない場合」は 3 を入力 ┃") 
@@ -59,9 +49,11 @@ def main():
         if answer == "":
             pass
         else:
-            print("＿人人人人人人＿") 
-            print(answer)
-            print("￣Y^Y^Y^Y^Y^Y￣") 
+            print("******************************************") 
+            answer = answer.split(',')
+            for ans in answer:
+                print(ans)
+            print("******************************************") 
             break
 
 #回答があったら出力してループを抜ける
