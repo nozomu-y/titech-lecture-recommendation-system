@@ -7,6 +7,7 @@ import pandas as pd
 #  from sklearn import model_selection
 from sklearn.cluster import AffinityPropagation
 from getname import GetNameJ
+from wordnet import SearchSimilarWords
 
 keyword = input('キーワード: ')
 
