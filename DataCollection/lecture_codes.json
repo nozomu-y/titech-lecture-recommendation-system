@@ -1,0 +1,6322 @@
+{
+    "EEE.G291": {
+        "日本語": "エレクトロニクスの基礎",
+        "英語": "Fundamentals of Electronics"
+    },
+    "CAP.P211": {
+        "日本語": "高分子化学第一（逐次重合）",
+        "英語": "Polymer Chemistry I (Step-Growth Polymerization)"
+    },
+    "CAP.P202": {
+        "日本語": "高分子統計力学",
+        "英語": "Statistical Mechanics for Polymers"
+    },
+    "CAP.P212": {
+        "日本語": "高分子化学第二（連鎖重合）",
+        "英語": "Polymer Chemistry II  (Chain Polymerization)"
+    },
+    "CAP.B214": {
+        "日本語": "有機化学第四（求核置換反応） B",
+        "英語": "Organic Chemistry IV (Nucleophilic Substitution) B"
+    },
+    "MTH.U212": {
+        "日本語": "基礎工業数学第一b",
+        "英語": "Applied Mathematics for Engineers Ib"
+    },
+    "CAP.C201": {
+        "日本語": "移動現象第一（運動量移動）",
+        "英語": "Transport Phenomena I (Momentum)"
+    },
+    "CAP.B216": {
+        "日本語": "物理化学第一（熱力学法則） B",
+        "英語": "Physical Chemistry I (Thermodynamics) B"
+    },
+    "CAP.B219": {
+        "日本語": "物理化学（分子運動論） B",
+        "英語": "Physical Chemistry (Kinetic Theory of Molecules) B"
+    },
+    "CAP.B212": {
+        "日本語": "有機化学第二（アルケン） B",
+        "英語": "Organic Chemistry II (Alkenes) B"
+    },
+    "CAP.B226": {
+        "日本語": "量子化学第一（基礎） A",
+        "英語": "Quantum Chemistry I (Basics) A"
+    },
+    "CAP.B217": {
+        "日本語": "物理化学第二（化学平衡） B",
+        "英語": "Physical Chemistry II (Chemical Equilibrium) B"
+    },
+    "CAP.C202": {
+        "日本語": "移動現象第二（熱移動）",
+        "英語": "Transport Phenomena II (Heat)"
+    },
+    "CAP.P222": {
+        "日本語": "高分子物理第二（固体構造）",
+        "英語": "Polymer Physics II (Solid Structures)"
+    },
+    "CAP.E241": {
+        "日本語": "化学データ解析",
+        "英語": "Data Analysis for the Chemical Engineering"
+    },
+    "CAP.B223": {
+        "日本語": "無機化学（材料科学） A",
+        "英語": "Inorganic Chemistry (Materials Science) A"
+    },
+    "CAP.B221": {
+        "日本語": "無機化学第一（結合論） B",
+        "英語": "Inorganic Chemistry I (Chemical Bonding) B"
+    },
+    "CAP.C211": {
+        "日本語": "エネルギー操作",
+        "英語": "Energy Transfer Operation"
+    },
+    "CAP.B224": {
+        "日本語": "無機化学（元素と化合物）",
+        "英語": "Inorganic Chemistry (Elements and Compounds)"
+    },
+    "CAP.C203": {
+        "日本語": "移動現象第三（物質移動）",
+        "英語": "Transport Phenomena III (Mass)"
+    },
+    "MTH.U211": {
+        "日本語": "基礎工業数学第一a",
+        "英語": "Applied Mathematics for Engineers Ia"
+    },
+    "CAP.B211": {
+        "日本語": "有機化学第一（アルカン）（応用化学） B",
+        "英語": "Organic Chemistry I (Alkanes) (Chemical Science and Engineering) B"
+    },
+    "CAP.B227": {
+        "日本語": "量子化学第二（発展） B",
+        "英語": "Quantum Chemistry II (Advances) B"
+    },
+    "CAP.P201": {
+        "日本語": "高分子科学",
+        "英語": "Polymer Science"
+    },
+    "CAP.P221": {
+        "日本語": "高分子物理第一（溶液物性）",
+        "英語": "Polymer Physics I (Polymer Solutions)"
+    },
+    "CAP.C205": {
+        "日本語": "化学プロセス量論 A",
+        "英語": "Chemical Process Stoichiometry A"
+    },
+    "MTH.U213": {
+        "日本語": "基礎工業数学第二a",
+        "英語": "Applied Mathematics for Engineers Ila"
+    },
+    "CAP.C204": {
+        "日本語": "化工熱力学",
+        "英語": "Chemical Engineering Thermodynamics"
+    },
+    "CAP.B201": {
+        "日本語": "応用化学実験第一a/b",
+        "英語": "Chemical Engineering and Industrial Chemistry Laboratory I a/b"
+    },
+    "CAP.C206": {
+        "日本語": "反応工学第一（均一系）",
+        "英語": "Chemical Reaction Engineering I (Homogeneous System)"
+    },
+    "CAP.B203": {
+        "日本語": "応用化学実験第二a/b",
+        "英語": "Chemical Engineering and Industrial Chemistry Laboratory II a/b"
+    },
+    "CAP.B218": {
+        "日本語": "物理化学第三（反応速度論） B",
+        "英語": "Physical Chemistry III (Kinetics) B"
+    },
+    "CAP.A275": {
+        "日本語": "無機化学（固体化学）",
+        "英語": "Inorganic Chemistry (Solid State Chemistry)"
+    },
+    "CAP.C212": {
+        "日本語": "分離操作",
+        "英語": "Separation Operation"
+    },
+    "MTH.U214": {
+        "日本語": "基礎工業数学第二b",
+        "英語": "Applied Mathematics for Engineers Ilb"
+    },
+    "CAP.B213": {
+        "日本語": "有機化学第三（芳香族） A",
+        "英語": "Organic Chemistry III (Aromatic Compounds) A"
+    },
+    "CAP.B222": {
+        "日本語": "無機化学第二（反応と構造） A",
+        "英語": "Inorganic Chemistry II (Chemical Reactions and Structures of Solids) A"
+    },
+    "CAP.B202": {
+        "日本語": "応用化学実験第一b/a",
+        "英語": "Chemical Engineering and Industrial Chemistry Laboratory I b/a"
+    },
+    "CAP.C213": {
+        "日本語": "化学プロセスシステム第一（制御）",
+        "英語": "Chemical Process System I (Control)"
+    },
+    "CAP.B204": {
+        "日本語": "応用化学実験第二b/a",
+        "英語": "Chemical Engineering and Industrial Chemistry Laboratory II b/a"
+    },
+    "CAP.C207": {
+        "日本語": "バイオ工学基礎",
+        "英語": "Introduction to Biotechnology"
+    },
+    "CAP.E332": {
+        "日本語": "環境エネルギー概論",
+        "英語": "Introduction to Environmental and Energy Process"
+    },
+    "CAP.E351": {
+        "日本語": "電気化学",
+        "英語": "Electrochemistry"
+    },
+    "CAP.C322": {
+        "日本語": "ケミカルエンジニアリングデザイン",
+        "英語": "Chemical Engineering Design"
+    },
+    "CAP.P351": {
+        "日本語": "高分子工学演習第一",
+        "英語": "Exercises in Polymer Science I"
+    },
+    "CAP.E362": {
+        "日本語": "原子力化学工学",
+        "英語": "Nuclear Chemical Engineering"
+    },
+    "CAP.A334": {
+        "日本語": "上級有機化学第三（有機合成化学）",
+        "英語": "Advanced Organic Chemistry III (Organic Synthesis)"
+    },
+    "CAP.A386": {
+        "日本語": "先進無機化学第一",
+        "英語": "Advances and Applications in Inorganic Chemistry I"
+    },
+    "CAP.C316": {
+        "日本語": "電気化学システム論",
+        "英語": "Electrochemistry in energy systems"
+    },
+    "CAP.C344": {
+        "日本語": "工業プロセス概論",
+        "英語": "Introduction to Industrial Chemical Process"
+    },
+    "CAP.A382": {
+        "日本語": "分析化学演習",
+        "英語": "Exercise in Analytical Chemistry"
+    },
+    "CAP.B315": {
+        "日本語": "有機化学第五（カルボニル化合物） A",
+        "英語": "Organic Chemistry V (Carbonyl Compounds) A"
+    },
+    "CAP.P312": {
+        "日本語": "高分子化学第四（架橋反応）",
+        "英語": "Polymer Chemistry IV (Crosslinking Reactions)"
+    },
+    "CAP.A346": {
+        "日本語": "先進有機化学第一",
+        "英語": "Advances and Applications in Organic Chemistry I"
+    },
+    "CAP.C311": {
+        "日本語": "粒子・流体操作",
+        "英語": "Particle and Fluid Operation"
+    },
+    "CAP.B305": {
+        "日本語": "応用化学実験第三",
+        "英語": "Chemical Engineering and Industrial Chemistry Laboratory III"
+    },
+    "CAP.C332": {
+        "日本語": "化学工学実験第一",
+        "英語": "Chemical Engineering Laboratory I"
+    },
+    "CAP.E381": {
+        "日本語": "機器分析（応用化学）",
+        "英語": "Instrumental Analysis (Chemical Science and Engineering)"
+    },
+    "CAP.A354": {
+        "日本語": "触媒プロセス化学第一（不均一系）",
+        "英語": "Chemistry of Catalytic Processes I (Heterogeneous)"
+    },
+    "CAP.A366": {
+        "日本語": "先進物理化学第一",
+        "英語": "Advances and Applications in Physical Chemistry I"
+    },
+    "CAP.A347": {
+        "日本語": "先進有機化学第二",
+        "英語": "Advances and Applications in Organic Chemistry II"
+    },
+    "CAP.A302": {
+        "日本語": "応用化学実験（専門）第二",
+        "英語": "Applied Chemistry Laboratory II"
+    },
+    "CAP.E331": {
+        "日本語": "基礎自然共生科学",
+        "英語": "Introduction to Environmental Chemistry and Science"
+    },
+    "CAP.C314": {
+        "日本語": "生物プロセス工学",
+        "英語": "Bioprocess Engineering"
+    },
+    "CAP.A367": {
+        "日本語": "先進物理化学第二",
+        "英語": "Advances and Applications in Physical Chemistry II"
+    },
+    "CAP.C321": {
+        "日本語": "化学装置設計",
+        "英語": "Chemical Equipment Design"
+    },
+    "CAP.C341": {
+        "日本語": "ケミカルエンジニアリングトピックス",
+        "英語": "Chemical Engineering Topics"
+    },
+    "CAP.P353": {
+        "日本語": "高分子基礎演習第一",
+        "英語": "Exercises in Basic of Polymer Science I"
+    },
+    "CAP.E333": {
+        "日本語": "地球の化学",
+        "英語": "Introduction to Geochemistry"
+    },
+    "CAP.C313": {
+        "日本語": "化学プロセスシステム第二（設計）",
+        "英語": "Chemical Process System II (Design)"
+    },
+    "CAP.E361": {
+        "日本語": "放射化学",
+        "英語": "Radiation Chemistry"
+    },
+    "CAP.A352": {
+        "日本語": "エネルギー・資源変換化学第二（化学エネルギー変換）",
+        "英語": "Energy and Resource Conversion Chemistry II (Chemical Potential Conversion)"
+    },
+    "CAP.P342": {
+        "日本語": "生体高分子",
+        "英語": "Biopolymer"
+    },
+    "CAP.P343": {
+        "日本語": "高分子工業化学",
+        "英語": "Industrial Polymer Chemistry"
+    },
+    "CAP.P362": {
+        "日本語": "高分子工学実験第二",
+        "英語": "Polymer Chemistry Laboratory II"
+    },
+    "CAP.A331": {
+        "日本語": "上級有機化学第四（有機反応化学）",
+        "英語": "Advanced Organic Chemistry IV (Organic Reactions)"
+    },
+    "CAP.A335": {
+        "日本語": "上級有機化学第五（医農薬化学）",
+        "英語": "Advanced Organic Chemistry V (Drug Design and Synthesis)"
+    },
+    "CAP.E312": {
+        "日本語": "応用化学インターンシップ第二",
+        "英語": "Internship in Chemical Science and Engineering II"
+    },
+    "CAP.C342": {
+        "日本語": "化学工学実験第二",
+        "英語": "Chemical Engineering Laboratory II"
+    },
+    "CAP.P341": {
+        "日本語": "高分子特性解析",
+        "英語": "Polymer Characterization"
+    },
+    "CAP.A355": {
+        "日本語": "触媒プロセス化学第二（均一系）",
+        "英語": "Chemistry of Catalytic Processes I (Homogeneous)"
+    },
+    "CAP.P352": {
+        "日本語": "高分子工学演習第二",
+        "英語": "Exercises in Polymer Science II"
+    },
+    "CAP.A333": {
+        "日本語": "上級有機化学第二（構造機能化学）",
+        "英語": "Advanced Organic ChemistryⅡ (Structure and Function)"
+    },
+    "CAP.A371": {
+        "日本語": "無機化学（理論１）",
+        "英語": "Inorganic Chemistry (Theory I)"
+    },
+    "CAP.C306": {
+        "日本語": "反応工学第二（不均一系）",
+        "英語": "Chemical Reaction Engineering II (Heterogeneous System)"
+    },
+    "CAP.P321": {
+        "日本語": "高分子物理第三（レオロジー）",
+        "英語": "Polymer Physics III (Rheology)"
+    },
+    "CAP.E311": {
+        "日本語": "応用化学インターンシップ第一",
+        "英語": "Internship in Chemical Science and Engineering I"
+    },
+    "CAP.P354": {
+        "日本語": "高分子基礎演習第二",
+        "英語": "Exercises in Basic of Polymer Science II"
+    },
+    "CAP.A373": {
+        "日本語": "無機化学（錯体化学）",
+        "英語": "Inorganic Chemistry (Coordination Chemistry)"
+    },
+    "CAP.A301": {
+        "日本語": "応用化学実験（専門）第一",
+        "英語": "Applied Chemistry Laboratory I"
+    },
+    "CAP.P361": {
+        "日本語": "高分子工学実験第一",
+        "英語": "Polymer Chemistry Laboratory I"
+    },
+    "CAP.A353": {
+        "日本語": "エネルギー・資源変換化学第三（光エネルギー変換）",
+        "英語": "Energy and Resource Conversion Chemistry III (Photoenergy Conversion)"
+    },
+    "CAP.C333": {
+        "日本語": "プロセス設計実習第一",
+        "英語": "Chemical Process Design Practice I"
+    },
+    "CAP.B316": {
+        "日本語": "有機化学第六（アミン） B",
+        "英語": "Organic Chemistry VI (Amines) B"
+    },
+    "CAP.P371": {
+        "日本語": "先進高分子科学第一",
+        "英語": "Advances and Applications in Polymer Science I"
+    },
+    "CAP.A372": {
+        "日本語": "無機化学（理論２）",
+        "英語": "Inorganic Chemistry (Theory II)"
+    },
+    "CAP.A387": {
+        "日本語": "先進無機化学第二",
+        "英語": "Advances and Applications in Inorganic Chemistry II"
+    },
+    "CAP.P322": {
+        "日本語": "高分子物理第四（応用物性）",
+        "英語": "Polymer Physics IV (Physical Properties)"
+    },
+    "CAP.P311": {
+        "日本語": "高分子化学第三（高分子反応）",
+        "英語": "Polymer Chemistry III (Polymer Reactions)"
+    },
+    "CAP.C343": {
+        "日本語": "プロセス設計実習第二",
+        "英語": "Chemical Process Design Practice II"
+    },
+    "CSC.T241": {
+        "日本語": "計算基礎論",
+        "英語": "Fundamentals of Computing"
+    },
+    "CSC.T261": {
+        "日本語": "情報論理",
+        "英語": "Logic in Computer Science"
+    },
+    "CSC.T251": {
+        "日本語": "オートマトンと形式言語",
+        "英語": "Automata and Formal Languages"
+    },
+    "CSC.T262": {
+        "日本語": "アセンブリ言語",
+        "英語": "Assembly Language"
+    },
+    "CSC.T352": {
+        "日本語": "パターン認識",
+        "英語": "Pattern Recognition"
+    },
+    "CSC.T353": {
+        "日本語": "生命情報解析",
+        "英語": "Biological Data Analysis"
+    },
+    "CSC.T372": {
+        "日本語": "コンパイラ構成",
+        "英語": "Compiler Construction"
+    },
+    "CSC.T343": {
+        "日本語": "データベース",
+        "英語": "Databases"
+    },
+    "CSC.T376": {
+        "日本語": "先端情報工学",
+        "英語": "Advances in Computer Science"
+    },
+    "CSC.T377": {
+        "日本語": "情報工学英語プレゼンテーション",
+        "英語": "English Writing and Presentation Skills (Computer Science)"
+    },
+    "SCE.S203": {
+        "日本語": "ロボットの機構と力学",
+        "英語": "Kinematics and Dynamics of Robotic systems"
+    },
+    "SCE.C202": {
+        "日本語": "フィードバック制御",
+        "英語": "Feedback Control"
+    },
+    "SCE.I201": {
+        "日本語": "計測・信号処理基礎",
+        "英語": "Introduction to Measurement Engineering"
+    },
+    "SCE.I203": {
+        "日本語": "デジタル信号処理",
+        "英語": "Digital Signal Processing"
+    },
+    "SCE.P201": {
+        "日本語": "システム創造設計",
+        "英語": "Creative System Design"
+    },
+    "SCE.I202": {
+        "日本語": "不規則信号処理",
+        "英語": "Random Signal Processing"
+    },
+    "SCE.S201": {
+        "日本語": "メカトロニクス設計概論",
+        "英語": "Essentials for Design of Mechatronic Systems"
+    },
+    "SCE.E201": {
+        "日本語": "電気回路基礎",
+        "英語": "Basic Theory of Electric Circuit"
+    },
+    "SCE.A201": {
+        "日本語": "システム制御数学Ａ",
+        "英語": "Mathematics for Systems and Control A"
+    },
+    "SCE.A202": {
+        "日本語": "システム制御数学Ｂ",
+        "英語": "Mathematics for Systems and Control B"
+    },
+    "SCE.M201": {
+        "日本語": "機械の運動と力学",
+        "英語": "Fundamental Kinematics and Kinetics for Mechanical Systems"
+    },
+    "SCE.C201": {
+        "日本語": "動的システム基礎",
+        "英語": "Fundamentals of Dynamical Systems"
+    },
+    "SCE.S202": {
+        "日本語": "組込システム基礎",
+        "英語": "Fundamental course of integrated systems"
+    },
+    "SCE.E202": {
+        "日本語": "基礎情報処理及び演習（システム制御）",
+        "英語": "Information Processing and Programming (Systems and Control)"
+    },
+    "SCE.M202": {
+        "日本語": "解析力学基礎（システム制御）",
+        "英語": "Fundamentals of Analytical Dynamics (Systems and Control)"
+    },
+    "SCE.C301": {
+        "日本語": "線形システム制御論",
+        "英語": "Linear System Theory"
+    },
+    "SCE.E381": {
+        "日本語": "電磁アクチュエータ学",
+        "英語": "Electromagnetic Actuators"
+    },
+    "XEN.E301": {
+        "日本語": "科学技術者実践英語 融合理工学系B",
+        "英語": "Advanced English Communication for Engineers"
+    },
+    "SCE.S351": {
+        "日本語": "ロボット・ビークルテクノロジー",
+        "英語": "Robot and Vehicle Technology"
+    },
+    "SCE.C351": {
+        "日本語": "プロセス制御",
+        "英語": "Process Control"
+    },
+    "SCE.S303": {
+        "日本語": "バイオシステム基礎",
+        "英語": "Fundamentals of Bio-systems"
+    },
+    "SCE.I301": {
+        "日本語": "画像センシング",
+        "英語": "Image Sensing"
+    },
+    "SCE.I351": {
+        "日本語": "先端センシングテクノロジー",
+        "英語": "Advanced Sensing Technology"
+    },
+    "SCE.M305": {
+        "日本語": "生産プロセス",
+        "英語": "Manufacturing Process"
+    },
+    "SCE.P351": {
+        "日本語": "システム制御インターンシップ",
+        "英語": "Internship on Systems and Control"
+    },
+    "SCE.M304": {
+        "日本語": "計算力学",
+        "英語": "Computational Mechanics"
+    },
+    "SCE.S301": {
+        "日本語": "ロボットシステムと制御",
+        "英語": "Robotic System and Control"
+    },
+    "SCE.M301": {
+        "日本語": "連続体の力学",
+        "英語": "Continuum Mechanics"
+    },
+    "SCE.M302": {
+        "日本語": "熱工学基礎",
+        "英語": "Fundamentals of Thermal Engineering"
+    },
+    "SCE.I302": {
+        "日本語": "機械計測",
+        "英語": "Mechanical Instrumentation"
+    },
+    "SCE.M306": {
+        "日本語": "熱エネルギー変換学",
+        "英語": "Thermal Energy Conversion"
+    },
+    "SCE.S302": {
+        "日本語": "システムの数理科学",
+        "英語": "Fundamentals of System Science"
+    },
+    "SCE.M303": {
+        "日本語": "振動学",
+        "英語": "Theory of Oscillations"
+    },
+    "SCE.I303": {
+        "日本語": "計測システム論",
+        "英語": "Sensing Systems Theory"
+    },
+    "MTH.B211": {
+        "日本語": "幾何学概論第一",
+        "英語": "Introduction to Geometry I"
+    },
+    "PHY.Q207": {
+        "日本語": "量子力学入門",
+        "英語": "Introduction to Quantum Mechanics"
+    },
+    "MTH.B212": {
+        "日本語": "幾何学概論第二",
+        "英語": "Introduction to Geometry II"
+    },
+    "MTH.C201": {
+        "日本語": "解析学概論第一",
+        "英語": "Introduction to Analysis I"
+    },
+    "MTH.A201": {
+        "日本語": "代数学概論第一",
+        "英語": "Introduction to Algebra I"
+    },
+    "MTH.C211": {
+        "日本語": "応用解析序論第一",
+        "英語": "Applied Analysis I"
+    },
+    "PHY.Q206": {
+        "日本語": "解析力学",
+        "英語": "Analytical Mechanics"
+    },
+    "MTH.A203": {
+        "日本語": "代数学概論第三",
+        "英語": "Introduction to Algebra III"
+    },
+    "MTH.B202": {
+        "日本語": "位相空間論第二",
+        "英語": "Introduction to Topology II"
+    },
+    "MTH.C202": {
+        "日本語": "解析学概論第二",
+        "英語": "Introduction to Analysis II"
+    },
+    "MTH.B203": {
+        "日本語": "位相空間論第三",
+        "英語": "Introduction to Topology III"
+    },
+    "MTH.B201": {
+        "日本語": "位相空間論第一",
+        "英語": "Introduction to Topology I"
+    },
+    "MTH.C204": {
+        "日本語": "解析学概論第四",
+        "英語": "Introduction to Analysis IV"
+    },
+    "MTH.C212": {
+        "日本語": "応用解析序論第二",
+        "英語": "Applied Analysis II"
+    },
+    "MTH.A202": {
+        "日本語": "代数学概論第二",
+        "英語": "Introduction to Algebra II"
+    },
+    "MTH.A204": {
+        "日本語": "代数学概論第四",
+        "英語": "Introduction to Algebra IV"
+    },
+    "MTH.C203": {
+        "日本語": "解析学概論第三",
+        "英語": "Introduction to Analysis III"
+    },
+    "MTH.A211": {
+        "日本語": "線形空間論第一",
+        "英語": "Advanced Linear Algebra I"
+    },
+    "MTH.B204": {
+        "日本語": "位相空間論第四",
+        "英語": "Introduction to Topology IV"
+    },
+    "MTH.A212": {
+        "日本語": "線形空間論第二",
+        "英語": "Advanced Linear Algebra II"
+    },
+    "MTH.C305": {
+        "日本語": "実解析第一",
+        "英語": "Real Analysis I"
+    },
+    "MTH.C361": {
+        "日本語": "確率論",
+        "英語": "Probability Theory"
+    },
+    "MTH.B331": {
+        "日本語": "幾何学続論",
+        "英語": "Geometry III"
+    },
+    "MTH.B301": {
+        "日本語": "幾何学第一",
+        "英語": "Geometry I"
+    },
+    "MTH.B341": {
+        "日本語": "位相幾何学",
+        "英語": "Topology"
+    },
+    "MTH.C306": {
+        "日本語": "実解析第二",
+        "英語": "Real Analysis II"
+    },
+    "MTH.A301": {
+        "日本語": "代数学第一",
+        "英語": "Algebra I"
+    },
+    "MTH.C351": {
+        "日本語": "函数解析",
+        "英語": "Functional Analysis"
+    },
+    "MTH.A302": {
+        "日本語": "代数学第二",
+        "英語": "Algebra II"
+    },
+    "MTH.C301": {
+        "日本語": "複素解析第一",
+        "英語": "Complex Analysis I"
+    },
+    "MTH.B302": {
+        "日本語": "幾何学第二",
+        "英語": "Geometry II"
+    },
+    "MTH.C331": {
+        "日本語": "複素解析続論",
+        "英語": "Complex Analysis III"
+    },
+    "MTH.C341": {
+        "日本語": "微分方程式概論第一",
+        "英語": "Differential Equations I"
+    },
+    "MTH.C342": {
+        "日本語": "微分方程式概論第二",
+        "英語": "Differential Equations II"
+    },
+    "MTH.C302": {
+        "日本語": "複素解析第二",
+        "英語": "Complex Analysis II"
+    },
+    "MTH.Z385": {
+        "日本語": "数学先端研究基礎",
+        "英語": "Advanced Research Project Basics(MTH)"
+    },
+    "MTH.A331": {
+        "日本語": "代数学続論",
+        "英語": "Algebra III"
+    },
+    "LAE.E114": {
+        "日本語": "英語第四 41-RW",
+        "英語": "English 4 41-RW"
+    },
+    "LAE.E112": {
+        "日本語": "英語第二 33",
+        "英語": "English 2 33"
+    },
+    "LAE.E111": {
+        "日本語": "英語第一 18",
+        "英語": "English 1 18"
+    },
+    "LAE.E113": {
+        "日本語": "英語第三 32-LS",
+        "英語": "English 3 32-LS"
+    },
+    "LAE.E155": {
+        "日本語": "TOEFL対策セミナー（リーディング＆ライティング）第一 1",
+        "英語": "TOEFL Seminar (Reading and Writing) 1 1"
+    },
+    "LAE.E133": {
+        "日本語": "英語スピーキング演習第三 2",
+        "英語": "Oral Expression in English 3 2"
+    },
+    "LAE.E151": {
+        "日本語": "TOEFL対策セミナー（リスニング＆スピーキング）第一 3",
+        "英語": "TOEFL Seminar (Listening and Speaking) 1 3"
+    },
+    "LAE.E181": {
+        "日本語": "英語スピーキング演習GI 3",
+        "英語": "Oral Expression in English GI 3"
+    },
+    "LAE.E154": {
+        "日本語": "TOEFL対策セミナー（リスニング＆スピーキング）第四 3",
+        "英語": "TOEFL Seminar (Listening and Speaking) 4 3"
+    },
+    "LAE.E152": {
+        "日本語": "TOEFL対策セミナー（リスニング＆スピーキング）第二 3",
+        "英語": "TOEFL Seminar (Listening and Speaking) 2 3"
+    },
+    "LAE.E172": {
+        "日本語": "英語海外研修1B 2",
+        "英語": "Study Abroad Program in English IB 2"
+    },
+    "LAE.E158": {
+        "日本語": "TOEFL対策セミナー（リーディング＆ライティング）第四 1",
+        "英語": "TOEFL Seminar (Reading and Writing) 4 1"
+    },
+    "LAE.E161": {
+        "日本語": "TOEIC対策セミナー第一",
+        "英語": "TOEIC Seminar 1"
+    },
+    "LAE.E156": {
+        "日本語": "TOEFL対策セミナー（リーディング＆ライティング）第二 2",
+        "英語": "TOEFL Seminar (Reading and Writing) 2 2"
+    },
+    "LAE.E143": {
+        "日本語": "英語プレゼンテーション演習第三 1",
+        "英語": "English Presentation Seminar 3 1"
+    },
+    "LAE.E132": {
+        "日本語": "英語スピーキング演習第二 3",
+        "英語": "Oral Expression in English 2 3"
+    },
+    "LAE.E171": {
+        "日本語": "英語海外研修1A 2",
+        "英語": "Study Abroad Program in English IA 2"
+    },
+    "LAE.E131": {
+        "日本語": "英語スピーキング演習第一 2",
+        "英語": "Oral Expression in English 1 2"
+    },
+    "LAE.E141": {
+        "日本語": "英語プレゼンテーション演習第一 2",
+        "英語": "English Presentation Seminar 1 2"
+    },
+    "LAE.E157": {
+        "日本語": "TOEFL対策セミナー（リーディング＆ライティング）第三 1",
+        "英語": "TOEFL Seminar (Reading and Writing) 3 1"
+    },
+    "LAE.E134": {
+        "日本語": "英語スピーキング演習第四 3",
+        "英語": "Oral Expression in English 4 3"
+    },
+    "LAE.E142": {
+        "日本語": "英語プレゼンテーション演習第二 1",
+        "英語": "English Presentation Seminar 2 1"
+    },
+    "LAE.E164": {
+        "日本語": "TOEIC対策セミナー第四",
+        "英語": "TOEIC Seminar 4"
+    },
+    "LAE.E182": {
+        "日本語": "英語スピーキング演習GII 3",
+        "英語": "Oral Expression in English GII 3"
+    },
+    "LAE.E162": {
+        "日本語": "TOEIC対策セミナー第二",
+        "英語": "TOEIC Seminar 2"
+    },
+    "LAE.E153": {
+        "日本語": "TOEFL対策セミナー（リスニング＆スピーキング）第三 1",
+        "英語": "TOEFL Seminar (Listening and Speaking) 3 1"
+    },
+    "LAE.E163": {
+        "日本語": "TOEIC対策セミナー第三",
+        "英語": "TOEIC Seminar 3"
+    },
+    "LAE.E144": {
+        "日本語": "英語プレゼンテーション演習第四 1",
+        "英語": "English Presentation Seminar 4 1"
+    },
+    "LAE.E211": {
+        "日本語": "英語第五 44-RW",
+        "英語": "English 5 44-RW"
+    },
+    "LAE.E241": {
+        "日本語": "英語プレゼンテーション演習第五",
+        "英語": "English Presentation Seminar 5"
+    },
+    "LAE.E212": {
+        "日本語": "英語第六 47-RW",
+        "英語": "English 6 47-RW"
+    },
+    "LAE.E213": {
+        "日本語": "英語第七 38-RW",
+        "英語": "English 7 38-RW"
+    },
+    "LAE.E214": {
+        "日本語": "英語第八 38-RW",
+        "英語": "English 8 38-RW"
+    },
+    "LAE.E233": {
+        "日本語": "英語スピーキング演習第七",
+        "英語": "Oral Expression in English 7"
+    },
+    "LAE.E255": {
+        "日本語": "TOEFL対策セミナー（リーディング＆ライティング）第五",
+        "英語": "TOEFL Seminar (Reading and Writing) 5"
+    },
+    "LAE.E251": {
+        "日本語": "TOEFL対策セミナー（リスニング＆スピーキング）第五",
+        "英語": "TOEFL Seminar (Listening and Speaking) 5"
+    },
+    "LAE.E257": {
+        "日本語": "TOEFL対策セミナー（リーディング＆ライティング）第七",
+        "英語": "TOEFL Seminar (Reading and Writing) 7"
+    },
+    "LAE.E232": {
+        "日本語": "英語スピーキング演習第六 2",
+        "英語": "Oral Expression in English 6 2"
+    },
+    "LAE.E243": {
+        "日本語": "英語プレゼンテーション演習第七 2",
+        "英語": "English Presentation Seminar 7 2"
+    },
+    "LAE.E242": {
+        "日本語": "英語プレゼンテーション演習第六",
+        "英語": "English Presentation Seminar 6"
+    },
+    "LAE.E234": {
+        "日本語": "英語スピーキング演習第八",
+        "英語": "Oral Expression in English 8"
+    },
+    "LAE.E252": {
+        "日本語": "TOEFL対策セミナー（リスニング＆スピーキング）第六",
+        "英語": "TOEFL Seminar (Listening and Speaking) 6"
+    },
+    "LAE.E253": {
+        "日本語": "TOEFL対策セミナー（リスニング＆スピーキング）第七",
+        "英語": "TOEFL Seminar (Listening and Speaking) 7"
+    },
+    "LAE.E231": {
+        "日本語": "英語スピーキング演習第五 2",
+        "英語": "Oral Expression in English 5 2"
+    },
+    "LAE.E256": {
+        "日本語": "TOEFL対策セミナー（リーディング＆ライティング）第六",
+        "英語": "TOEFL Seminar (Reading and Writing) 6"
+    },
+    "LAE.E244": {
+        "日本語": "英語プレゼンテーション演習第八 2",
+        "英語": "English Presentation Seminar 8 2"
+    },
+    "LAE.E254": {
+        "日本語": "TOEFL対策セミナー（リスニング＆スピーキング）第八",
+        "英語": "TOEFL Seminar (Listening and Speaking) 8"
+    },
+    "LAE.E258": {
+        "日本語": "TOEFL対策セミナー（リーディング＆ライティング）第八",
+        "英語": "TOEFL Seminar (Reading and Writing) 8"
+    },
+    "LAE.E311": {
+        "日本語": "英語第九 22 再履修16B17B学生用",
+        "英語": "English 9 22 再履修16B17B学生用"
+    },
+    "LAE.E351": {
+        "日本語": "TOEFL対策セミナー（リスニング＆スピーキング）第九",
+        "英語": "TOEFL Seminar (Listening and Speaking) 9"
+    },
+    "LAE.E372": {
+        "日本語": "英語スピーチ演習第十",
+        "英語": "English Speech Seminar 10"
+    },
+    "LAE.E371": {
+        "日本語": "英語スピーチ演習第九",
+        "英語": "English Speech Seminar 9"
+    },
+    "LAE.E341": {
+        "日本語": "アカデミックプレゼンテーション第九",
+        "英語": "Academic Presentation 9"
+    },
+    "LAE.E356": {
+        "日本語": "TOEFL対策セミナー（リーディング＆ライティング）第十",
+        "英語": "TOEFL Seminar (Reading and Writing) 10"
+    },
+    "LAE.E381": {
+        "日本語": "実践型科学技術英語海外研修",
+        "英語": "Scientific Technical English Study Abroad Practicum"
+    },
+    "LAE.E355": {
+        "日本語": "TOEFL対策セミナー（リーディング＆ライティング）第九",
+        "英語": "TOEFL Seminar (Reading and Writing) 9"
+    },
+    "LAE.E332": {
+        "日本語": "英語スピーキング演習第十",
+        "英語": "Oral Expression in English 10"
+    },
+    "LAE.E357": {
+        "日本語": "TOEFL対策セミナー（リーディング＆ライティング）第十一",
+        "英語": "TOEFL Seminar (Reading and Writing) 11"
+    },
+    "LAE.E344": {
+        "日本語": "アカデミックプレゼンテーション第十二",
+        "英語": "Academic Presentation 12"
+    },
+    "LAE.E334": {
+        "日本語": "英語スピーキング演習第十二",
+        "英語": "Oral Expression in English 12"
+    },
+    "LAE.E354": {
+        "日本語": "TOEFL対策セミナー（リスニング＆スピーキング）第十二",
+        "英語": "TOEFL Seminar (Listening and Speaking) 12"
+    },
+    "LAE.E331": {
+        "日本語": "英語スピーキング演習第九",
+        "英語": "Oral Expression in English 9"
+    },
+    "LAE.E342": {
+        "日本語": "アカデミックプレゼンテーション第十",
+        "英語": "Academic Presentation 10"
+    },
+    "LAE.E352": {
+        "日本語": "TOEFL対策セミナー（リスニング＆スピーキング）第十",
+        "英語": "TOEFL Seminar (Listening and Speaking) 10"
+    },
+    "LAE.E343": {
+        "日本語": "アカデミックプレゼンテーション第十一",
+        "英語": "Academic Presentation 11"
+    },
+    "LAE.E333": {
+        "日本語": "英語スピーキング演習第十一",
+        "英語": "Oral Expression in English 11"
+    },
+    "LAE.E353": {
+        "日本語": "TOEFL対策セミナー（リスニング＆スピーキング）第十一",
+        "英語": "TOEFL Seminar (Listening and Speaking) 11"
+    },
+    "LAE.E358": {
+        "日本語": "TOEFL対策セミナー（リーディング＆ライティング）第十二",
+        "英語": "TOEFL Seminar (Reading and Writing) 12"
+    },
+    "CHM.D205": {
+        "日本語": "有機化学基礎実験",
+        "英語": "Laboratory Course in Basic Organic Chemistry"
+    },
+    "CHM.B201": {
+        "日本語": "無機化学第一",
+        "英語": "Inorganic Chemistry I"
+    },
+    "CHM.C201": {
+        "日本語": "量子化学序論",
+        "英語": "Introductory Quantum Chemistry"
+    },
+    "CHM.A201": {
+        "日本語": "安全の化学",
+        "英語": "Chemistry for Safety"
+    },
+    "CHM.C202": {
+        "日本語": "化学統計熱力学",
+        "英語": "Chemical and Statistical Thermodynamics"
+    },
+    "CHM.C204": {
+        "日本語": "化学統計熱力学演習",
+        "英語": "Exercise in Chemical and Statistical Thermodynamics"
+    },
+    "CHM.C203": {
+        "日本語": "量子化学序論演習",
+        "英語": "Exercise in Introductory Quantum Chemistry"
+    },
+    "CHM.B205": {
+        "日本語": "無機・分析化学基礎実験",
+        "英語": "Laboratory Course in Basic Inorganic and Analytical Chemistry"
+    },
+    "CHM.B203": {
+        "日本語": "無機化学演習第一",
+        "英語": "Exercise in Inorganic Chemistry I"
+    },
+    "CHM.D203": {
+        "日本語": "有機化学演習第一",
+        "英語": "Exercise in Organic Chemistry I"
+    },
+    "CHM.B202": {
+        "日本語": "基礎分析化学",
+        "英語": "Basic Analytical Chemistry"
+    },
+    "CHM.D202": {
+        "日本語": "有機化学第二",
+        "英語": "Organic Chemistry II"
+    },
+    "CHM.A221": {
+        "日本語": "コンピュータ実習",
+        "英語": "Practice in Computer Science"
+    },
+    "CHM.D201": {
+        "日本語": "有機化学第一",
+        "英語": "Organic Chemistry I"
+    },
+    "CHM.C205": {
+        "日本語": "物理化学基礎実験",
+        "英語": "Laboratory Course in Basic Physical Chemistry"
+    },
+    "CHM.D204": {
+        "日本語": "有機化学演習第二",
+        "英語": "Exercise in Organic Chemistry II"
+    },
+    "CHM.Z201": {
+        "日本語": "B2D 研究基礎a（化学系）",
+        "英語": "B2D Research Basic A in Chemistry"
+    },
+    "CHM.B204": {
+        "日本語": "基礎分析化学演習",
+        "英語": "Exercise in Basic Analytical Chemistry"
+    },
+    "CHM.B335": {
+        "日本語": "固体化学",
+        "英語": "Chemistry of Solids"
+    },
+    "CHM.B333": {
+        "日本語": "結晶化学",
+        "英語": "Crystal Chemistry"
+    },
+    "CHM.D334": {
+        "日本語": "天然物化学",
+        "英語": "Natural Product Chemistry"
+    },
+    "CHM.C301": {
+        "日本語": "反応物理化学序論",
+        "英語": "Introductory Chemical Kinetics"
+    },
+    "CHM.C331": {
+        "日本語": "物性化学",
+        "英語": "Solid State Chemistry"
+    },
+    "CHM.D301": {
+        "日本語": "有機化学第三",
+        "英語": "Organic Chemistry III"
+    },
+    "CHM.C333": {
+        "日本語": "分子構造学",
+        "英語": "Molecular Structural Science"
+    },
+    "CHM.B305": {
+        "日本語": "無機・分析化学総合実験",
+        "英語": "Laboratory Course in Advanced Inorganic and Analytical Chemistry"
+    },
+    "CHM.A301": {
+        "日本語": "計算化学・情報演習１",
+        "英語": "Exercise in Computational Chemistry and Chemical Information 1"
+    },
+    "CHM.Z385": {
+        "日本語": "化学先端研究基礎",
+        "英語": "Advanced Research Project Basics (CHM)"
+    },
+    "CHM.D331": {
+        "日本語": "合成有機化学",
+        "英語": "Organic Synthesis"
+    },
+    "CHM.B331": {
+        "日本語": "化学計測学",
+        "英語": "Quantitative Chemical Analysis"
+    },
+    "CHM.B332": {
+        "日本語": "光化学",
+        "英語": "Photochemistry"
+    },
+    "CHM.C332": {
+        "日本語": "量子化学",
+        "英語": "Quantum Chemistry"
+    },
+    "CHM.B301": {
+        "日本語": "無機化学第二",
+        "英語": "Inorganic Chemistry II"
+    },
+    "CHM.D332": {
+        "日本語": "有機構造化学",
+        "英語": "Structural Organic Chemistry"
+    },
+    "CHM.D333": {
+        "日本語": "有機反応論",
+        "英語": "Organic Reactions"
+    },
+    "CHM.C305": {
+        "日本語": "物理化学総合実験",
+        "英語": "Laboratory Course in Advanced Physical Chemistry"
+    },
+    "CHM.C334": {
+        "日本語": "反応物理化学",
+        "英語": "Chemical Kinetics"
+    },
+    "CHM.D305": {
+        "日本語": "有機化学総合実験",
+        "英語": "Laboratory Course in Advanced Organic Chemistry"
+    },
+    "CHM.A302": {
+        "日本語": "計算化学・情報演習２",
+        "英語": "Exercise in Computational Chemistry and Chemical Information 2"
+    },
+    "CHM.C303": {
+        "日本語": "反応物理化学序論演習",
+        "英語": "Exercise in Introductory Chemical Kinetics"
+    },
+    "CHM.B303": {
+        "日本語": "無機化学演習第二",
+        "英語": "Exercise in Inorganic Chemistry II"
+    },
+    "CHM.B334": {
+        "日本語": "地球化学",
+        "英語": "Geochemistry"
+    },
+    "CHM.D303": {
+        "日本語": "有機化学演習第三",
+        "英語": "Exercise in Organic Chemistry III"
+    },
+    "ICT.I216": {
+        "日本語": "計算機論理設計（情報通信）",
+        "英語": "Computer Logic Design (ICT)"
+    },
+    "ICT.S210": {
+        "日本語": "ディジタル信号処理",
+        "英語": "Digital Signal Processing"
+    },
+    "ICT.I203": {
+        "日本語": "交流回路",
+        "英語": "Electric Circuits"
+    },
+    "ICT.M215": {
+        "日本語": "離散構造とアルゴリズム",
+        "英語": "Discrete Structures and Algorithms"
+    },
+    "ICT.P208": {
+        "日本語": "プログラミング発展",
+        "英語": "Advanced Computer Programming (ICT)"
+    },
+    "ICT.I211": {
+        "日本語": "論理回路設計",
+        "英語": "Theory and Design of Logic Circuits"
+    },
+    "ICT.M202": {
+        "日本語": "確率と統計（情報通信）",
+        "英語": "Probability and Statistics (ICT)"
+    },
+    "ICT.P204": {
+        "日本語": "プログラミング基礎（情報通信）",
+        "英語": "Basic Computer Programming (ICT)"
+    },
+    "ICT.S206": {
+        "日本語": "信号とシステム解析",
+        "英語": "Signal and System Analysis"
+    },
+    "ICT.E213": {
+        "日本語": "情報通信実験1",
+        "英語": "Experiments of Information and Communications Engineering I"
+    },
+    "ICT.E218": {
+        "日本語": "情報通信実験2",
+        "英語": "Experiments of Information and Communications Engineering II"
+    },
+    "ICT.C209": {
+        "日本語": "代数系と符号理論",
+        "英語": "Algebraic Systems and Coding Theory"
+    },
+    "ICT.C201": {
+        "日本語": "情報通信概論",
+        "英語": "Introduction to  Information and Communications Engineering"
+    },
+    "ICT.C205": {
+        "日本語": "通信理論（情報通信）",
+        "英語": "Communication Theory (ICT)"
+    },
+    "ICT.I207": {
+        "日本語": "線形回路",
+        "英語": "Linear Circuits"
+    },
+    "ICT.C214": {
+        "日本語": "通信方式",
+        "英語": "Communication Systems"
+    },
+    "ICT.H217": {
+        "日本語": "論理と推論",
+        "英語": "Logic and Reasoning"
+    },
+    "ICT.H212": {
+        "日本語": "オートマトンと言語（情報通信）",
+        "英語": "Automata and Languages (ICT)"
+    },
+    "ICT.I308": {
+        "日本語": "計算機アーキテクチャ（情報通信）",
+        "英語": "Computer Architecture (ICT)"
+    },
+    "ICT.S302": {
+        "日本語": "関数解析と逆問題",
+        "英語": "Functional Analysis and Inverse Problems"
+    },
+    "XEG.G301": {
+        "日本語": "工学と理学のための確率と統計 A",
+        "英語": "Probability and Statistics for Engineering and Sciences A"
+    },
+    "ICT.M310": {
+        "日本語": "数理計画法",
+        "英語": "Mathematical Programming"
+    },
+    "ICT.I303": {
+        "日本語": "集積回路設計",
+        "英語": "Integrated Circuit Design"
+    },
+    "ICT.C301": {
+        "日本語": "ネットワーク基礎理論",
+        "英語": "Foundations of Communication Network"
+    },
+    "ICT.H318": {
+        "日本語": "人工知能基礎（情報通信）",
+        "英語": "Foundations of Artificial Intelligence (ICT)"
+    },
+    "ICT.I312": {
+        "日本語": "線形電子回路",
+        "英語": "Linear Electronic Circuits"
+    },
+    "ICT.H313": {
+        "日本語": "感覚知覚システム",
+        "英語": "Sensation and Perception Systems"
+    },
+    "LST.A208": {
+        "日本語": "分子生物学第一",
+        "英語": "Molecular Biology I"
+    },
+    "LST.A249": {
+        "日本語": "生物化学工学",
+        "英語": "Biochemical Engineering"
+    },
+    "LST.A247": {
+        "日本語": "生物無機化学",
+        "英語": "Biological  Inorganic Chemistry"
+    },
+    "LST.A242": {
+        "日本語": "バイオ機器分析",
+        "英語": "Instrumental Analysis in Bioscience"
+    },
+    "LST.A203": {
+        "日本語": "生物化学第一",
+        "英語": "Biochemistry I"
+    },
+    "LST.A201": {
+        "日本語": "物理化学第一（熱力学，反応速度）",
+        "英語": "Physical Chemistry I"
+    },
+    "LST.A248": {
+        "日本語": "遺伝学",
+        "英語": "Molecular Genetics"
+    },
+    "LST.A211": {
+        "日本語": "物理化学第三（分子軌道，相互作用）",
+        "英語": "Physical Chemistry III"
+    },
+    "LST.A246": {
+        "日本語": "生命情報学",
+        "英語": "Bioinformatics(LST)"
+    },
+    "LST.A206": {
+        "日本語": "物理化学第二（統計熱力学）",
+        "英語": "Physical Chemistry II"
+    },
+    "LST.A251": {
+        "日本語": "生命理工学基礎実験・演習第一 B",
+        "英語": "LST Basic Laboratory and Exercise I B"
+    },
+    "LST.A243": {
+        "日本語": "発生生物学",
+        "英語": "Developmental Biology"
+    },
+    "LST.A252": {
+        "日本語": "生命理工学基礎実験・演習第二 D",
+        "英語": "LST Basic Laboratory and Exercise II D"
+    },
+    "LST.A254": {
+        "日本語": "生命理工学基礎実験・演習第四 B",
+        "英語": "LST Basic Laboratory and Exercise IV B"
+    },
+    "LST.A202": {
+        "日本語": "有機化学第一(アルカン，ハロアルカン)",
+        "英語": "Organic Chemistry I (alkanes and haloalkanes)"
+    },
+    "LST.A213": {
+        "日本語": "分子生物学第二",
+        "英語": "Molecular Biology II"
+    },
+    "LST.A212": {
+        "日本語": "有機化学第三(ベンゼン，ケトン)",
+        "英語": "Organic Chemistry III (benzene and ketones)"
+    },
+    "LST.Z281": {
+        "日本語": "B2D研究基礎a（生命理工学系）",
+        "英語": "B2D Research Basic A in Chemistry（LST）"
+    },
+    "LST.A218": {
+        "日本語": "生物化学第二",
+        "英語": "Biochemistry II"
+    },
+    "LST.A230": {
+        "日本語": "先端バイオものつくり",
+        "英語": "Advanced Bio-Creative Design"
+    },
+    "LST.A207": {
+        "日本語": "有機化学第二(アルコール，アルケン)",
+        "英語": "Organic Chemistry II (alcohols and alkenes)"
+    },
+    "LST.A217": {
+        "日本語": "有機化学第四(カルボニル化合物，アミン)",
+        "英語": "Organic Chemistry IV (carbonyl compounds and amines)"
+    },
+    "LST.A253": {
+        "日本語": "生命理工学基礎実験・演習第三 D",
+        "英語": "LST Basic Laboratory and Exercise III D"
+    },
+    "LST.A331": {
+        "日本語": "構造生物学",
+        "英語": "Structural Biology"
+    },
+    "LST.A336": {
+        "日本語": "遺伝子工学",
+        "英語": "Genetic Engineering"
+    },
+    "LST.A341": {
+        "日本語": "生物物理化学",
+        "英語": "Biophysical Chemistry"
+    },
+    "LST.A334": {
+        "日本語": "植物生理学",
+        "英語": "Plant Physiology"
+    },
+    "LST.A364": {
+        "日本語": "酵素工学",
+        "英語": "Enzyme Engineering"
+    },
+    "LST.A347": {
+        "日本語": "進化生物学",
+        "英語": "Evolutionary Biology"
+    },
+    "LST.A337": {
+        "日本語": "生体高分子材料",
+        "英語": "Biomaterials Science"
+    },
+    "LST.A371": {
+        "日本語": "生命海外研修第一",
+        "英語": "LST Overseas Training I"
+    },
+    "LST.A322": {
+        "日本語": "生命理工学特別講義2",
+        "英語": "LST Seminar 2"
+    },
+    "LST.A333": {
+        "日本語": "生物有機化学",
+        "英語": "Bioorganic Chemistry"
+    },
+    "LST.A346": {
+        "日本語": "基礎神経科学",
+        "英語": "Basic Neuroscience"
+    },
+    "LST.A344": {
+        "日本語": "動物生理学",
+        "英語": "Animal Physiology"
+    },
+    "LST.A352": {
+        "日本語": "細胞工学",
+        "英語": "Cell Engineering"
+    },
+    "LST.A361": {
+        "日本語": "光合成科学",
+        "英語": "Photosynthesis and photobiology"
+    },
+    "LST.A363": {
+        "日本語": "環境生物工学",
+        "英語": "Environmental Bioengineering"
+    },
+    "LST.A372": {
+        "日本語": "生命海外研修第二",
+        "英語": "LST Overseas Training II"
+    },
+    "LST.A343": {
+        "日本語": "医薬品化学",
+        "英語": "Pharmaceutical Chemistry"
+    },
+    "LST.A345": {
+        "日本語": "微生物学",
+        "英語": "Microbiology"
+    },
+    "LST.A351": {
+        "日本語": "ゲノム情報学",
+        "英語": "Genome Informatics"
+    },
+    "LST.A321": {
+        "日本語": "生命理工学特別講義1",
+        "英語": "LST Seminar 1"
+    },
+    "LST.A324": {
+        "日本語": "生命理工学特別講義4",
+        "英語": "LST Seminar 4"
+    },
+    "LST.A376": {
+        "日本語": "学士インターンシップ第一",
+        "英語": "BS Internship I"
+    },
+    "LST.A378": {
+        "日本語": "学士インターンシップ第三",
+        "英語": "BS Internship III"
+    },
+    "LST.A379": {
+        "日本語": "学士インターンシップ第四",
+        "英語": "BS Internship IV"
+    },
+    "LST.A354": {
+        "日本語": "生命倫理・法規",
+        "英語": "Bioethics and Law"
+    },
+    "LST.A377": {
+        "日本語": "学士インターンシップ第二",
+        "英語": "BS Internship II"
+    },
+    "LST.A323": {
+        "日本語": "生命理工学特別講義3",
+        "英語": "LST Seminar 3"
+    },
+    "LST.A348": {
+        "日本語": "高分子科学（生命理工学）",
+        "英語": "Polymer Science (LST)"
+    },
+    "LST.A373": {
+        "日本語": "生命海外研修第三",
+        "英語": "LST Overseas Training III"
+    },
+    "LST.A374": {
+        "日本語": "生命海外研修第四",
+        "英語": "LST Overseas Training IV"
+    },
+    "PHY.G230": {
+        "日本語": "現代物理学概論",
+        "英語": "Introduction to Modern Physics"
+    },
+    "PHY.E205": {
+        "日本語": "電磁気学",
+        "英語": "Electromagnetism"
+    },
+    "PHY.S209": {
+        "日本語": "熱力学（物理）",
+        "英語": "Thermodynamics (Physics)"
+    },
+    "PHY.Q208": {
+        "日本語": "量子力学II",
+        "英語": "Quantum Mechanics II"
+    },
+    "PHY.E212": {
+        "日本語": "電磁気学II",
+        "英語": "Electromagnetism II"
+    },
+    "PHY.L201": {
+        "日本語": "物理実験学",
+        "英語": "Experimental Physics"
+    },
+    "EPS.L202": {
+        "日本語": "地惑実験（岩石学）",
+        "英語": "Laboratory in Earth and Planetary Sciences (petrology)"
+    },
+    "EPS.L220": {
+        "日本語": "地惑巡検",
+        "英語": "Field Excursion"
+    },
+    "EPS.A204": {
+        "日本語": "地球惑星物理学序論",
+        "英語": "Introduction to Earth and Planetary Physics"
+    },
+    "EPS.B210": {
+        "日本語": "物理数学B（地惑）",
+        "英語": "Mathematics for Physics B (EPS course)"
+    },
+    "PHY.M211": {
+        "日本語": "物理数学II",
+        "英語": "Mathematical Methods in Physics II"
+    },
+    "EPS.A202": {
+        "日本語": "惑星科学序論",
+        "英語": "Introduction to Earth and Planetary Sciences"
+    },
+    "EPS.B211": {
+        "日本語": "無機化学（地惑）",
+        "英語": "Inorganic Chemistry (EPS course)"
+    },
+    "EPS.B202": {
+        "日本語": "熱力学（地惑）",
+        "英語": "Thermodynamics (EPS course)"
+    },
+    "EPS.L204": {
+        "日本語": "地惑実験（物理計測）",
+        "英語": "Laboratory in Earth and Planetary Sciences (geophysical measurements)"
+    },
+    "PHY.M204": {
+        "日本語": "物理数学I",
+        "英語": "Mathematical Methods in Physics I"
+    },
+    "EPS.B203": {
+        "日本語": "力学（地惑）",
+        "英語": "Mechanics (EPS course)"
+    },
+    "EPS.A203": {
+        "日本語": "地球史概論",
+        "英語": "Introduction to History of the Earth"
+    },
+    "EPS.L203": {
+        "日本語": "地惑実験（地球化学）",
+        "英語": "Laboratory in Earth and Planetary Sciences (geochemistry)"
+    },
+    "EPS.L205": {
+        "日本語": "地惑実験（野外実習）",
+        "英語": "Laboratory in Earth and Planetary Sciences (field geology)"
+    },
+    "EPS.B201": {
+        "日本語": "物理数学A（地惑）",
+        "英語": "Mathematics for Physics A (EPS course)"
+    },
+    "EPS.A201": {
+        "日本語": "地球惑星物質学序論",
+        "英語": "Introduction to Material Sciences of Earth and Planet"
+    },
+    "EPS.B212": {
+        "日本語": "電磁気学（地惑）",
+        "英語": "Electromagnetism (EPS course)"
+    },
+    "EPS.L201": {
+        "日本語": "地惑実験学（安全・データ解析）",
+        "英語": "Experimental Methods of Earth and Planetary Sciences (safety and data analysis)"
+    },
+    "EPS.A337": {
+        "日本語": "地球と生命",
+        "英語": "Earth and Life"
+    },
+    "EPS.A336": {
+        "日本語": "地球惑星ダイナミクス",
+        "英語": "Dynamics of the Earth and Planet"
+    },
+    "EPS.A333": {
+        "日本語": "惑星天文学",
+        "英語": "Planetary Astronomy"
+    },
+    "EPS.A331": {
+        "日本語": "地球物質学",
+        "英語": "Earth Materials"
+    },
+    "EPS.A330": {
+        "日本語": "宇宙地球化学",
+        "英語": "Geochemistry and Cosmochemistry"
+    },
+    "EPS.A332": {
+        "日本語": "火山学",
+        "英語": "Volcanology"
+    },
+    "EPS.B330": {
+        "日本語": "流体力学（地惑）",
+        "英語": "Fluid Mechanics (EPS course)"
+    },
+    "EPS.B331": {
+        "日本語": "量子力学（地惑）",
+        "英語": "Quantum Mechanics (EPS course)"
+    },
+    "PHY.S301": {
+        "日本語": "統計力学(講義）",
+        "英語": "Statistical Mechanics(Lecture)"
+    },
+    "EPS.A335": {
+        "日本語": "太陽地球系物理学",
+        "英語": "Solar-Terrestrial Physics"
+    },
+    "EPS.C331": {
+        "日本語": "最先端トピックスから学ぶ地惑英語bD",
+        "英語": "Cutting-Edge Topics in Earth and Planetary Sciences bD"
+    },
+    "EPS.B332": {
+        "日本語": "統計力学（地惑）",
+        "英語": "Statistical Mechanics (EPS course)"
+    },
+    "EPS.L330": {
+        "日本語": "数値地球惑星科学",
+        "英語": "Computational Planetary Science"
+    },
+    "EPS.A334": {
+        "日本語": "生物地球科学",
+        "英語": "Biogeoscience"
+    },
+    "EPS.C329": {
+        "日本語": "最先端トピックスから学ぶ地惑英語bB",
+        "英語": "Cutting-Edge Topics in Earth and Planetary Sciences bB"
+    },
+    "EPS.C328": {
+        "日本語": "最先端トピックスから学ぶ地惑英語bA",
+        "英語": "Cutting-Edge Topics in Earth and Planetary Sciences bA"
+    },
+    "EPS.C330": {
+        "日本語": "最先端トピックスから学ぶ地惑英語bC",
+        "英語": "Cutting-Edge Topics in Earth and Planetary Sciences bC"
+    },
+    "LST.A241": {
+        "日本語": "生命統計学",
+        "英語": "Biostatistics"
+    },
+    "LST.A353": {
+        "日本語": "生物化学工学",
+        "英語": "Biochemical Engineering"
+    },
+    "LST.A362": {
+        "日本語": "進化・発生学",
+        "英語": "Evolution and Developmental Biology"
+    },
+    "LST.A342": {
+        "日本語": "医用材料学",
+        "英語": "Biomedical Materials"
+    },
+    "LST.A335": {
+        "日本語": "遺伝学",
+        "英語": "Molecular Genetics"
+    },
+    "LST.A365": {
+        "日本語": "遺伝子の分子生物学",
+        "英語": "Molecular biology of the gene"
+    },
+    "LST.A332": {
+        "日本語": "生体高分子工学",
+        "英語": "Biopolymer Engineering"
+    },
+    "ARC.S201": {
+        "日本語": "材料力学概論A",
+        "英語": "Fundamentals of Mechanics of Materials A"
+    },
+    "ARC.S203": {
+        "日本語": "建築構造力学第一",
+        "英語": "Structural Mechanics I"
+    },
+    "ARC.E202": {
+        "日本語": "建築環境設備学（建築設備）",
+        "英語": "Building Services"
+    },
+    "ARC.P204": {
+        "日本語": "都市学の基礎",
+        "英語": "Introduction to Urban Study"
+    },
+    "ARC.P203": {
+        "日本語": "建築計画演習",
+        "英語": "Exercise in Architectural Planning"
+    },
+    "ARC.P201": {
+        "日本語": "建築計画基礎",
+        "英語": "Introduction to Architectural Planning"
+    },
+    "ARC.E201": {
+        "日本語": "建築環境設備学（環境工学）",
+        "英語": "Environmental Engineering"
+    },
+    "ARC.A202": {
+        "日本語": "建築設計製図第二",
+        "英語": "Architectural Design and Drawing II"
+    },
+    "ARC.S204": {
+        "日本語": "建築構造材料構法",
+        "英語": "Building Materials and Construction"
+    },
+    "ARC.A205": {
+        "日本語": "建築数理",
+        "英語": "Mathematical Methods in Architectural Planning and Engineering"
+    },
+    "ARC.D202": {
+        "日本語": "西洋建築史",
+        "英語": "History of Western Architecture"
+    },
+    "ARC.S202": {
+        "日本語": "材料力学概論B",
+        "英語": "Fundamentals of Mechanics of Materials B"
+    },
+    "ARC.D201": {
+        "日本語": "近代建築史",
+        "英語": "History of Modern Architecture"
+    },
+    "ARC.P202": {
+        "日本語": "建築計画第一",
+        "英語": "Architectural Planning I"
+    },
+    "ARC.D204": {
+        "日本語": "建築意匠",
+        "英語": "Visual Design"
+    },
+    "ARC.A204": {
+        "日本語": "建築法規",
+        "英語": "Building Codes"
+    },
+    "ARC.D203": {
+        "日本語": "造形演習",
+        "英語": "Architectural Design"
+    },
+    "ARC.A203": {
+        "日本語": "建築一般構造",
+        "英語": "Building Construction and Detail"
+    },
+    "ARC.A201": {
+        "日本語": "建築設計製図第一",
+        "英語": "Architectural Design and Drawing I"
+    },
+    "ARC.P305": {
+        "日本語": "国土・都市計画論",
+        "英語": "National and City Planning"
+    },
+    "ARC.S306": {
+        "日本語": "建築構造力学第三",
+        "英語": "Structural Mechanics III"
+    },
+    "ARC.A305": {
+        "日本語": "建築経済",
+        "英語": "Building Economics"
+    },
+    "ARC.P301": {
+        "日本語": "建築計画第二",
+        "英語": "Architectural Planning II"
+    },
+    "ARC.S305": {
+        "日本語": "建築構造力学第二",
+        "英語": "Structural Mechanics II"
+    },
+    "ARC.A302": {
+        "日本語": "建築学実験第一",
+        "英語": "Environmental and Structural Engineering Laboratory I"
+    },
+    "ARC.A301": {
+        "日本語": "建築設計製図第三",
+        "英語": "Architectural Design and Drawing III"
+    },
+    "ARC.S301": {
+        "日本語": "建築構造設計第一",
+        "英語": "Structural Design I"
+    },
+    "ARC.A308": {
+        "日本語": "建築学セミナー",
+        "英語": "Seminar on Architecture and Building Engineering"
+    },
+    "ARC.P302": {
+        "日本語": "ランドスケープ",
+        "英語": "Landscape Architecture"
+    },
+    "ARC.S307": {
+        "日本語": "建築仕上材料構法",
+        "英語": "Building Materials and Finishing"
+    },
+    "ARC.A304": {
+        "日本語": "建築設計製図第四",
+        "英語": "Architectural Design and Drawing IV"
+    },
+    "ARC.E304": {
+        "日本語": "建築設備の制御",
+        "英語": "Control of Building Services"
+    },
+    "ARC.E302": {
+        "日本語": "建築環境計測",
+        "英語": "Environmental Laboratory"
+    },
+    "ARC.S304": {
+        "日本語": "地盤工学",
+        "英語": "Geotechnical Engineering"
+    },
+    "ARC.E301": {
+        "日本語": "建築環境設備学（応用）",
+        "英語": "Applied Environmental Engineering and Building Services"
+    },
+    "ARC.P304": {
+        "日本語": "都市土地利用計画",
+        "英語": "Urban Land Use Planning"
+    },
+    "ARC.D302": {
+        "日本語": "日本建築史",
+        "英語": "History of Japanese Architecture"
+    },
+    "ARC.A303": {
+        "日本語": "建築学実験第二",
+        "英語": "Environmental and Structural Engineering Laboratory II"
+    },
+    "ARC.D301": {
+        "日本語": "建築史実習",
+        "英語": "Architectural Tour"
+    },
+    "ARC.P303": {
+        "日本語": "住環境計画",
+        "英語": "Urban Housing and Residential Improvement"
+    },
+    "ARC.S302": {
+        "日本語": "建築構造設計第二",
+        "英語": "Structural Design II"
+    },
+    "ARC.A307": {
+        "日本語": "建築生産",
+        "英語": "Building Production"
+    },
+    "ARC.S303": {
+        "日本語": "建築構造設計第三",
+        "英語": "Structural Design III"
+    },
+    "ARC.E303": {
+        "日本語": "建築電気設備",
+        "英語": "Electrical Systems for Building"
+    },
+    "IEE.A206": {
+        "日本語": "オペレーションズ・リサーチ 基礎",
+        "英語": "Operations Research"
+    },
+    "IEE.B206": {
+        "日本語": "実験経済学",
+        "英語": "Experimental Economics"
+    },
+    "IEE.B203": {
+        "日本語": "マクロ経済学第一",
+        "英語": "Macroeconomics I"
+    },
+    "IEE.D202": {
+        "日本語": "会計基礎論",
+        "英語": "Basic Accounting"
+    },
+    "IEE.B202": {
+        "日本語": "ミクロ経済学第二",
+        "英語": "Microeconomics II"
+    },
+    "IEE.C201": {
+        "日本語": "情報システム基礎",
+        "英語": "Introduction to Information Systems"
+    },
+    "IEE.B204": {
+        "日本語": "マクロ経済学第二",
+        "英語": "Macroeconomics II"
+    },
+    "IEE.B201": {
+        "日本語": "ミクロ経済学第一",
+        "英語": "Microeconomics I"
+    },
+    "IEE.B208": {
+        "日本語": "社会と経済",
+        "英語": "Society and Economy"
+    },
+    "IEE.C204": {
+        "日本語": "知的財産管理",
+        "英語": "Intellectual Property Management"
+    },
+    "IEE.A205": {
+        "日本語": "経営・経済のための統計",
+        "英語": "Statistics for Industrial Engineering and Economics"
+    },
+    "IEE.C203": {
+        "日本語": "工業心理学",
+        "英語": "Engineering Psychology"
+    },
+    "IEE.B205": {
+        "日本語": "非協力ゲーム理論",
+        "英語": "Noncooperative Game Theory"
+    },
+    "IEE.A207": {
+        "日本語": "プログラミング基礎（経営工学）",
+        "英語": "Computer Programming (Industrial Engineering and Economics)"
+    },
+    "IEE.C202": {
+        "日本語": "インダストリアル・エンジニアリング",
+        "英語": "Industrial Engineering"
+    },
+    "IEE.D203": {
+        "日本語": "マーケティング",
+        "英語": "Marketing"
+    },
+    "IEE.A202": {
+        "日本語": "経営・経済数学",
+        "英語": "Mathematics for Industrial Engineering and Economics"
+    },
+    "IEE.A204": {
+        "日本語": "経営・経済のための確率",
+        "英語": "Probability for Industrial Engineering and Economics"
+    },
+    "IEE.A201": {
+        "日本語": "経営・経済のための基礎数理",
+        "英語": "Basic Mathematics for Industrial Engineering and Economics"
+    },
+    "IEE.A230": {
+        "日本語": "プログラミング応用",
+        "英語": "Advanced Computer Programming"
+    },
+    "IEE.A203": {
+        "日本語": "数理工学",
+        "英語": "Mathematical Engineering"
+    },
+    "IEE.B207": {
+        "日本語": "計量経済学第一",
+        "英語": "Econometrics I"
+    },
+    "IEE.D201": {
+        "日本語": "経営管理論",
+        "英語": "Introduction to Management"
+    },
+    "IEE.B337": {
+        "日本語": "数理経済学",
+        "英語": "Mathematical Economics"
+    },
+    "IEE.B302": {
+        "日本語": "協力ゲーム理論",
+        "英語": "Cooperative Game Theory"
+    },
+    "IEE.C303": {
+        "日本語": "生産管理",
+        "英語": "Production Management"
+    },
+    "IEE.C305": {
+        "日本語": "データ収集・分析",
+        "英語": "Data Collection and Analysis"
+    },
+    "IEE.B332": {
+        "日本語": "応用マクロ経済学",
+        "英語": "Applied Macroeconomics"
+    },
+    "IEE.B334": {
+        "日本語": "数量経済史",
+        "英語": "Cliometrics"
+    },
+    "IEE.B331": {
+        "日本語": "応用ミクロ経済学",
+        "英語": "Applied Microeconomics"
+    },
+    "IEE.A330": {
+        "日本語": "オペレーションズ・リサーチ応用",
+        "英語": "Advanced Operations Research"
+    },
+    "IEE.C330": {
+        "日本語": "先端経営工学",
+        "英語": "Topics of Industrial Engineering and Economics"
+    },
+    "IEE.B330": {
+        "日本語": "行動経済・経営論",
+        "英語": "Behavioral Economics and Management"
+    },
+    "IEE.B335": {
+        "日本語": "比較経済分析",
+        "英語": "Comparative Economic Analysis"
+    },
+    "IEE.D301": {
+        "日本語": "経営戦略・組織論",
+        "英語": "Business Strategy and Organization"
+    },
+    "IEE.C304": {
+        "日本語": "人間工学",
+        "英語": "Ergonomics"
+    },
+    "IEE.C301": {
+        "日本語": "経営情報システム",
+        "英語": "Management Information Systems"
+    },
+    "IEE.D302": {
+        "日本語": "経営財務論",
+        "英語": "Corporate Finance"
+    },
+    "IEE.B301": {
+        "日本語": "計量経済学第二",
+        "英語": "Econometrics II"
+    },
+    "IEE.E330": {
+        "日本語": "経営工学インターンシップ",
+        "英語": "Industrial Engineering Internship"
+    },
+    "IEE.B333": {
+        "日本語": "環境経済学",
+        "英語": "Environmental Economics"
+    },
+    "IEE.C302": {
+        "日本語": "品質管理",
+        "英語": "Quality Management"
+    },
+    "IEE.E331": {
+        "日本語": "異文化体験実習",
+        "英語": "Cross-cultural Experience-based Workshop"
+    },
+    "CHM.A211": {
+        "日本語": "化学数学第一",
+        "英語": "Mathematics for Chemistry I"
+    },
+    "CHM.A212": {
+        "日本語": "化学数学第二",
+        "英語": "Mathematics for Chemistry II"
+    },
+    "SCE.Z281": {
+        "日本語": "B2D研究基礎a（システム制御系）",
+        "英語": "B2D Research Basic A in Systems and Control Engineering"
+    },
+    "SCE.P301": {
+        "日本語": "システム創造プロジェクト",
+        "英語": "Creative System Project"
+    },
+    "SCE.C302": {
+        "日本語": "システムモデリング",
+        "英語": "System Modeling"
+    },
+    "CSC.T254": {
+        "日本語": "機械学習",
+        "英語": "Machine Learning"
+    },
+    "CSC.T272": {
+        "日本語": "人工知能",
+        "英語": "Artificial Intelligence"
+    },
+    "CSC.T271": {
+        "日本語": "データ構造とアルゴリズム",
+        "英語": "Data Structures and Algorithms"
+    },
+    "CSC.T273": {
+        "日本語": "オブジェクト指向プログラミング",
+        "英語": "Object-Oriented Programming"
+    },
+    "CSC.T242": {
+        "日本語": "確率論・統計学",
+        "英語": "Probability Theory and Statistics"
+    },
+    "CSC.T244": {
+        "日本語": "プログラミング創造演習",
+        "英語": "Creative Programming Projects"
+    },
+    "CSC.T243": {
+        "日本語": "手続き型プログラミング基礎",
+        "英語": "Procedural Programming Fundamentals"
+    },
+    "CSC.T263": {
+        "日本語": "関数型プログラミング基礎",
+        "英語": "Functional Programming Fundamentals"
+    },
+    "CSC.T253": {
+        "日本語": "手続き型プログラミング発展",
+        "英語": "Advanced Procedural Programming"
+    },
+    "CSC.T252": {
+        "日本語": "論理回路理論",
+        "英語": "Switching Circuit Theory"
+    },
+    "CSC.T344": {
+        "日本語": "システムプログラミング",
+        "英語": "System Programming"
+    },
+    "CSC.T363": {
+        "日本語": "コンピュータアーキテクチャ",
+        "英語": "Computer Architecture"
+    },
+    "CSC.T345": {
+        "日本語": "コンピュータネットワーク",
+        "英語": "Computer Networks"
+    },
+    "CSC.T371": {
+        "日本語": "システムソフトウェア",
+        "英語": "System Software"
+    },
+    "CSC.T378": {
+        "日本語": "チーム開発集中演習基礎",
+        "英語": "Camp on Team-based Software Development: Basic"
+    },
+    "CSC.T361": {
+        "日本語": "オブジェクト指向設計",
+        "英語": "Object-Oriented Design"
+    },
+    "CSC.T364": {
+        "日本語": "システム設計演習",
+        "英語": "Workshop on System Design"
+    },
+    "CSC.T341": {
+        "日本語": "コンピュータ論理設計",
+        "英語": "Computer Logic Design"
+    },
+    "CSC.T373": {
+        "日本語": "動的システム",
+        "英語": "Dynamical Systems"
+    },
+    "CSC.T374": {
+        "日本語": "システム制御",
+        "英語": "Control Systems"
+    },
+    "CSC.T354": {
+        "日本語": "並列プログラミング",
+        "英語": "Parallel Programming"
+    },
+    "CSC.T342": {
+        "日本語": "問題解決と意思決定",
+        "英語": "Problem Solving and Decision Making"
+    },
+    "CSC.T362": {
+        "日本語": "数値計算法",
+        "英語": "Numerical Analysis"
+    },
+    "CSC.T351": {
+        "日本語": "システム解析",
+        "英語": "System Analysis"
+    },
+    "CSC.T375": {
+        "日本語": "システム構築演習",
+        "英語": "Workshop on System Implementation"
+    },
+    "MAT.A204": {
+        "日本語": "材料熱力学 b",
+        "英語": "Thermodynamics of Materials b"
+    },
+    "MAT.A201": {
+        "日本語": "電気学",
+        "英語": "Fundamentals of Electrical Science and Engineering"
+    },
+    "MAT.C201": {
+        "日本語": "無機量子化学",
+        "英語": "Inorganic Quantum Chemistry"
+    },
+    "MAT.C202": {
+        "日本語": "結晶とフォノン",
+        "英語": "Crystal and Phonon"
+    },
+    "MAT.A203": {
+        "日本語": "材料量子力学 a",
+        "英語": "Quantum Mechanics of Materials a"
+    },
+    "MAT.M205": {
+        "日本語": "応力・ひずみの基礎と金属の変形",
+        "英語": "Fundamentals of Stress and Strain, and Deformation of Metals"
+    },
+    "MAT.C204": {
+        "日本語": "化学反応動力学（C）",
+        "英語": "Kinetics of Chemical Reaction  (Ceramics course)"
+    },
+    "MAT.P215": {
+        "日本語": "無機化学",
+        "英語": "Inorganic Chemistry"
+    },
+    "MAT.M206": {
+        "日本語": "金属の電子構造と物性",
+        "英語": "Electronic Structure and Physical Properties of Metals"
+    },
+    "MAT.P205": {
+        "日本語": "物理化学(相平衡）",
+        "英語": "Physical Chemistry (Phase Diagram)"
+    },
+    "MAT.M203": {
+        "日本語": "化学反応動力学(M)",
+        "英語": "Chemical Reaction Dynamics(M)"
+    },
+    "MAT.M204": {
+        "日本語": "金属学概論",
+        "英語": "Introduction to Metallurgy"
+    },
+    "MAT.M207": {
+        "日本語": "金属の状態図と相安定",
+        "英語": "Phase Diagram and Stability in Metals"
+    },
+    "MAT.C203": {
+        "日本語": "統計力学（C）",
+        "英語": "Statistical Mechanics  (Ceramics course)"
+    },
+    "MAT.P211": {
+        "日本語": "有機化学(構造−I)",
+        "英語": "Organic Chemistry (Structure-I)"
+    },
+    "MAT.A250": {
+        "日本語": "材料科学実験（M, P, C）第一",
+        "英語": "Materials Science Laboratory I"
+    },
+    "MAT.P212": {
+        "日本語": "有機化学(構造−II）",
+        "英語": "Organic Chemistry (Structure-II)"
+    },
+    "MAT.P202": {
+        "日本語": "量子化学B",
+        "英語": "Quantum Chemistry B"
+    },
+    "MAT.A251": {
+        "日本語": "材料科学実験（M, P, C）第二",
+        "英語": "Materials Science Laboratory II"
+    },
+    "MAT.A252": {
+        "日本語": "材料科学実験（M, P, C）第三",
+        "英語": "Materials Science Laboratory III"
+    },
+    "MAT.C205": {
+        "日本語": "セラミックス概論",
+        "英語": "Introduction of Ceramics"
+    },
+    "MAT.M202": {
+        "日本語": "統計力学（M）",
+        "英語": "Statistical Mechanics(M)"
+    },
+    "MAT.P201": {
+        "日本語": "量子化学A",
+        "英語": "Quantum Chemistry A"
+    },
+    "MAT.P204": {
+        "日本語": "物理化学(化学熱力学）",
+        "英語": "Physical Chemistry (Thermodynamics)"
+    },
+    "MAT.P221": {
+        "日本語": "有機材料構造A",
+        "英語": "Organic Materials Structures A"
+    },
+    "MAT.A206": {
+        "日本語": "材料の熱的機械的性質",
+        "英語": "Mechanical and Thermal Properties of Materials"
+    },
+    "MAT.M201": {
+        "日本語": "結晶学",
+        "英語": "Fundamentals of Crystallography"
+    },
+    "MAT.P214": {
+        "日本語": "有機化学(反応)B",
+        "英語": "Organic Chemistry (Reaction-B)"
+    },
+    "MAT.A205": {
+        "日本語": "情報処理概論演習",
+        "英語": "Exercise on Information Processing"
+    },
+    "MAT.A202": {
+        "日本語": "材料力学概論F",
+        "英語": "Fundamentals of Mechanics of Materials F"
+    },
+    "MAT.C206": {
+        "日本語": "セラミックスプロセシング",
+        "英語": "Ceramic Processing"
+    },
+    "MAT.P213": {
+        "日本語": "有機化学(反応)A",
+        "英語": "Organic Chemistry (Reaction-A)"
+    },
+    "MAT.M351": {
+        "日本語": "金属工学実験第二",
+        "英語": "Metallurgical Engineering Laboratory II"
+    },
+    "MAT.P303": {
+        "日本語": "固体物理学(電子系)",
+        "英語": "Solid State Physics (Electrons)"
+    },
+    "MAT.M303": {
+        "日本語": "格子欠陥と転位",
+        "英語": "Lattice Defects and Dislocation"
+    },
+    "MAT.P350": {
+        "日本語": "有機材料工学実験第一",
+        "英語": "Organic Materials Laboratory I"
+    },
+    "MAT.C306": {
+        "日本語": "誘電体材料科学",
+        "英語": "Dielectric Materials Science"
+    },
+    "MAT.P304": {
+        "日本語": "物理化学(電気化学）",
+        "英語": "Physical Chemistry (Electrochemistry)"
+    },
+    "MAT.C321": {
+        "日本語": "先進材料概論",
+        "英語": "Introduction of Advanced Materials"
+    },
+    "MAT.M350": {
+        "日本語": "金属工学実験第一",
+        "英語": "Metallurgical Engineering Laboratory I"
+    },
+    "MAT.P325": {
+        "日本語": "有機材料成形加工B",
+        "英語": "Processing of Organic Materials B"
+    },
+    "MAT.P306": {
+        "日本語": "物理化学(界面・表面）",
+        "英語": "Physical Chemistry (Surface)"
+    },
+    "MAT.C314": {
+        "日本語": "環境の科学",
+        "英語": "Environmental Science"
+    },
+    "MAT.A360": {
+        "日本語": "材料工学インターンシップA",
+        "英語": "Materials Engineering Internship A"
+    },
+    "MAT.P302": {
+        "日本語": "光学",
+        "英語": "Optics"
+    },
+    "MAT.C312": {
+        "日本語": "電気化学（C）",
+        "英語": "Electrochemistry (Ceramics course)"
+    },
+    "MAT.P391": {
+        "日本語": "有機機能材料物理",
+        "英語": "Organic Functional Materials Physics"
+    },
+    "MAT.C302": {
+        "日本語": "分光学",
+        "英語": "Spectroscopy"
+    },
+    "MAT.M309": {
+        "日本語": "金属工学創成プロジェクト",
+        "英語": "Creativity Laboratory in Metallurgy"
+    },
+    "MAT.P392": {
+        "日本語": "有機材料設計",
+        "英語": "Organic Materials Design"
+    },
+    "MAT.P396": {
+        "日本語": "有機機能生化学",
+        "英語": "Organic Functional Biochemistry"
+    },
+    "MAT.C301": {
+        "日本語": "結晶化学（C）",
+        "英語": "Crystal Chemistry (Ceramics course)"
+    },
+    "MAT.M302": {
+        "日本語": "金属物理化学",
+        "英語": "Physical Chemistry in Metals"
+    },
+    "MAT.M304": {
+        "日本語": "結晶成長と組織形成",
+        "英語": "Crystal Growth and Structure Formation"
+    },
+    "MAT.M305": {
+        "日本語": "鉄鋼材料学第一",
+        "英語": "Ferrous Materials I - Fundamentals of Iron and Steels"
+    },
+    "MAT.P301": {
+        "日本語": "固体物理学(格子系)",
+        "英語": "Solid State Physics (Lattice)"
+    },
+    "MAT.P321": {
+        "日本語": "有機材料構造B",
+        "英語": "Organic Materials Structures B"
+    },
+    "MAT.C304": {
+        "日本語": "非晶質体構造科学",
+        "英語": "Structural Science of Non-crystalline Solids"
+    },
+    "MAT.C315": {
+        "日本語": "薄膜・単結晶プロセシング",
+        "英語": "Fundamentals of Single Crystal and Thin Film Processing"
+    },
+    "MAT.C351": {
+        "日本語": "セラミックス実験第二",
+        "英語": "Ceramics Laboratory II"
+    },
+    "MAT.M307": {
+        "日本語": "非鉄金属材料学",
+        "英語": "Science and Engineering of Non-ferrous Materials"
+    },
+    "MAT.M310": {
+        "日本語": "金属材料プロセッシング",
+        "英語": "Metallic Materials Processing"
+    },
+    "MAT.P351": {
+        "日本語": "有機材料工学実験第二",
+        "英語": "Organic Materials Laboratory II"
+    },
+    "MAT.C316": {
+        "日本語": "生体材料学",
+        "英語": "Biomaterials Science"
+    },
+    "MAT.C352": {
+        "日本語": "セラミックス実験第三",
+        "英語": "Ceramics Laboratory III"
+    },
+    "MAT.M352": {
+        "日本語": "金属工学実験第三",
+        "英語": "Metallurgical Engineering Laboratory III"
+    },
+    "MAT.P352": {
+        "日本語": "有機材料工学実験第三",
+        "英語": "Organic Materials Laboratory III"
+    },
+    "MAT.P317": {
+        "日本語": "有機材料特性解析",
+        "英語": "Organic Materials Characterization"
+    },
+    "MAT.M306": {
+        "日本語": "鉄鋼材料学第二",
+        "英語": "Ferrous Materials II - Principles for Applications"
+    },
+    "MAT.C350": {
+        "日本語": "セラミックス実験第一",
+        "英語": "Ceramics Laboratory I"
+    },
+    "MAT.C360": {
+        "日本語": "技術者倫理（材料）",
+        "英語": "Engineering Ethics"
+    },
+    "MAT.P324": {
+        "日本語": "有機材料成形加工A",
+        "英語": "Processing of Organic Materials A"
+    },
+    "MAT.M313": {
+        "日本語": "材料科学入門",
+        "英語": "Introduction to solid materials"
+    },
+    "MAT.P314": {
+        "日本語": "有機材料合成化学A-2",
+        "英語": "Organic Synthetic Chemistry A-2"
+    },
+    "MAT.C305": {
+        "日本語": "半導体材料及びデバイス",
+        "英語": "Semiconductor Materials and Device"
+    },
+    "MAT.C313": {
+        "日本語": "界面化学",
+        "英語": "Interface Chemistry"
+    },
+    "MAT.M308": {
+        "日本語": "金属電気化学",
+        "英語": "Electrochemistry of Metals"
+    },
+    "MAT.P326": {
+        "日本語": "繊維・複合材料A",
+        "英語": "Fiber and Composite Materials A"
+    },
+    "MAT.C310": {
+        "日本語": "材料数理科学",
+        "英語": "Mathematical Methods for Materials Science"
+    },
+    "MAT.M301": {
+        "日本語": "金属材料解析",
+        "英語": "Characterization of Metals and Alloys"
+    },
+    "MAT.A361": {
+        "日本語": "材料工学インターンシップB",
+        "英語": "Materials Engineering Internship B"
+    },
+    "MAT.P322": {
+        "日本語": "有機材料物性A",
+        "英語": "Organic Materials Properties A"
+    },
+    "MAT.P311": {
+        "日本語": "有機化学(機能)A",
+        "英語": "Organic Chemistry (Functions) A"
+    },
+    "MAT.P395": {
+        "日本語": "有機機能材料化学",
+        "英語": "Organic Functional Materials Chemistry"
+    },
+    "MAT.M312": {
+        "日本語": "材料工学社会セミナー",
+        "英語": "Off-Campus Training in Metallurgy"
+    },
+    "MAT.P323": {
+        "日本語": "有機材料物性B",
+        "英語": "Organic Materials Properties B"
+    },
+    "MAT.P315": {
+        "日本語": "有機材料合成化学B",
+        "英語": "Organic Synthetic Chemistry B"
+    },
+    "MAT.C307": {
+        "日本語": "磁性体材料科学",
+        "英語": "Magnetic Materials Science"
+    },
+    "MAT.P327": {
+        "日本語": "繊維・複合材料B",
+        "英語": "Fiber and Composite Materials B"
+    },
+    "MAT.M311": {
+        "日本語": "金属工学英語セミナー",
+        "英語": "English Seminar in Metallurgy"
+    },
+    "MAT.C303": {
+        "日本語": "有機高分子化学",
+        "英語": "Organic and Polymer Chemistry"
+    },
+    "MAT.P305": {
+        "日本語": "物理化学（統計力学）",
+        "英語": "Physical Chemistry (Statistical Mechanics)"
+    },
+    "MAT.P312": {
+        "日本語": "有機化学(機能)B",
+        "英語": "Organic Chemistry (Functions) B"
+    },
+    "LAS.M106": {
+        "日本語": "線形代数学第二 M(1～10)",
+        "英語": "Linear Algebra II M(1～10)"
+    },
+    "LAS.M102": {
+        "日本語": "線形代数学第一・演習 H(48～53)",
+        "英語": "Linear Algebra I / Recitation H(48～53)"
+    },
+    "LAS.M101": {
+        "日本語": "微分積分学第一・演習 F(34～40)",
+        "英語": "Calculus I / Recitation F(34～40)"
+    },
+    "LAS.F101": {
+        "日本語": "科学・技術の最前線 b",
+        "英語": "Frontiers of science and technology b"
+    },
+    "LAS.M107": {
+        "日本語": "微分積分学演習第二 S(61～70)",
+        "英語": "Calculus Recitation II S(61～70)"
+    },
+    "LAS.C107": {
+        "日本語": "化学熱力学基礎 C",
+        "英語": "Basic Chemical Thermodynamics C"
+    },
+    "LAS.M105": {
+        "日本語": "微分積分学第二 M(1～10)",
+        "英語": "Calculus II M(1～10)"
+    },
+    "LAS.D101": {
+        "日本語": "図学・図形科学1",
+        "英語": "Descriptive Geometry・Graphic Science1"
+    },
+    "LAS.C105": {
+        "日本語": "量子化学基礎 E",
+        "英語": "Basic Quantum Chemistry E"
+    },
+    "LAS.C101": {
+        "日本語": "無機化学基礎 B",
+        "英語": "Basic Inorganic Chemistry B"
+    },
+    "LAS.B104": {
+        "日本語": "生命科学基礎第二２ H",
+        "英語": "Fundamental Life Science 2-2 H"
+    },
+    "LAS.D102": {
+        "日本語": "図学・図形科学2",
+        "英語": "Descriptive Geometry・Graphic Science2"
+    },
+    "LAS.P104": {
+        "日本語": "電磁気学基礎２ H",
+        "英語": "Fundamentals of Electromagnetism 2 H"
+    },
+    "LAS.P102": {
+        "日本語": "力学基礎２ M",
+        "英語": "Fundamentals of Mechanics 2 M"
+    },
+    "LAS.P101": {
+        "日本語": "力学基礎１ G",
+        "英語": "Fundamentals of Mechanics 1 G"
+    },
+    "LAS.B101": {
+        "日本語": "生命科学基礎第一１ G",
+        "英語": "Fundamental Life Science 1-1 G"
+    },
+    "LAS.P103": {
+        "日本語": "電磁気学基礎１ C",
+        "英語": "Fundamentals of Electromagnetism 1 C"
+    },
+    "LAS.C112": {
+        "日本語": "化学実験第二 D",
+        "英語": "Chemistry Laboratory II D"
+    },
+    "LAS.I122": {
+        "日本語": "コンピュータサイエンス第二 4b(CS2)",
+        "英語": "Computer Science II 4b(CS2)"
+    },
+    "LAS.I121": {
+        "日本語": "コンピュータサイエンス第一 2b(CS1)",
+        "英語": "Computer Science I 2b(CS1)"
+    },
+    "LAS.P105": {
+        "日本語": "物理学演習第一 n",
+        "英語": "Exercises in Physics I n"
+    },
+    "LAS.A102": {
+        "日本語": "宇宙地球科学Ｂ A",
+        "英語": "Earth and Space Sciences B A"
+    },
+    "LAS.P108": {
+        "日本語": "物理学実験第二 Mo",
+        "英語": "Physics Experiment II Mo"
+    },
+    "LAS.B102": {
+        "日本語": "生命科学基礎第一２ D",
+        "英語": "Fundamental Life Science 1-2 D"
+    },
+    "LAS.M108": {
+        "日本語": "線形代数学演習第二 S(61～70)",
+        "英語": "Linear Algebra Recitation II S(61～70)"
+    },
+    "LAS.E101": {
+        "日本語": "環境安全論 B",
+        "英語": "Environment and Safety B"
+    },
+    "LAS.I111": {
+        "日本語": "情報リテラシ第一 5c(IL1)",
+        "英語": "Information Literacy I 5c(IL1)"
+    },
+    "LAS.C110": {
+        "日本語": "化学実験第一 C",
+        "英語": "Chemistry Laboratory I C"
+    },
+    "LAS.I112": {
+        "日本語": "情報リテラシ第二 5a(IL2)",
+        "英語": "Information Literacy II 5a(IL2)"
+    },
+    "LAS.C103": {
+        "日本語": "有機化学基礎 F",
+        "英語": "Basic Organic Chemistry F"
+    },
+    "LAS.B103": {
+        "日本語": "生命科学基礎第二１ D",
+        "英語": "Fundamental Life Science 2-1 D"
+    },
+    "LAS.P107": {
+        "日本語": "物理学実験第一 Th",
+        "英語": "Physics Experiment I Th"
+    },
+    "LAS.A110": {
+        "日本語": "宇宙地球科学基礎ラボ（地球物理） B",
+        "英語": "Earth and Space Sciences, Laboratory and Field Studies (geophysics) B"
+    },
+    "LAS.A101": {
+        "日本語": "宇宙地球科学Ａ A",
+        "英語": "Earth and Space Sciences A A"
+    },
+    "LAS.D111": {
+        "日本語": "図学・図形デザイン第一",
+        "英語": "Descriptive Geometry for Space Design1"
+    },
+    "LAS.B105": {
+        "日本語": "生命科学基礎実験 月Ⅰ",
+        "英語": "Fundamental Life Science Laboratory 月Ⅰ"
+    },
+    "LAS.P106": {
+        "日本語": "物理学演習第二 i",
+        "英語": "Exercises in Physics II i"
+    },
+    "LAS.R101": {
+        "日本語": "ものつくり",
+        "英語": "Mono-Tsukuri (Craft and Design)"
+    },
+    "LAS.A112": {
+        "日本語": "宇宙地球科学基礎ラボ（天文宇宙） A",
+        "英語": "Earth and Space Sciences, Laboratory and Field Studies (astronomy) A"
+    },
+    "LAS.D113": {
+        "日本語": "図学製図",
+        "英語": "Descriptive Geometry and Drawing"
+    },
+    "LAS.D112": {
+        "日本語": "図学・図形デザイン第二",
+        "英語": "Descriptive Geometry for Space Design2"
+    },
+    "LAS.A111": {
+        "日本語": "宇宙地球科学基礎ラボ（地球物質） A",
+        "英語": "Earth and Space Sciences, Laboratory and Field Studies (earth materials) A"
+    },
+    "LAS.D201": {
+        "日本語": "図学・図形科学3",
+        "英語": "Descriptive Geometry・Graphic Science3"
+    },
+    "LAS.D202": {
+        "日本語": "図学・図形科学4",
+        "英語": "Descriptive Geometry・Graphic Science4"
+    },
+    "PHY.L203": {
+        "日本語": "物理学実験B",
+        "英語": "Experiments in Physics B"
+    },
+    "PHY.L202": {
+        "日本語": "物理学実験A",
+        "英語": "Experiments in Physics A"
+    },
+    "PHY.L210": {
+        "日本語": "計算物理",
+        "英語": "Computational Physics"
+    },
+    "PHY.C341": {
+        "日本語": "物性物理学I",
+        "英語": "Condensed Matter Physics I"
+    },
+    "PHY.S312": {
+        "日本語": "統計力学II",
+        "英語": "Statistical Mechanics II"
+    },
+    "PHY.C340": {
+        "日本語": "基礎固体物理学",
+        "英語": "Basic Solid State Physics"
+    },
+    "PHY.F353": {
+        "日本語": "一般相対論",
+        "英語": "General Relativity"
+    },
+    "PHY.F351": {
+        "日本語": "素粒子物理学",
+        "英語": "Elementary Particles"
+    },
+    "PHY.C343": {
+        "日本語": "化学物理学",
+        "英語": "Chemical Physics"
+    },
+    "PHY.F350": {
+        "日本語": "原子核物理学",
+        "英語": "Nuclear Physics"
+    },
+    "PHY.M330": {
+        "日本語": "物理数学III",
+        "英語": "Mathematical Methods in Physics III"
+    },
+    "PHY.Z397": {
+        "日本語": "物理学先端研究基礎",
+        "英語": "Advanced Research Project Basics (PHY)"
+    },
+    "PHY.G332": {
+        "日本語": "物理学のフロンティア",
+        "英語": "Frontiers of Physics"
+    },
+    "PHY.Q311": {
+        "日本語": "量子力学III(講義）",
+        "英語": "Quantum Mechanics III(Lecture)"
+    },
+    "PHY.C344": {
+        "日本語": "プラズマ物理学",
+        "英語": "Plasma Physics"
+    },
+    "PHY.Q331": {
+        "日本語": "相対論的量子力学",
+        "英語": "Relativistic Quantum Mechanics"
+    },
+    "PHY.C342": {
+        "日本語": "物性物理学II",
+        "英語": "Condensed Matter Physics II"
+    },
+    "PHY.F352": {
+        "日本語": "宇宙物理学",
+        "英語": "Physics of the Universe"
+    },
+    "PHY.E310": {
+        "日本語": "電磁気学III(講義）",
+        "英語": "Electromagnetism III(Lecture)"
+    },
+    "LAS.D103": {
+        "日本語": "図形科学とCG1 A",
+        "英語": "Descriptive Geometry & Computer Graphics1 A"
+    },
+    "LAS.D104": {
+        "日本語": "図形科学とCG2 A",
+        "英語": "Descriptive Geometry & Computer Graphics2 A"
+    },
+    "MAT.C309": {
+        "日本語": "材料強度学（材料）",
+        "英語": "Deformation and Fracture of Engineering Materials"
+    },
+    "MAT.C308": {
+        "日本語": "連続体力学",
+        "英語": "Continuum Mechanics"
+    },
+    "EPS.A205": {
+        "日本語": "地球科学序論",
+        "英語": "Introduction to Earth Sciences"
+    },
+    "EPS.Z398": {
+        "日本語": "地惑先端研究基礎F",
+        "英語": "Advanced Research Project Basics F(EPS)"
+    },
+    "EPS.Z397": {
+        "日本語": "地惑先端研究基礎S",
+        "英語": "Advanced Research Project Basics S(EPS)"
+    },
+    "ARC.A306": {
+        "日本語": "建築環境",
+        "英語": "Environmental Design"
+    },
+    "IEE.B336": {
+        "日本語": "応用計量経済学",
+        "英語": "Applied Econometrics"
+    },
+    "IEE.A331": {
+        "日本語": "モデル化とOR",
+        "英語": "OR and Modeling"
+    },
+    "IEE.D332": {
+        "日本語": "イノベーション論",
+        "英語": "Theories of Innovation"
+    },
+    "LST.A221": {
+        "日本語": "生命理工学基礎実験第一 B",
+        "英語": "LST Basic Laboratory I B"
+    },
+    "LST.A227": {
+        "日本語": "生命理工学演習第二 B",
+        "英語": "LST Exercise II B"
+    },
+    "LST.A222": {
+        "日本語": "生命理工学基礎実験第二 D",
+        "英語": "LST Basic Laboratory II D"
+    },
+    "LST.A226": {
+        "日本語": "生命理工学演習第一 D",
+        "英語": "LST Exercise I D"
+    },
+    "LST.A228": {
+        "日本語": "生命理工学演習第三 A",
+        "英語": "LST Exercise III A"
+    },
+    "LST.A223": {
+        "日本語": "生命理工学基礎実験第三 D",
+        "英語": "LST Basic Laboratory III D"
+    },
+    "LST.A224": {
+        "日本語": "生命理工学基礎実験第四 D",
+        "英語": "LST Basic Laboratory IV D"
+    },
+    "LST.A229": {
+        "日本語": "生命理工学演習第四 B",
+        "英語": "LST Exercise IV B"
+    },
+    "ICT.Z291": {
+        "日本語": "B2D研究基礎a（情報通信系）",
+        "英語": "B2D Research Basic A in Information and Communications Engineering"
+    },
+    "ICT.E319": {
+        "日本語": "情報通信実験5",
+        "英語": "Experiments of Information and Communications Engineering V"
+    },
+    "ICT.S311": {
+        "日本語": "機械学習（情報通信）",
+        "英語": "Machine Learning (ICT)"
+    },
+    "ICT.S307": {
+        "日本語": "統計的信号処理",
+        "英語": "Statistical Signal Processing"
+    },
+    "ICT.C309": {
+        "日本語": "マルチメディア伝送工学",
+        "英語": "Multimedia Distribution Technology"
+    },
+    "ICT.C315": {
+        "日本語": "暗号技術とネットワークセキュリティ",
+        "英語": "Cryptographic Technology and Network Security"
+    },
+    "ICT.I317": {
+        "日本語": "組み込みシステム",
+        "英語": "Embedded Systems"
+    },
+    "ICT.E304": {
+        "日本語": "情報通信実験3",
+        "英語": "Experiments of Information and Communications Engineering III"
+    },
+    "ICT.M306": {
+        "日本語": "コンピュータ数学",
+        "英語": "Concrete Mathematics"
+    },
+    "ICT.C305": {
+        "日本語": "ネットワーク構成",
+        "英語": "Network Architecture and Control"
+    },
+    "ICT.E314": {
+        "日本語": "情報通信実験4",
+        "英語": "Experiments of Information and Communications Engineering IV"
+    },
+    "ICT.M316": {
+        "日本語": "数値解析（情報通信）",
+        "英語": "Numerical Analysis (ICT)"
+    },
+    "LAE.E191": {
+        "日本語": "実践型科学技術英語海外研修Ⅰ",
+        "英語": "Scientific Technical English Study Abroad PracticumⅠ"
+    },
+    "LAE.E361": {
+        "日本語": "アカデミックライティング第十一",
+        "英語": "Academic Writing in English 11"
+    },
+    "LAE.E336": {
+        "日本語": "英語スピーキング演習GIIA",
+        "英語": "Oral Expression in English GⅡA"
+    },
+    "LAE.E362": {
+        "日本語": "アカデミックライティング第十二",
+        "英語": "Academic Writing in English 12"
+    },
+    "LAE.E335": {
+        "日本語": "英語スピーキング演習GⅠA",
+        "英語": "Oral Expression in English GⅠA"
+    },
+    "CAP.A351": {
+        "日本語": "エネルギー・資源変換化学第一（炭化水素変換）",
+        "英語": "Energy and Resource Conversion Chemistry I (Hydrocarbon Conversion)"
+    },
+    "CAP.E301": {
+        "日本語": "化学産業技術論",
+        "英語": "Advanced Technology and Science in Chemical Industry"
+    },
+    "CAP.C315": {
+        "日本語": "先進化学工学第一",
+        "英語": "Advances and Applications in Chemical Engineering I"
+    },
+    "CAP.A332": {
+        "日本語": "上級有機化学第一（有機反応化学）",
+        "英語": "Advanced Organic Chemistry Ⅰ (Organic Reactions)"
+    },
+    "MEC.B212": {
+        "日本語": "複素関数論 B",
+        "英語": "Complex Function Theory B"
+    },
+    "MEC.C211": {
+        "日本語": "弾塑性力学 B",
+        "英語": "Theory of Elasticity and Plasticity B"
+    },
+    "MEC.D201": {
+        "日本語": "機械力学 A",
+        "英語": "Mechanical Vibrations A"
+    },
+    "MEC.F201": {
+        "日本語": "基礎流体力学 B",
+        "英語": "Fundamentals of Fluid Mechanics B"
+    },
+    "MEC.C201": {
+        "日本語": "材料力学 B",
+        "英語": "Mechanics of Materials B"
+    },
+    "MEC.F211": {
+        "日本語": "実在流体力学 B",
+        "英語": "Practical Fluid Mechanics B"
+    },
+    "MEC.H211": {
+        "日本語": "機械要素設計",
+        "英語": "Design of Machine Elements"
+    },
+    "MEC.H201": {
+        "日本語": "機械要素及び機械製図 B",
+        "英語": "Machine Elements and Machine Drawing B"
+    },
+    "MEC.E201": {
+        "日本語": "熱力学（機械） B",
+        "英語": "Thermodynamics (Mechanical Engineering) B"
+    },
+    "MEC.H231": {
+        "日本語": "デザイン工学",
+        "英語": "Design Engineering"
+    },
+    "MEC.I211": {
+        "日本語": "ロボット機構学 A",
+        "英語": "Robot Kinematics A"
+    },
+    "MEC.B214": {
+        "日本語": "ベクトル解析 B",
+        "英語": "Vector Analysis B"
+    },
+    "MEC.P212": {
+        "日本語": "機械系応用実験 A",
+        "英語": "Applied Experiments for Mechanical Engineering A"
+    },
+    "MEC.Q201": {
+        "日本語": "機械システム学",
+        "英語": "Introduction to Mechanical Systems"
+    },
+    "MEC.H212": {
+        "日本語": "機械設計製図基礎 B",
+        "英語": "Fundamentals of Machine Design and Drawing B"
+    },
+    "MEC.P211": {
+        "日本語": "機械系基礎実験 A",
+        "英語": "Basic Experiments for Mechanical Engineering A"
+    },
+    "MEC.B211": {
+        "日本語": "常微分方程式 B",
+        "英語": "Ordinary Differential Equations B"
+    },
+    "MEC.D231": {
+        "日本語": "解析力学基礎（機械）",
+        "英語": "Fundamentals of Analytical Dynamics (Mechanical Engineering)"
+    },
+    "MEC.A201": {
+        "日本語": "工業力学 B",
+        "英語": "Engineering Mechanics B"
+    },
+    "MEC.B231": {
+        "日本語": "確率・統計",
+        "英語": "Probability Theory and Statistics"
+    },
+    "MEC.B213": {
+        "日本語": "偏微分方程式 B",
+        "英語": "Partial Differential Equations B"
+    },
+    "MEC.G211": {
+        "日本語": "機械材料工学 B",
+        "英語": "Mechanical Materials B"
+    },
+    "MEC.B232": {
+        "日本語": "基礎数値計算法",
+        "英語": "Fundamentals of Numerical Analysis"
+    },
+    "MEC.M231": {
+        "日本語": "宇宙工学基礎",
+        "英語": "Introduction to Space Engineering"
+    },
+    "MEC.K231": {
+        "日本語": "基礎情報処理及び演習（機械）",
+        "英語": "Exercise in Information Processing (Mechanical Engineering)"
+    },
+    "TSE.A311": {
+        "日本語": "原子核工学概論",
+        "英語": "Introduction to Nuclear Engineering"
+    },
+    "MEC.I311": {
+        "日本語": "計測工学基礎",
+        "英語": "Fundamentals of Instrumentation Engineering"
+    },
+    "MEC.N331": {
+        "日本語": "自動車技術",
+        "英語": "Automotive Engineering"
+    },
+    "MEC.I333": {
+        "日本語": "ロボットの力学と制御",
+        "英語": "Robot Dynamics and Control"
+    },
+    "MEC.I334": {
+        "日本語": "ロボット技術",
+        "英語": "Robot Technology"
+    },
+    "MEC.C331": {
+        "日本語": "材料強度学（機械）",
+        "英語": "Strength and Fracture of Materials (Mechanical Engineering)"
+    },
+    "MEC.E311": {
+        "日本語": "伝熱学 B",
+        "英語": "Heat Transfer B"
+    },
+    "MEC.I331": {
+        "日本語": "メカトロニクス工学（機械）",
+        "英語": "Mechatronics (Mechanical Engineering)"
+    },
+    "MEC.D311": {
+        "日本語": "振動解析学 B",
+        "英語": "Vibration Analysis B"
+    },
+    "MEC.M334": {
+        "日本語": "航空・宇宙技術",
+        "英語": "Aeronautical and Aerospace Technology"
+    },
+    "MEC.J311": {
+        "日本語": "精密機械基礎学 A",
+        "英語": "Fundamentals of Precision Machinery A"
+    },
+    "MEC.J333": {
+        "日本語": "トライボロジーの基礎",
+        "英語": "Fundamentals of Tribology"
+    },
+    "MEC.L331": {
+        "日本語": "生体工学基礎",
+        "英語": "Basic Bioengineering"
+    },
+    "MEC.M332": {
+        "日本語": "宇宙システムプロジェクト",
+        "英語": "Space Systems Design Project"
+    },
+    "MEC.M331": {
+        "日本語": "宇宙システム工学",
+        "英語": "Space Systems Engineering"
+    },
+    "MEC.E331": {
+        "日本語": "エネルギー変換工学",
+        "英語": "Energy Conversion"
+    },
+    "MEC.I332": {
+        "日本語": "メカトロニクス演習",
+        "英語": "Exercise in Mechatronics"
+    },
+    "MEC.L332": {
+        "日本語": "機器の設計と脳科学",
+        "英語": "Mechanical Design and Brain Science"
+    },
+    "MEC.J331": {
+        "日本語": "マイクロ・ナノ加工基礎",
+        "英語": "Fundamentals of Micro and Nano Machining"
+    },
+    "MEC.J332": {
+        "日本語": "精密測定学",
+        "英語": "Fundamentals of Precision Measurement"
+    },
+    "MEC.B332": {
+        "日本語": "応用数値計算法",
+        "英語": "Applied Numerical Mathematics"
+    },
+    "MEC.Q301": {
+        "日本語": "機械システムデザイン",
+        "英語": "Creative Design of Mechanical Systems"
+    },
+    "MEC.B331": {
+        "日本語": "信号処理基礎",
+        "英語": "Fundamentals of Signal Processing"
+    },
+    "MEC.K332": {
+        "日本語": "有限要素法",
+        "英語": "Finite Element Analysis"
+    },
+    "MEC.Q310": {
+        "日本語": "機械工作実習と安全",
+        "英語": "Machine tool and Safety training"
+    },
+    "MEC.G311": {
+        "日本語": "加工学概論",
+        "英語": "Introduction to Manufacturing Engineering"
+    },
+    "MEC.H331": {
+        "日本語": "機械設計製図",
+        "英語": "Machine Design and Drawing"
+    },
+    "MEC.P332": {
+        "日本語": "機械系先端実験",
+        "英語": "Frontal Experiments for Mechanical Engineering"
+    },
+    "MEC.I312": {
+        "日本語": "モデリングと制御 B",
+        "英語": "Modeling and Control Theory B"
+    },
+    "MEC.M333": {
+        "日本語": "宇宙開発工学",
+        "英語": "Advanced Space Engineering"
+    },
+    "MEC.F331": {
+        "日本語": "応用流体力学",
+        "英語": "Advanced Fluid Mechanics"
+    },
+    "MEC.Q311": {
+        "日本語": "機械システム開発プロジェクト",
+        "英語": "Creative Design Project of Mechanical Systems"
+    },
+    "MEC.K331": {
+        "日本語": "CAE概論",
+        "英語": "Fundamentals of Computer Aided Engineering"
+    },
+    "MEC.P331": {
+        "日本語": "機械系発展実験",
+        "英語": "Advanced Experiments for Mechanical Engineering"
+    },
+    "MEC.B333": {
+        "日本語": "スペクトル解析",
+        "英語": "Spectral Analysis"
+    },
+    "EEE.E202": {
+        "日本語": "電磁気学第二",
+        "英語": "Electricity and Magnetism II"
+    },
+    "EEE.E201": {
+        "日本語": "電磁気学第一",
+        "英語": "Electricity and Magnetism I"
+    },
+    "EEE.E211": {
+        "日本語": "波動工学",
+        "英語": "Electromagnetic Fields and Waves"
+    },
+    "EEE.C211": {
+        "日本語": "アナログ電子回路",
+        "英語": "Analog Electronic Circuits"
+    },
+    "EEE.D201": {
+        "日本語": "量子力学",
+        "英語": "Quantum Mechanics"
+    },
+    "EEE.C261": {
+        "日本語": "制御工学",
+        "英語": "Control theory"
+    },
+    "CVE.N210": {
+        "日本語": "社会基盤と環境-概論",
+        "英語": "Introduction to Infrastructure and Environment"
+    },
+    "CVE.B201": {
+        "日本語": "水理学第一",
+        "英語": "Hydraulics I"
+    },
+    "TSE.M204": {
+        "日本語": "統計とデータ解析",
+        "英語": "Statistics and Data Analysis"
+    },
+    "CVE.B202": {
+        "日本語": "水理学第二",
+        "英語": "Hydraulics II"
+    },
+    "CVE.D211": {
+        "日本語": "国土・都市計画概論",
+        "英語": "Introduction to National Land Use and City Planning"
+    },
+    "TSE.C201": {
+        "日本語": "融合理工学基礎",
+        "英語": "Introduction to Transdisciplinary Science and Engineering"
+    },
+    "TSE.M203": {
+        "日本語": "線形システム論",
+        "英語": "Theory of Linear System"
+    },
+    "CVE.D210": {
+        "日本語": "土木と環境の計画理論",
+        "英語": "Planning Theory for Civil and Environmental Engineering"
+    },
+    "TSE.C203": {
+        "日本語": "社会デザインプロジェクト",
+        "英語": "Social Design Project"
+    },
+    "TSE.M202": {
+        "日本語": "偏微分方程式と物理現象",
+        "英語": "Partial Differential Equations for Science and Engineering"
+    },
+    "TSE.A231": {
+        "日本語": "工学計測基礎",
+        "英語": "Engineering Measurement"
+    },
+    "TSE.A201": {
+        "日本語": "材料・物性工学基礎",
+        "英語": "Material and Molecular Engineering"
+    },
+    "TSE.A204": {
+        "日本語": "反応工学基礎",
+        "英語": "Chemical Reaction Engineering"
+    },
+    "TSE.M201": {
+        "日本語": "常微分方程式と物理現象",
+        "英語": "Ordinary Differential Equations and Physical Phenomena"
+    },
+    "TSE.C202": {
+        "日本語": "システムデザインプロジェクト",
+        "英語": "System Design Project"
+    },
+    "CVE.G230": {
+        "日本語": "環境計画プロジェクト演習",
+        "英語": "Environmental Planning Project"
+    },
+    "TSE.C204": {
+        "日本語": "システムデザイン＆アセスメント",
+        "英語": "System Design & Impact Assessment"
+    },
+    "TSE.A206": {
+        "日本語": "生物工学基礎",
+        "英語": "Biological engineering"
+    },
+    "TSE.A205": {
+        "日本語": "流体工学基礎",
+        "英語": "Fluid Engineering"
+    },
+    "TSE.A203": {
+        "日本語": "電気・磁気工学基礎",
+        "英語": "Electrical Engineering"
+    },
+    "TSE.Z201": {
+        "日本語": "B2D研究基礎a（融合理工学系） E",
+        "英語": "B2D Research Basic A in TSE E"
+    },
+    "TSE.A202": {
+        "日本語": "固体・構造力学基礎",
+        "英語": "Solid Mechanics and Structure Engineering"
+    },
+    "CVE.D312": {
+        "日本語": "公共システム論",
+        "英語": "Behavioral Theory of Public Systems"
+    },
+    "EEE.P331": {
+        "日本語": "高電圧工学",
+        "英語": "High Voltage Engineering"
+    },
+    "EEE.P321": {
+        "日本語": "電力工学第一",
+        "英語": "Electric Power Engineering I"
+    },
+    "EEE.P311": {
+        "日本語": "パワーエレクトロニクス",
+        "英語": "Power Electronics"
+    },
+    "EEE.P301": {
+        "日本語": "電気機器工学",
+        "英語": "Electric Machinery and apparatus"
+    },
+    "TSE.A337": {
+        "日本語": "原子核工学基礎第１",
+        "英語": "Basic Nuclear Engineering 1"
+    },
+    "CVE.D301": {
+        "日本語": "交通システム工学",
+        "英語": "Traffic and Transportation Systems"
+    },
+    "EEE.S341": {
+        "日本語": "通信理論（電気電子）",
+        "英語": "Communication Theory (Electrical and Electronic Engineering)"
+    },
+    "CVE.M301": {
+        "日本語": "数値解析基礎・演習",
+        "英語": "Computers and Fundamental Programming"
+    },
+    "CVE.D310": {
+        "日本語": "景観学",
+        "英語": "Theory of Landscape Architecture"
+    },
+    "TSE.A307": {
+        "日本語": "プログラミングと数値解析基礎 b",
+        "英語": "Programming and numerical analysis b"
+    },
+    "EEE.P322": {
+        "日本語": "電力工学第二",
+        "英語": "Electric Power Engineering II"
+    },
+    "CVE.D311": {
+        "日本語": "公共経済学",
+        "英語": "Public Economics"
+    },
+    "CVE.G310": {
+        "日本語": "水環境工学",
+        "英語": "Water Environmental Engineering"
+    },
+    "TSE.A312": {
+        "日本語": "地球・地域生態学概論",
+        "英語": "Introduction to global and local ecology"
+    },
+    "TSE.A351": {
+        "日本語": "融合理工学実験A",
+        "英語": "Transdisciplinary Engineering Experiment A"
+    },
+    "TSE.C304": {
+        "日本語": "国際プロジェクト演習",
+        "英語": "Exercises on International Development Engineering"
+    },
+    "TSE.C312": {
+        "日本語": "社会環境政策概論",
+        "英語": "Introduction to Environmental Policy and Social System"
+    },
+    "CVE.D313": {
+        "日本語": "インフラストラクチャーの都市計画",
+        "英語": "Urban Planning and Infrastructure"
+    },
+    "CVE.B310": {
+        "日本語": "海岸・海洋工学",
+        "英語": "Coastal Engineering and Oceanography"
+    },
+    "TSE.C301": {
+        "日本語": "国際開発共創概論",
+        "英語": "Introduction to International Development"
+    },
+    "TSE.A322": {
+        "日本語": "通信とネットワーク",
+        "英語": "Communication and network"
+    },
+    "EEE.C301": {
+        "日本語": "電子計測",
+        "英語": "Electronic Measurement"
+    },
+    "TSE.C303": {
+        "日本語": "プロジェクトマネジメント",
+        "英語": "Project Management"
+    },
+    "CVE.B311": {
+        "日本語": "河川工学",
+        "英語": "River Engineering"
+    },
+    "TSE.A352": {
+        "日本語": "融合理工学実験B",
+        "英語": "Transdisciplinary Engineering Experiment B"
+    },
+    "TSE.A324": {
+        "日本語": "プログラミングと数値解析応用",
+        "英語": "Applied programming and numerical analysis"
+    },
+    "TSE.A335": {
+        "日本語": "地域・地球環境概論第１",
+        "英語": "Basic theory of regional and global environment 1"
+    },
+    "TSE.C302": {
+        "日本語": "開発経済学入門",
+        "英語": "Introduction to Development Economics"
+    },
+    "TSE.A315": {
+        "日本語": "気象学基礎",
+        "英語": "Introduction to Meteorology"
+    },
+    "TSE.A316": {
+        "日本語": "防災工学基礎",
+        "英語": "Introduction to Natural Disaster Science and Engineering"
+    },
+    "TSE.A336": {
+        "日本語": "地域・地球環境概論第２",
+        "英語": "Basic theory of regional and global environment 2"
+    },
+    "TSE.A338": {
+        "日本語": "原子核工学基礎第２",
+        "英語": "Basic Nuclear Engineering 2"
+    },
+    "TSE.A305": {
+        "日本語": "電磁気学（融合理工）",
+        "英語": "Electromagnetics (TSE)"
+    },
+    "TSE.C349": {
+        "日本語": "融合理工学海外研修（中期）A",
+        "英語": "Transdisciplinary science and engineering international tranining (middle term) A"
+    },
+    "TSE.C365": {
+        "日本語": "融合理工学インターンシップ（短期）A",
+        "英語": "Transdisciplinary science and engineering internship (short term) A"
+    },
+    "TSE.A313": {
+        "日本語": "資源・エネルギー工学概論",
+        "英語": "Theory of Resource and Energy Engineering"
+    },
+    "TSE.A339": {
+        "日本語": "原子核工学基礎第３",
+        "英語": "Basic Nuclear Engineering 3"
+    },
+    "TSE.C348": {
+        "日本語": "融合理工学海外研修（短期）D",
+        "英語": "Transdisciplinary science and engineering international tranining (short term) D"
+    },
+    "TSE.C352": {
+        "日本語": "融合理工学海外研修（中期）D",
+        "英語": "Transdisciplinary science and engineering international tranining (middle term) D"
+    },
+    "TSE.C318": {
+        "日本語": "エンジニアリングデザインと技術経営基礎",
+        "英語": "Introduction to Engineering Design and Management of Technology"
+    },
+    "TSE.A303": {
+        "日本語": "操作論",
+        "英語": "Unit operations"
+    },
+    "TSE.A321": {
+        "日本語": "実用材料の冶金学基礎",
+        "英語": "Introduction to metallurgy of engineering materials"
+    },
+    "TSE.C342": {
+        "日本語": "融合理工学海外研修（超短期）B",
+        "英語": "Transdisciplinary science and engineering international tranining (very short term) B"
+    },
+    "TSE.C346": {
+        "日本語": "融合理工学海外研修（短期）B",
+        "英語": "Transdisciplinary science and engineering international tranining (short term) B"
+    },
+    "TSE.C350": {
+        "日本語": "融合理工学海外研修（中期）B",
+        "英語": "Transdisciplinary science and engineering international tranining (middle term) B"
+    },
+    "TSE.C362": {
+        "日本語": "融合理工学インターンシップ（超短期）B",
+        "英語": "Transdisciplinary science and engineering internship (very short term) B"
+    },
+    "TSE.A318": {
+        "日本語": "エンジニアリングデザイン概論",
+        "英語": "Introduction to Design Engineering"
+    },
+    "TSE.A301": {
+        "日本語": "剛体の運動力学",
+        "英語": "Rigid body dynamics"
+    },
+    "TSE.C343": {
+        "日本語": "融合理工学海外研修（超短期）C",
+        "英語": "Transdisciplinary science and engineering international tranining (very short term) C"
+    },
+    "TSE.C355": {
+        "日本語": "融合理工学海外研修（長期）C",
+        "英語": "Transdisciplinary science and engineering international tranining (long term) C"
+    },
+    "TSE.C375": {
+        "日本語": "融合理工学インターンシップ（長期）C",
+        "英語": "Transdisciplinary science and engineering internship (long term) C"
+    },
+    "TSE.C317": {
+        "日本語": "融合技術論",
+        "英語": "Methodology of Transdisciplinary Research:theory and practice"
+    },
+    "TSE.A304": {
+        "日本語": "工業化学",
+        "英語": "Industrial chemistry"
+    },
+    "TSE.C344": {
+        "日本語": "融合理工学海外研修（超短期）D",
+        "英語": "Transdisciplinary science and engineering international tranining (very short term) D"
+    },
+    "TSE.C356": {
+        "日本語": "融合理工学海外研修（長期）D",
+        "英語": "Transdisciplinary science and engineering international tranining (long term) D"
+    },
+    "TSE.C364": {
+        "日本語": "融合理工学インターンシップ（超短期）D",
+        "英語": "Transdisciplinary science and engineering internship (very short term) D"
+    },
+    "TSE.C341": {
+        "日本語": "融合理工学海外研修（超短期）A",
+        "英語": "Transdisciplinary science and engineering international tranining (very short term) A"
+    },
+    "TSE.C345": {
+        "日本語": "融合理工学海外研修（短期）A",
+        "英語": "Transdisciplinary science and engineering international tranining (short term) A"
+    },
+    "TSE.C353": {
+        "日本語": "融合理工学海外研修（長期）A",
+        "英語": "Transdisciplinary science and engineering international tranining (long term) A"
+    },
+    "TSE.C361": {
+        "日本語": "融合理工学インターンシップ（超短期）A",
+        "英語": "Transdisciplinary science and engineering internship (very short term) A"
+    },
+    "TSE.C373": {
+        "日本語": "融合理工学インターンシップ（長期）A",
+        "英語": "Transdisciplinary science and engineering internship (long term) A"
+    },
+    "TSE.C357": {
+        "日本語": "融合理工学海外研修（単位認定併用）S",
+        "英語": "Transdisciplinary science and engineering international training (with credit transfer) S"
+    },
+    "TSE.C354": {
+        "日本語": "融合理工学海外研修（長期）B",
+        "英語": "Transdisciplinary science and engineering international tranining (long term) B"
+    },
+    "TSE.C366": {
+        "日本語": "融合理工学インターンシップ（短期）B",
+        "英語": "Transdisciplinary science and engineering internship (short term) B"
+    },
+    "TSE.C370": {
+        "日本語": "融合理工学インターンシップ（中期）B",
+        "英語": "Transdisciplinary science and engineering internship (middle term) B"
+    },
+    "TSE.C374": {
+        "日本語": "融合理工学インターンシップ（長期）B",
+        "英語": "Transdisciplinary science and engineering internship (long term) B"
+    },
+    "TSE.A308": {
+        "日本語": "基礎熱力学（融合理工）",
+        "英語": "Basic Thermodynamics (TSE)"
+    },
+    "TSE.C347": {
+        "日本語": "融合理工学海外研修（短期）C",
+        "英語": "Transdisciplinary science and engineering international tranining (short term) C"
+    },
+    "TSE.C351": {
+        "日本語": "融合理工学海外研修（中期）C",
+        "英語": "Transdisciplinary science and engineering international tranining (middle term) C"
+    },
+    "TSE.C363": {
+        "日本語": "融合理工学インターンシップ（超短期）C",
+        "英語": "Transdisciplinary science and engineering internship (very short term) C"
+    },
+    "TSE.A340": {
+        "日本語": "原子核工学基礎第４",
+        "英語": "Basic Nuclear Engineering 4"
+    },
+    "TSE.C358": {
+        "日本語": "融合理工学海外研修（単位認定併用）F",
+        "英語": "Transdisciplinary science and engineering international training (with credit transfer) F"
+    },
+    "TSE.A314": {
+        "日本語": "水・物質循環システム概論",
+        "英語": "Introduction to Water and Mass Transport in the Environment"
+    },
+    "TSE.C372": {
+        "日本語": "融合理工学インターンシップ（中期）D",
+        "英語": "Transdisciplinary science and engineering internship (middle term) D"
+    },
+    "TSE.C376": {
+        "日本語": "融合理工学インターンシップ（長期）D",
+        "英語": "Transdisciplinary science and engineering internship (long term) D"
+    },
+    "TSE.C369": {
+        "日本語": "融合理工学インターンシップ（中期）A",
+        "英語": "Transdisciplinary science and engineering internship (middle term) A"
+    },
+    "TSE.A302": {
+        "日本語": "強度の力学",
+        "英語": "Mechanics of strength"
+    },
+    "TSE.M301": {
+        "日本語": "確率論（融合理工）",
+        "英語": "Probability theory (TSE)"
+    },
+    "TSE.C367": {
+        "日本語": "融合理工学インターンシップ（短期）C",
+        "英語": "Transdisciplinary science and engineering internship (short term) C"
+    },
+    "TSE.C371": {
+        "日本語": "融合理工学インターンシップ（中期）C",
+        "英語": "Transdisciplinary science and engineering internship (middle term) C"
+    },
+    "TSE.A317": {
+        "日本語": "環境流体力学基礎",
+        "英語": "Basis of Environmental Hydrodynamics"
+    },
+    "TSE.C368": {
+        "日本語": "融合理工学インターンシップ（短期）D",
+        "英語": "Transdisciplinary science and engineering internship (short term) D"
+    },
+    "LAJ.C102": {
+        "日本語": "日本文化演習：適応",
+        "英語": "Japanese Culture : Adaptation"
+    },
+    "LAJ.T103": {
+        "日本語": "入門日本語２A KJ",
+        "英語": "Introduction to Japanese 2A KJ"
+    },
+    "LAJ.T104": {
+        "日本語": "入門日本語２B KJ",
+        "英語": "Introduction to Japanese 2B KJ"
+    },
+    "LAJ.J102": {
+        "日本語": "日本語１Ｂ GSEP",
+        "英語": "Japanese 1B GSEP"
+    },
+    "LAJ.J103": {
+        "日本語": "日本語２Ａ GSEP",
+        "英語": "Japanese 2A GSEP"
+    },
+    "LAJ.T106": {
+        "日本語": "入門日本語３B KJ",
+        "英語": "Introduction to Japanese 3B KJ"
+    },
+    "LAJ.S101": {
+        "日本語": "サバイバルジャパニーズ101 GSEP",
+        "英語": "Survival Japanese 101: Intensive"
+    },
+    "LAJ.S102": {
+        "日本語": "サバイバルジャパニーズ102 GSEP",
+        "英語": "Survival Japanese 102: Intensive"
+    },
+    "LAJ.T101": {
+        "日本語": "入門日本語１A KJ",
+        "英語": "Introduction to Japanese 1A KJ"
+    },
+    "LAJ.C101": {
+        "日本語": "日本文化演習：社会",
+        "英語": "Japanese Culture : Society"
+    },
+    "LAJ.J101": {
+        "日本語": "日本語１Ａ GSEP",
+        "英語": "Japanese 1A GSEP"
+    },
+    "LAJ.C103": {
+        "日本語": "日本文化演習：芸術",
+        "英語": "Japanese Culture : Arts"
+    },
+    "LAJ.T105": {
+        "日本語": "入門日本語３A KJ",
+        "英語": "Introduction to Japanese 3A KJ"
+    },
+    "LAJ.J104": {
+        "日本語": "日本語２Ｂ A",
+        "英語": "Japanese 2B A"
+    },
+    "LAJ.T102": {
+        "日本語": "入門日本語１B KJ",
+        "英語": "Introduction to Japanese 1B KJ"
+    },
+    "LAJ.J202": {
+        "日本語": "日本語３Ｂ B",
+        "英語": "Japanese 3B B"
+    },
+    "LAJ.J201": {
+        "日本語": "日本語３Ａ A",
+        "英語": "Japanese 3A A"
+    },
+    "LAJ.J203": {
+        "日本語": "日本語４Ａ GSEP",
+        "英語": "Japanese 4A GSEP"
+    },
+    "LAJ.J204": {
+        "日本語": "日本語４Ｂ GSEP",
+        "英語": "Japanese 4B GSEP"
+    },
+    "LAJ.T302": {
+        "日本語": "サバイバルジャパニーズ302 A",
+        "英語": "Survival Japanese 302: Intensive A"
+    },
+    "LAJ.T301": {
+        "日本語": "サバイバルジャパニーズ301 F",
+        "英語": "Survival Japanese 301: Intensive F"
+    },
+    "LAH.S102": {
+        "日本語": "法学（民事法）Ａ",
+        "英語": "Law (Civil Law) A"
+    },
+    "LAH.S110": {
+        "日本語": "現代ジャーナリズムＡ",
+        "英語": "Journalism A"
+    },
+    "LAH.T108": {
+        "日本語": "意思決定論Ａ",
+        "英語": "Decision Making A"
+    },
+    "LAH.S103": {
+        "日本語": "政治学Ａ",
+        "英語": "Political Science A"
+    },
+    "LAH.H102": {
+        "日本語": "芸術Ａ",
+        "英語": "Art A"
+    },
+    "LAH.T112": {
+        "日本語": "教養特論：ミュージアムから学ぶ科学・技術・文化コミュニケーション",
+        "英語": "Special Lecture: Thinking and learning through museums"
+    },
+    "LAH.H104": {
+        "日本語": "文学Ａ",
+        "英語": "Literature A"
+    },
+    "LAH.T107": {
+        "日本語": "社会モデリングＡ",
+        "英語": "Social Modeling A"
+    },
+    "LAH.S108": {
+        "日本語": "現代社会論Ａ",
+        "英語": "Contemporary Society A"
+    },
+    "LAH.H107": {
+        "日本語": "コミュニケーション論Ａ",
+        "英語": "Communication A"
+    },
+    "LAH.S101": {
+        "日本語": "法学（憲法）Ａ",
+        "英語": "Law (Constitutional Law) A"
+    },
+    "LAH.S109": {
+        "日本語": "経済学Ａ",
+        "英語": "Economics A"
+    },
+    "LAH.C101": {
+        "日本語": "東工大立志プロジェクト 28",
+        "英語": "Tokyo Tech Visionary Project 28"
+    },
+    "LAH.H153": {
+        "日本語": "人文学系ゼミ（参加と協働と至福の場づくり）導入２",
+        "英語": "Seminar on Humanities(Facilitating dialogue, collaboration, and bliss)Introduction 2"
+    },
+    "LAH.H101": {
+        "日本語": "哲学Ａ",
+        "英語": "Philosophy A"
+    },
+    "LAH.H112": {
+        "日本語": "教養特論：ライティングスキル",
+        "英語": "Special Lecture : Writing Skills"
+    },
+    "LAH.T110": {
+        "日本語": "学びのデザイン",
+        "英語": "Learning Design"
+    },
+    "LAH.S105": {
+        "日本語": "心理学Ａ",
+        "英語": "Psychology A"
+    },
+    "LAH.H108": {
+        "日本語": "教養特論：多文化共生論",
+        "英語": "Special Lecture :Social and Cultural Diversity"
+    },
+    "LAH.S150": {
+        "日本語": "社会科学系ゼミ（法学ゼミ）導入１",
+        "英語": "Seminar on Social Sciences (Japanese Law Study Seminar)Introduction 1"
+    },
+    "LAH.S104": {
+        "日本語": "国際関係論Ａ",
+        "英語": "International Relations A"
+    },
+    "LAH.S151": {
+        "日本語": "社会科学系ゼミ（法学ゼミ）導入２",
+        "英語": "Seminar on Social Sciences (Japanese Law Study Seminar)Introduction 2"
+    },
+    "LAH.T109": {
+        "日本語": "言語学Ａ",
+        "英語": "Linguistics A"
+    },
+    "LAH.T106": {
+        "日本語": "科学哲学Ａ",
+        "英語": "Philosophy of Science A"
+    },
+    "LAH.T102": {
+        "日本語": "科学史Ａ",
+        "英語": "History of Science A"
+    },
+    "LAH.H103": {
+        "日本語": "文化人類学Ａ",
+        "英語": "Cultural Anthropology A"
+    },
+    "LAH.H114": {
+        "日本語": "人間文化論Ａ",
+        "英語": "Human Studies A"
+    },
+    "LAH.T101": {
+        "日本語": "統計学Ａ",
+        "英語": "Statistics A"
+    },
+    "LAH.H150": {
+        "日本語": "人文学系ゼミ（自分発見、社会・文化・人間探求セッション）導入１",
+        "英語": "Seminar on Humanities(Culture, Society and Humanity)Introduction1"
+    },
+    "LAH.H156": {
+        "日本語": "人文学系ゼミ（現代宗教／スピリチュアリティ論）導入１",
+        "英語": "Seminar on Humanities(Religion and Spirituality in Contemporary Society)Introduction 1"
+    },
+    "LAH.T150": {
+        "日本語": "融合系ゼミ（意思決定論）導入１",
+        "英語": "Seminar on Transdisciplinary Studies (Decision Making)Introduction1"
+    },
+    "LAH.H113": {
+        "日本語": "表象文化論Ａ",
+        "英語": "Studies of Culture and Representation A"
+    },
+    "LAH.S111": {
+        "日本語": "教養特論：東南アジア",
+        "英語": "Special Lecture: Southeast Asia"
+    },
+    "LAH.T155": {
+        "日本語": "融合系ゼミ（「Well-being（よく生きること）」の科学と教育）導入２",
+        "英語": "Seminar on Transdisciplinary Studies(Scientific studies on \"well-being\" and positive education)Introduction2"
+    },
+    "LAH.H110": {
+        "日本語": "外国語への招待１",
+        "英語": "Introduction to Foreign Languages 1"
+    },
+    "LAH.T111": {
+        "日本語": "教養特論：技術と美術の哲学",
+        "英語": "Special Lecture: Technology and art"
+    },
+    "LAH.S112": {
+        "日本語": "メディア論Ａ",
+        "英語": "Media Studies A"
+    },
+    "LAH.S152": {
+        "日本語": "社会科学系ゼミ（政策とメディアの社会学）導入１",
+        "英語": "Seminar on Social Sciences(Sociology of  media and governance )Introduction 1"
+    },
+    "LAH.H151": {
+        "日本語": "人文学系ゼミ（自分発見、社会・文化・人間探求セッション）導入２",
+        "英語": "Seminar on Humanities(Culture, Society and Humanity)Introduction 2"
+    },
+    "LAH.H157": {
+        "日本語": "人文学系ゼミ（現代宗教／スピリチュアリティ論）導入２",
+        "英語": "Seminar on Humanities(Religion and Spirituality in Contemporary Society)Introduction 2"
+    },
+    "LAH.H106": {
+        "日本語": "宗教学Ａ",
+        "英語": "Religion A"
+    },
+    "LAH.H111": {
+        "日本語": "外国語への招待２",
+        "英語": "Introduction to Foreign Languages 2"
+    },
+    "LAH.T103": {
+        "日本語": "技術史Ａ",
+        "英語": "History of Technology A"
+    },
+    "LAH.H152": {
+        "日本語": "人文学系ゼミ（参加と協働と至福の場づくり）導入１",
+        "英語": "Seminar on Humanities(Facilitating dialogue, collaboration, and bliss)Introduction 1"
+    },
+    "LAH.H154": {
+        "日本語": "人文学系ゼミ（創造と思考のレッスン）導入１",
+        "英語": "Seminar on Humanities(Art workshop)Introduction 1"
+    },
+    "LAH.H105": {
+        "日本語": "歴史学Ａ",
+        "英語": "History A"
+    },
+    "LAH.T151": {
+        "日本語": "融合系ゼミ（意思決定論）導入２",
+        "英語": "Seminar on Transdisciplinary Studies (Decision Making)Introduction2"
+    },
+    "LAH.S155": {
+        "日本語": "社会科学系ゼミ（日米関係と沖縄）導入２",
+        "英語": "Seminar on Social Science(US-Japan Relations: Military Base Problem in Okinawa)Introduction 2)"
+    },
+    "LAH.H159": {
+        "日本語": "人文学系ゼミ（博物館と歴史学）導入２",
+        "英語": "Seminar on Humanities(Museum and History)Introduction 2"
+    },
+    "LAH.T157": {
+        "日本語": "融合系ゼミ（社会科学への量的アプローチ入門）導入２",
+        "英語": "Seminar on Transdisciplinary Studies (Introduction to Quantitative Approach to Social Science)Introduction2"
+    },
+    "LAH.T105": {
+        "日本語": "科学技術倫理Ａ",
+        "英語": "Ethics in Engineering A"
+    },
+    "LAH.S107": {
+        "日本語": "社会学Ａ",
+        "英語": "Sociology A"
+    },
+    "LAH.T104": {
+        "日本語": "科学技術社会論・科学技術政策Ａ",
+        "英語": "Science and Technology for Society A"
+    },
+    "LAH.H109": {
+        "日本語": "教養特論：言語と文化",
+        "英語": "Special Lecture : Language and Culture"
+    },
+    "LAH.T154": {
+        "日本語": "融合系ゼミ（「Well-being（よく生きること）」の科学と教育）導入１",
+        "英語": "Seminar on Transdisciplinary Studies(Scientific studies on \"well-being\" and positive education)Introduction1"
+    },
+    "LAH.S154": {
+        "日本語": "社会科学系ゼミ（日米関係と沖縄）導入１",
+        "英語": "Seminar on Social Science(US-Japan Relations: Military Base Problem in Okinawa)Introduction 1"
+    },
+    "LAH.H158": {
+        "日本語": "人文学系ゼミ（博物館と歴史学）導入１",
+        "英語": "Seminar on Humanities(Museum and History)Introduction 1"
+    },
+    "LAH.H155": {
+        "日本語": "人文学系ゼミ（創造と思考のレッスン）導入２",
+        "英語": "Seminar on Humanities(Art workshop)Introduction 2"
+    },
+    "LAH.S153": {
+        "日本語": "社会科学系ゼミ（政策とメディアの社会学）導入２",
+        "英語": "Seminar on Social Sciences(Sociology of  media and governance )Introduction 2"
+    },
+    "LAH.T208": {
+        "日本語": "意思決定論Ｂ",
+        "英語": "Decision Making B"
+    },
+    "LAH.S203": {
+        "日本語": "政治学Ｂ",
+        "英語": "Political Science B"
+    },
+    "LAH.T204": {
+        "日本語": "教養特論：大学史",
+        "英語": "Special Lecture: History of Universities"
+    },
+    "LAH.T205": {
+        "日本語": "科学技術社会論・科学技術政策Ｂ",
+        "英語": "Science and Technology for Society B"
+    },
+    "LAH.T206": {
+        "日本語": "科学技術倫理Ｂ",
+        "英語": "Ethics in Engineering B"
+    },
+    "LAH.H201": {
+        "日本語": "哲学Ｂ",
+        "英語": "Philosophy B"
+    },
+    "LAH.T202": {
+        "日本語": "科学史Ｂ",
+        "英語": "History of Science B"
+    },
+    "LAH.T209": {
+        "日本語": "社会モデリングＢ",
+        "英語": "Social Modeling B"
+    },
+    "LAH.T252": {
+        "日本語": "融合系ゼミ（意思決定論）１",
+        "英語": "Seminar on Transdisciplinary Studies (Decision Making)1"
+    },
+    "LAH.S254": {
+        "日本語": "社会科学系ゼミ（日米関係と沖縄）１",
+        "英語": "Seminar on Social Science(US-Japan Relations: Military Base Problem in Okinawa)1"
+    },
+    "LAH.H205": {
+        "日本語": "歴史学Ｂ",
+        "英語": "History B"
+    },
+    "LAH.S213": {
+        "日本語": "メディア論Ｂ",
+        "英語": "Media Studies B"
+    },
+    "LAH.T259": {
+        "日本語": "融合系ゼミ（社会科学への量的アプローチ入門）２",
+        "英語": "Seminar on Transdisciplinary Studies (Introduction to Quantitative Approach to Social Science)2"
+    },
+    "LAH.H212": {
+        "日本語": "世界文学２",
+        "英語": "World Literature 2"
+    },
+    "LAH.T211": {
+        "日本語": "教養特論：身体教養科学",
+        "英語": "Special Lecture: Physical Activity"
+    },
+    "LAH.S202": {
+        "日本語": "法学（民事法）Ｂ",
+        "英語": "Law (Civil Law) B"
+    },
+    "LAH.S208": {
+        "日本語": "現代社会論Ｂ",
+        "英語": "Contemporary Society B"
+    },
+    "LAH.S211": {
+        "日本語": "教養特論：国際社会とコミュニケーション",
+        "英語": "Special Lecture:International society and Communication"
+    },
+    "LAH.H215": {
+        "日本語": "表象文化論Ｂ",
+        "英語": "Studies of Culture and Representation B"
+    },
+    "LAH.H204": {
+        "日本語": "文学Ｂ",
+        "英語": "Literature B"
+    },
+    "LAH.H209": {
+        "日本語": "国際文化論：アジア・アフリカ",
+        "英語": "Intercultural Studies: Asia and Africa"
+    },
+    "LAH.H256": {
+        "日本語": "人文学系ゼミ（現代宗教／スピリチュアリティ論）１",
+        "英語": "Seminar on Humanities(Religion and Spirituality in Contemporary Society)1"
+    },
+    "LAH.H258": {
+        "日本語": "人文学系ゼミ（博物館と歴史学）１",
+        "英語": "Seminar on Humanities(Museum and History)1"
+    },
+    "LAH.T257": {
+        "日本語": "融合系ゼミ（「Well-being（よく生きること）」の科学と教育）２",
+        "英語": "Seminar on Transdisciplinary Studies(Scientific studies on \"well-being\" and positive education)2"
+    },
+    "LAH.H202": {
+        "日本語": "芸術Ｂ",
+        "英語": "Arts B, Esthetics B"
+    },
+    "LAH.H206": {
+        "日本語": "宗教学Ｂ",
+        "英語": "Religion B"
+    },
+    "LAH.H254": {
+        "日本語": "人文学系ゼミ（創造と思考のレッスン）１",
+        "英語": "Seminar on Humanities(Art workshop)1"
+    },
+    "LAH.S250": {
+        "日本語": "社会科学系ゼミ（法学ゼミ）１",
+        "英語": "Seminar on Social Sciences (Japanese Law Study Seminar)1"
+    },
+    "LAH.H252": {
+        "日本語": "人文学系ゼミ（参加と協働と至福の場づくり）１",
+        "英語": "Seminar on Humanities(Facilitating dialogue, collaboration, and bliss)1"
+    },
+    "LAH.S201": {
+        "日本語": "法学（憲法）Ｂ",
+        "英語": "Law (Constitutional Law) Ｂ"
+    },
+    "LAH.T210": {
+        "日本語": "言語学Ｂ",
+        "英語": "Linguistics B"
+    },
+    "LAH.H251": {
+        "日本語": "人文学系ゼミ（自分発見、社会・文化・人間探求セッション）２",
+        "英語": "Seminar on Humanities(Culture, Society and Humanity)2"
+    },
+    "LAH.S205": {
+        "日本語": "心理学Ｂ",
+        "英語": "Psychology B"
+    },
+    "LAH.H203": {
+        "日本語": "文化人類学Ｂ",
+        "英語": "Cultural Anthropology B"
+    },
+    "LAH.S204": {
+        "日本語": "国際関係論Ｂ",
+        "英語": "International Relations B"
+    },
+    "LAH.H250": {
+        "日本語": "人文学系ゼミ（自分発見、社会・文化・人間探求セッション）１",
+        "英語": "Seminar on Humanities(Culture, Society and Humanity)1"
+    },
+    "LAH.H207": {
+        "日本語": "コミュニケーション論Ｂ",
+        "英語": "Communication B"
+    },
+    "LAH.H211": {
+        "日本語": "世界文学１",
+        "英語": "World Literature 1"
+    },
+    "LAH.H257": {
+        "日本語": "人文学系ゼミ（現代宗教／スピリチュアリティ論）２",
+        "英語": "Seminar on Humanities(Religion and Spirituality in Contemporary Society)2"
+    },
+    "LAH.H255": {
+        "日本語": "人文学系ゼミ（創造と思考のレッスン）２",
+        "英語": "Seminar on Humanities(Art workshop)2"
+    },
+    "LAH.T212": {
+        "日本語": "教養特論：科学とヒューマニズム",
+        "英語": "Special Lecture: Science, Literature, and Humanism"
+    },
+    "LAH.S209": {
+        "日本語": "経済学Ｂ",
+        "英語": "Economics B"
+    },
+    "LAH.T207": {
+        "日本語": "科学哲学Ｂ",
+        "英語": "Philosophy of Science B"
+    },
+    "LAH.S253": {
+        "日本語": "社会科学系ゼミ（政策とメディアの社会学）２",
+        "英語": "Seminar on Social Sciences(Sociology of  media and governance )2"
+    },
+    "LAH.S255": {
+        "日本語": "社会科学系ゼミ（日米関係と沖縄）２",
+        "英語": "Seminar on Social Science(US-Japan Relations: Military Base Problem in Okinawa)2"
+    },
+    "LAH.T203": {
+        "日本語": "技術史Ｂ",
+        "英語": "History of Technology B"
+    },
+    "LAH.H216": {
+        "日本語": "人間文化論Ｂ",
+        "英語": "Human Studies B"
+    },
+    "LAH.T256": {
+        "日本語": "融合系ゼミ（「Well-being（よく生きること）」の科学と教育）１",
+        "英語": "Seminar on Transdisciplinary Studies(Scientific studies on \"well-being\" and positive education)1"
+    },
+    "LAH.H210": {
+        "日本語": "国際文化論：ヨーロッパ・ラテンアメリカ",
+        "英語": "Intercultural Studies: Europe and Latin America"
+    },
+    "LAH.H253": {
+        "日本語": "人文学系ゼミ（参加と協働と至福の場づくり）２",
+        "英語": "Seminar on Humanities(Facilitating dialogue, collaboration, and bliss)2"
+    },
+    "LAH.H217": {
+        "日本語": "教養特論：アートとデザイン",
+        "英語": "Special Lecture: Art and Design"
+    },
+    "LAH.H213": {
+        "日本語": "教養特論：オペラへの招待",
+        "英語": "Special Lecture: Introduction to Opera"
+    },
+    "LAH.S207": {
+        "日本語": "社会学Ｂ",
+        "英語": "Sociology B"
+    },
+    "LAH.S252": {
+        "日本語": "社会科学系ゼミ（政策とメディアの社会学）１",
+        "英語": "Seminar on Social Sciences(Sociology of  media and governance )1"
+    },
+    "LAH.S251": {
+        "日本語": "社会科学系ゼミ（法学ゼミ）２",
+        "英語": "Seminar on Social Sciences (Japanese Law Study Seminar)2"
+    },
+    "LAH.T253": {
+        "日本語": "融合系ゼミ（意思決定論）２",
+        "英語": "Seminar on Transdisciplinary Studies (Decision Making)2"
+    },
+    "LAH.H259": {
+        "日本語": "人文学系ゼミ（博物館と歴史学）２",
+        "英語": "Seminar on Humanities(Museum and History)2"
+    },
+    "LAH.T201": {
+        "日本語": "統計学Ｂ",
+        "英語": "Statistics B"
+    },
+    "LAH.C301": {
+        "日本語": "教養卒論 21",
+        "英語": "Liberal Arts Final Report 21"
+    },
+    "LAH.S303": {
+        "日本語": "法学（民事法・知財）Ｃ",
+        "英語": "Law (Intellectual Property Law) C"
+    },
+    "LAH.H304": {
+        "日本語": "文学Ｃ",
+        "英語": "Literature C"
+    },
+    "LAH.T354": {
+        "日本語": "融合系ゼミ（意思決定論）３",
+        "英語": "Seminar on Transdisciplinary Studies (Decision Making)3"
+    },
+    "LAH.H313": {
+        "日本語": "教養特論：都市",
+        "英語": "Special Lecture: Urban Space for the Future"
+    },
+    "LAH.H307": {
+        "日本語": "教養特論：日本思想史",
+        "英語": "Special Lecture: Intellectual History in Japan"
+    },
+    "LAH.S302": {
+        "日本語": "法学（民事法）Ｃ",
+        "英語": "Law (Civil Procedure Law) C"
+    },
+    "LAH.S311": {
+        "日本語": "教養特論：メディア心理学",
+        "英語": "Special Lecture: Media Psychology"
+    },
+    "LAH.S304": {
+        "日本語": "政治学Ｃ",
+        "英語": "Political Science C"
+    },
+    "LAH.T303": {
+        "日本語": "技術史Ｃ",
+        "英語": "History of Technology C"
+    },
+    "LAH.H308": {
+        "日本語": "教養特論：ジェンダー",
+        "英語": "Special Lecture: Gender"
+    },
+    "LAH.T301": {
+        "日本語": "統計学Ｃ",
+        "英語": "Statistics C"
+    },
+    "LAH.T306": {
+        "日本語": "科学哲学Ｃ",
+        "英語": "Philosophy of Science C"
+    },
+    "LAH.S352": {
+        "日本語": "社会科学系ゼミ（法学ゼミ）５",
+        "英語": "Seminar on Social Sciences (Japanese Law Study Seminar)5"
+    },
+    "LAH.S356": {
+        "日本語": "社会科学系ゼミ（政策とメディアの社会学）５",
+        "英語": "Seminar on Social Sciences(Sociology of  media and governance )5"
+    },
+    "LAH.T356": {
+        "日本語": "融合系ゼミ（意思決定論）５",
+        "英語": "Seminar on Transdisciplinary Studies (Decision Making)5"
+    },
+    "LAH.T364": {
+        "日本語": "融合系ゼミ（「Well-being（よく生きること）」の科学と教育）５",
+        "英語": "Seminar on Transdisciplinary Studies(Scientific studies on \"well-being\" and positive education)5"
+    },
+    "LAH.H360": {
+        "日本語": "人文学系ゼミ（創造と思考のレッスン）５",
+        "英語": "Seminar on Humanities(Art workshop)5"
+    },
+    "LAH.S361": {
+        "日本語": "社会科学系ゼミ（日米関係と沖縄）６",
+        "英語": "Seminar on Social Science(US-Japan Relations: Military Base Problem in Okinawa)6"
+    },
+    "LAH.H301": {
+        "日本語": "哲学Ｃ",
+        "英語": "Philosophy C"
+    },
+    "LAH.T309": {
+        "日本語": "言語学Ｃ",
+        "英語": "Linguistics C"
+    },
+    "LAH.S305": {
+        "日本語": "国際関係論Ｃ",
+        "英語": "International Relations C"
+    },
+    "LAH.S360": {
+        "日本語": "社会科学系ゼミ（日米関係と沖縄）５",
+        "英語": "Seminar on Social Science(US-Japan Relations: Military Base Problem in Okinawa)5"
+    },
+    "LAH.H303": {
+        "日本語": "文化人類学Ｃ",
+        "英語": "Cultural Anthropology C"
+    },
+    "LAH.S310": {
+        "日本語": "経済学Ｃ",
+        "英語": "Economics C"
+    },
+    "LAH.T365": {
+        "日本語": "融合系ゼミ（「Well-being（よく生きること）」の科学と教育）６",
+        "英語": "Seminar on Transdisciplinary Studies(Scientific studies on \"well-being\" and positive education)6"
+    },
+    "LAH.H351": {
+        "日本語": "人文学系ゼミ（自分発見、社会・文化・人間探求セッション）４",
+        "英語": "Seminar on Humanities(Culture, Society and Humanity)4"
+    },
+    "LAH.T363": {
+        "日本語": "融合系ゼミ（「Well-being（よく生きること）」の科学と教育）４",
+        "英語": "Seminar on Transdisciplinary Studies(Scientific studies on \"well-being\" and positive education)4"
+    },
+    "LAH.S359": {
+        "日本語": "社会科学系ゼミ（日米関係と沖縄）４",
+        "英語": "Seminar on Social Science(US-Japan Relations: Military Base Problem in Okinawa)4"
+    },
+    "LAH.T367": {
+        "日本語": "融合系ゼミ（社会科学への量的アプローチ入門）４",
+        "英語": "Seminar on Transdisciplinary Studies (Introduction to Quantitative Approach to Social Science)4"
+    },
+    "LAH.H302": {
+        "日本語": "芸術Ｃ",
+        "英語": "Arts C, Esthetics C"
+    },
+    "LAH.T304": {
+        "日本語": "科学技術社会論・科学技術政策Ｃ",
+        "英語": "Science and Technology for Society C"
+    },
+    "LAH.H314": {
+        "日本語": "表象文化論Ｃ",
+        "英語": "Studies of Culture and Representation C"
+    },
+    "LAH.T313": {
+        "日本語": "教養特論：人間関係論",
+        "英語": "Special Lecture: Human Relations"
+    },
+    "LAH.S306": {
+        "日本語": "心理学Ｃ",
+        "英語": "Psychology C"
+    },
+    "LAH.H306": {
+        "日本語": "宗教学Ｃ",
+        "英語": "Religion C"
+    },
+    "LAH.S354": {
+        "日本語": "社会科学系ゼミ（政策とメディアの社会学）３",
+        "英語": "Seminar on Social Sciences(Sociology of  media and governance )3"
+    },
+    "LAH.H364": {
+        "日本語": "人文学系ゼミ（現代宗教／スピリチュアリティ論）５",
+        "英語": "Seminar on Humanities(Religion and Spirituality in Contemporary Society)5"
+    },
+    "LAH.H355": {
+        "日本語": "人文学系ゼミ（参加と協働と至福の場づくり）４",
+        "英語": "Seminar on Humanities(Facilitating dialogue, collaboration, and bliss)4"
+    },
+    "LAH.S301": {
+        "日本語": "法学（憲法）Ｃ",
+        "英語": "Law (Constitutional Law) C"
+    },
+    "LAH.H310": {
+        "日本語": "教養特論：オンライン学習コース概論",
+        "英語": "Special Lecture: Introduction to edX online course creation"
+    },
+    "LAH.T307": {
+        "日本語": "意思決定論Ｃ",
+        "英語": "Decision Making C"
+    },
+    "LAH.T302": {
+        "日本語": "科学史Ｃ",
+        "英語": "History of Science C"
+    },
+    "LAH.S350": {
+        "日本語": "社会科学系ゼミ（法学ゼミ）３",
+        "英語": "Seminar on Social Sciences (Japanese Law Study Seminar)3"
+    },
+    "LAH.T362": {
+        "日本語": "融合系ゼミ（「Well-being（よく生きること）」の科学と教育）３",
+        "英語": "Seminar on Transdisciplinary Studies(Scientific studies on \"well-being\" and positive education)3"
+    },
+    "LAH.H354": {
+        "日本語": "人文学系ゼミ（参加と協働と至福の場づくり）３",
+        "英語": "Seminar on Humanities(Facilitating dialogue, collaboration, and bliss)3"
+    },
+    "LAH.H356": {
+        "日本語": "人文学系ゼミ（参加と協働と至福の場づくり）５",
+        "英語": "Seminar on Humanities(Facilitating dialogue, collaboration, and bliss)5"
+    },
+    "LAH.H366": {
+        "日本語": "人文学系ゼミ（博物館と歴史学）３",
+        "英語": "Seminar on Humanities(Museum and History)3"
+    },
+    "LAH.S351": {
+        "日本語": "社会科学系ゼミ（法学ゼミ）４",
+        "英語": "Seminar on Social Sciences (Japanese Law Study Seminar)4"
+    },
+    "LAH.T357": {
+        "日本語": "融合系ゼミ（意思決定論）６",
+        "英語": "Seminar on Transdisciplinary Studies (Decision Making)6"
+    },
+    "LAH.S355": {
+        "日本語": "社会科学系ゼミ（政策とメディアの社会学）４",
+        "英語": "Seminar on Social Sciences(Sociology of  media and governance )4"
+    },
+    "LAH.H359": {
+        "日本語": "人文学系ゼミ（創造と思考のレッスン）４",
+        "英語": "Seminar on Humanities(Art workshop)4"
+    },
+    "LAH.H365": {
+        "日本語": "人文学系ゼミ（現代宗教／スピリチュアリティ論）６",
+        "英語": "Seminar on Humanities(Religion and Spirituality in Contemporary Society)6"
+    },
+    "LAH.H367": {
+        "日本語": "人文学系ゼミ（博物館と歴史学）４",
+        "英語": "Seminar on Humanities(Museum and History)4"
+    },
+    "LAH.T312": {
+        "日本語": "教養特論：スポーツ科学",
+        "英語": "Special Lecture: Sports Science"
+    },
+    "LAH.T305": {
+        "日本語": "科学技術倫理Ｃ",
+        "英語": "Ethics in Engineering C"
+    },
+    "LAH.T308": {
+        "日本語": "社会モデリングＣ",
+        "英語": "Social Modeling C"
+    },
+    "LAH.H311": {
+        "日本語": "教養特論：オンライン学習コース制作実習",
+        "英語": "Special Lecture: Introduction to online course video creation"
+    },
+    "LAH.S308": {
+        "日本語": "社会学Ｃ",
+        "英語": "Sociology C"
+    },
+    "LAH.H350": {
+        "日本語": "人文学系ゼミ（自分発見、社会・文化・人間探求セッション）３",
+        "英語": "Seminar on Humanities(Culture, Society and Humanity)3"
+    },
+    "LAH.H368": {
+        "日本語": "人文学系ゼミ（博物館と歴史学）5",
+        "英語": "Seminar on Humanities(Museum and History)5"
+    },
+    "LAH.S312": {
+        "日本語": "メディア論Ｃ",
+        "英語": "Media Studies C"
+    },
+    "LAH.T355": {
+        "日本語": "融合系ゼミ（意思決定論）４",
+        "英語": "Seminar on Transdisciplinary Studies (Decision Making)4"
+    },
+    "LAH.S357": {
+        "日本語": "社会科学系ゼミ（政策とメディアの社会学）６",
+        "英語": "Seminar on Social Sciences(Sociology of  media and governance )6"
+    },
+    "LAH.S353": {
+        "日本語": "社会科学系ゼミ（法学ゼミ）６",
+        "英語": "Seminar on Social Sciences (Japanese Law Study Seminar)6"
+    },
+    "LAH.T369": {
+        "日本語": "融合系ゼミ（社会科学への量的アプローチ入門）６",
+        "英語": "Seminar on Transdisciplinary Studies (Introduction to Quantitative Approach to Social Science)6"
+    },
+    "LAH.H312": {
+        "日本語": "教養特論：都市の表象",
+        "英語": "Special Lecture: Urban Space in Literature and Cinema"
+    },
+    "LAH.H352": {
+        "日本語": "人文学系ゼミ（自分発見、社会・文化・人間探求セッション）５",
+        "英語": "Seminar on Humanities(Culture, Society and Humanity)5"
+    },
+    "LAH.H358": {
+        "日本語": "人文学系ゼミ（創造と思考のレッスン）３",
+        "英語": "Seminar on Humanities(Art workshop)3"
+    },
+    "LAH.H362": {
+        "日本語": "人文学系ゼミ（現代宗教／スピリチュアリティ論）３",
+        "英語": "Seminar on Humanities(Religion and Spirituality in Contemporary Society)3"
+    },
+    "LAH.S358": {
+        "日本語": "社会科学系ゼミ（日米関係と沖縄）３",
+        "英語": "Seminar on Social Science(US-Japan Relations: Military Base Problem in Okinawa)3"
+    },
+    "LAH.H357": {
+        "日本語": "人文学系ゼミ（参加と協働と至福の場づくり）６",
+        "英語": "Seminar on Humanities(Facilitating dialogue, collaboration, and bliss)6"
+    },
+    "LAH.H353": {
+        "日本語": "人文学系ゼミ（自分発見、社会・文化・人間探求セッション）６",
+        "英語": "Seminar on Humanities(Culture, Society and Humanity)6"
+    },
+    "LAH.H361": {
+        "日本語": "人文学系ゼミ（創造と思考のレッスン）６",
+        "英語": "Seminar on Humanities(Art workshop)6"
+    },
+    "LAH.H363": {
+        "日本語": "人文学系ゼミ（現代宗教／スピリチュアリティ論）４",
+        "英語": "Seminar on Humanities(Religion and Spirituality in Contemporary Society)4"
+    },
+    "LAH.H369": {
+        "日本語": "人文学系ゼミ（博物館と歴史学）６",
+        "英語": "Seminar on Humanities(Museum and History)6"
+    },
+    "LAH.H305": {
+        "日本語": "歴史学Ｃ",
+        "英語": "History C"
+    },
+    "EEE.M201": {
+        "日本語": "解析学（電気電子）",
+        "英語": "Analysis for Electrical and Electronic Engineers"
+    },
+    "EEE.M211": {
+        "日本語": "フーリエ変換とラプラス変換",
+        "英語": "Fourier Transform and Laplace Transform"
+    },
+    "EEE.L232": {
+        "日本語": "電気電子工学実験第三B",
+        "英語": "Electrical and Electronic Engineering Laboratory IIIB"
+    },
+    "EEE.L212": {
+        "日本語": "電気電子工学実験第一B",
+        "英語": "Electrical and Electronic Engineering Laboratory IB"
+    },
+    "EEE.D211": {
+        "日本語": "半導体物性",
+        "英語": "Semiconductor Physics"
+    },
+    "EEE.M231": {
+        "日本語": "応用確率統計",
+        "英語": "Applied Probability and Statistical Theory"
+    },
+    "EEE.C202": {
+        "日本語": "電気回路第二",
+        "英語": "Electric Circuits II"
+    },
+    "EEE.M221": {
+        "日本語": "計算アルゴリズムとプログラミング",
+        "英語": "Computation Algorithms and Programming"
+    },
+    "EEE.L231": {
+        "日本語": "電気電子工学実験第三A",
+        "英語": "Electrical and Electronic Engineering Laboratory IIIA"
+    },
+    "EEE.L221": {
+        "日本語": "電気電子工学実験第二A",
+        "英語": "Electrical and Electronic Engineering Laboratory IIA"
+    },
+    "EEE.L222": {
+        "日本語": "電気電子工学実験第二B",
+        "英語": "Electrical and Electronic Engineering Laboratory IIB"
+    },
+    "EEE.M241": {
+        "日本語": "離散時間システム",
+        "英語": "Discrete-Time System"
+    },
+    "EEE.L211": {
+        "日本語": "電気電子工学実験第一A",
+        "英語": "Electrical and Electronic Engineering Laboratory IA"
+    },
+    "EEE.C201": {
+        "日本語": "電気回路第一",
+        "英語": "Electric Circuits I"
+    },
+    "EEE.C321": {
+        "日本語": "デジタル回路",
+        "英語": "Digital Electronic Circuits"
+    },
+    "EEE.P381": {
+        "日本語": "電気鉄道",
+        "英語": "Electric Railway"
+    },
+    "EEE.C361": {
+        "日本語": "線形制御理論",
+        "英語": "Linear Control Theorem"
+    },
+    "EEE.S361": {
+        "日本語": "光エレクトロニクス",
+        "英語": "Opto-electronics"
+    },
+    "EEE.D352": {
+        "日本語": "電子デバイス第二",
+        "英語": "Electron Devices II"
+    },
+    "EEE.C311": {
+        "日本語": "応用電子回路",
+        "英語": "Advanced Electronic Circuits"
+    },
+    "EEE.L331": {
+        "日本語": "技術者倫理（電気電子）",
+        "英語": "Science and Engineering Ethics (Electrical and Electronic Engineering)"
+    },
+    "EEE.D391": {
+        "日本語": "半導体加工プロセス",
+        "英語": "Semiconductor Fabrication Process"
+    },
+    "EEE.D331": {
+        "日本語": "半導体の光・電磁物性",
+        "英語": "Optical and Electromagnetic Property in Semiconductors"
+    },
+    "EEE.L342": {
+        "日本語": "電力工学実験B",
+        "英語": "Electric Power Engineering Laboratory B"
+    },
+    "EEE.P361": {
+        "日本語": "電気法規および施設管理",
+        "英語": "Regulation and Operational Management of Electric Power Engineering"
+    },
+    "EEE.D351": {
+        "日本語": "電子デバイス第一",
+        "英語": "Electron Devices I"
+    },
+    "EEE.S301": {
+        "日本語": "導波路工学および電波法",
+        "英語": "Waveguide Engineering and the Radio Law"
+    },
+    "EEE.C341": {
+        "日本語": "集積回路工学",
+        "英語": "Integrated Circuit Technology Integrated Circuit Technology"
+    },
+    "EEE.L301": {
+        "日本語": "電気電子工学創造実験",
+        "英語": "Creative Experiments on Electrical and Electronic Engineering"
+    },
+    "EEE.D371": {
+        "日本語": "記憶デバイス",
+        "英語": "Memory Devices"
+    },
+    "EEE.P351": {
+        "日本語": "電気機器設計および製図",
+        "英語": "Design and Drawing of Electric Machine"
+    },
+    "EEE.R351": {
+        "日本語": "海外留学（電気電子）",
+        "英語": "Study Abroad"
+    },
+    "EEE.P332": {
+        "日本語": "環境浄化工学実験",
+        "英語": "Environmental Cleanup Laboratory"
+    },
+    "EEE.D361": {
+        "日本語": "光デバイス",
+        "英語": "Photonic Devices"
+    },
+    "EEE.D311": {
+        "日本語": "電子材料科学",
+        "英語": "Electronic Material Science"
+    },
+    "EEE.S351": {
+        "日本語": "信号システム",
+        "英語": "Signal System"
+    },
+    "EEE.D381": {
+        "日本語": "電力デバイス",
+        "英語": "Power devices"
+    },
+    "EEE.D341": {
+        "日本語": "材料力学概論S",
+        "英語": "Fundamentals of Mechanics of Materials S"
+    },
+    "EEE.L361": {
+        "日本語": "インターンシップ（電気電子）",
+        "英語": "Internship (Electrical and Electronic Engineering)"
+    },
+    "EEE.P396": {
+        "日本語": "一般機械工学",
+        "英語": "Introduction to Mechanical Engineering"
+    },
+    "EEE.P341": {
+        "日本語": "電力エネルギー変換工学",
+        "英語": "Energy and Electric Power Conversion Technology"
+    },
+    "EEE.D301": {
+        "日本語": "電気電子材料",
+        "英語": "Electrical and Electronics Materials"
+    },
+    "EEE.L341": {
+        "日本語": "電力工学実験A",
+        "英語": "Electric Power Engineering Laboratory A"
+    },
+    "EEE.C331": {
+        "日本語": "コンピュータアーキテクチャ（電気電子）",
+        "英語": "Computer Architecture (Electrical and Electronic Engineering)"
+    },
+    "EEE.L321": {
+        "日本語": "技術論文（Lゼミ）",
+        "英語": "Engineering Writing (L Seminar)"
+    },
+    "CVE.D201": {
+        "日本語": "土木計画学基礎",
+        "英語": "Fundamentals of Infrastructure Planning"
+    },
+    "CVE.N230": {
+        "日本語": "構造力学・水理学実験第一",
+        "英語": "Structural Mechanics and Hydraulics Laboratory I"
+    },
+    "CVE.C202": {
+        "日本語": "土質力学第二",
+        "英語": "Soil Mechanics II"
+    },
+    "CVE.D230": {
+        "日本語": "都市・交通計画プロジェクト演習",
+        "英語": "Urban and Transportation Planning Project"
+    },
+    "CVE.C201": {
+        "日本語": "土質力学第一",
+        "英語": "Soil Mechanics I"
+    },
+    "CVE.M202": {
+        "日本語": "システム数理基礎・演習",
+        "英語": "Basic Mathematics for System Science"
+    },
+    "CVE.N232": {
+        "日本語": "構造・空間デザイン演習",
+        "英語": "Design Studio for Structure and Space"
+    },
+    "CVE.E201": {
+        "日本語": "コンクリート工学",
+        "英語": "Concrete Engineering"
+    },
+    "CVE.M230": {
+        "日本語": "測量学実習",
+        "英語": "Practice in Surveying"
+    },
+    "CVE.A210": {
+        "日本語": "土木振動学",
+        "英語": "Structural Dynamics in Civil Engineering"
+    },
+    "CVE.M201": {
+        "日本語": "物理数学基礎・演習",
+        "英語": "Basic Mathematics for Physical Science"
+    },
+    "CVE.L210": {
+        "日本語": "土木工学英語第一",
+        "英語": "Civil Engineering English I"
+    },
+    "CVE.A201": {
+        "日本語": "材料と部材の力学",
+        "英語": "Mechanics of Materials and Members"
+    },
+    "CVE.N231": {
+        "日本語": "コンクリート・地盤工学実験第一",
+        "英語": "Concrete and Geotechnical Engineering Laboratory I"
+    },
+    "CVE.M203": {
+        "日本語": "測量学",
+        "英語": "Surveying"
+    },
+    "CVE.L211": {
+        "日本語": "土木工学英語第二",
+        "英語": "Civil Engineering English II"
+    },
+    "CVE.L212": {
+        "日本語": "土木工学英語第三",
+        "英語": "Civil Engineering English III"
+    },
+    "CVE.A202": {
+        "日本語": "構造力学第一",
+        "英語": "Structural Mechanics I"
+    },
+    "CVE.N331": {
+        "日本語": "コンクリート・地盤工学実験第二",
+        "英語": "Concrete and Geotechnical Engineering Laboratory II"
+    },
+    "CVE.N332": {
+        "日本語": "土木・環境工学総合演習",
+        "英語": "Integrated Civil and Environmental Engineering Project"
+    },
+    "CVE.A301": {
+        "日本語": "構造力学第二",
+        "英語": "Structural Mechanics II"
+    },
+    "CVE.C311": {
+        "日本語": "地盤調査・施工学",
+        "英語": "Geotechnical Engineering in Practice"
+    },
+    "CVE.N301": {
+        "日本語": "土木史・土木技術者倫理",
+        "英語": "History of Civil Engineering and Engineering Ethics"
+    },
+    "CVE.A311": {
+        "日本語": "マトリックス構造解析",
+        "英語": "Matrix Methods of Structural Analysis"
+    },
+    "CVE.M302": {
+        "日本語": "応用数値解析・演習",
+        "英語": "Computers and Applied Programming"
+    },
+    "CVE.A310": {
+        "日本語": "鋼構造学",
+        "英語": "Steel Structures"
+    },
+    "CVE.N333": {
+        "日本語": "土木・環境工学インターンシップ",
+        "英語": "Civil and Environmental Engineering Internship"
+    },
+    "CVE.N330": {
+        "日本語": "構造力学・水理学実験第二",
+        "英語": "Structural Mechanics and Hydraulics Laboratory II"
+    },
+    "CVE.E301": {
+        "日本語": "コンクリート構造",
+        "英語": "Structural Concrete"
+    },
+    "CVE.L310": {
+        "日本語": "土木工学英語第四",
+        "英語": "Civil Engineering English IV"
+    },
+    "CVE.N310": {
+        "日本語": "社会基盤と環境−特別講義",
+        "英語": "Special Lectures on Infrastructure and Environment"
+    },
+    "CVE.C310": {
+        "日本語": "土質基礎工学",
+        "英語": "Foundation Engineering"
+    },
+    "LAW.X101": {
+        "日本語": "グローバル理工人入門 2",
+        "英語": "Introductory Course for Global Scientists and Engineers"
+    },
+    "LAW.W111": {
+        "日本語": "健康科学演習 D1",
+        "英語": "Laboratory of Health Science"
+    },
+    "LAW.W101": {
+        "日本語": "健康科学概論 S2(申告専用）",
+        "英語": "Health Science"
+    },
+    "LAW.W131": {
+        "日本語": "生涯ウェルネス実習 A18",
+        "英語": "Advanced Wellness Exercise A18"
+    },
+    "LAW.W121": {
+        "日本語": "ウェルネス実習 D7（集中）",
+        "英語": "Wellness Exercise"
+    },
+    "LAW.X102": {
+        "日本語": "グローバル理工人研修入門１Ａ m",
+        "英語": "Introduction to Overseas Training for Global Scientists and Engineers 1A"
+    },
+    "LAW.X113": {
+        "日本語": "グローバル理工人研修入門３Ｄ",
+        "英語": "Introduction to Overseas Training for Global Scientists and Engineers 3D"
+    },
+    "LAW.X103": {
+        "日本語": "グローバル理工人研修入門１Ｂ e",
+        "英語": "Introduction to Overseas Training for Global Scientists and Engineers 1B"
+    },
+    "LAW.X154": {
+        "日本語": "アジア交流派遣学習基礎（Tokyo Tech-AYSEAS）",
+        "英語": "Study Abroad Program for international communication in Asia - Basic Course (Tokyo Tech-AYSEAS)"
+    },
+    "LAW.X110": {
+        "日本語": "グローバル理工人研修入門３Ａ",
+        "英語": "Introduction to Overseas Training for Global Scientists and Engineers 3A"
+    },
+    "LAW.X108": {
+        "日本語": "グローバル理工人研修入門２Ｃ a",
+        "英語": "Introduction to Overseas Training for Global Scientists and Engineers 2C"
+    },
+    "LAW.X109": {
+        "日本語": "グローバル理工人研修入門２Ｄ",
+        "英語": "Introduction to Overseas Training for Global Scientists and Engineers 2D"
+    },
+    "LAW.X152": {
+        "日本語": "グローバル理工人研修入門１A’ s",
+        "英語": "Introduction to Overseas Training for Global Scientists and Engineers 1A' s"
+    },
+    "LAW.X105": {
+        "日本語": "グローバル理工人研修入門１Ｄ",
+        "英語": "Introduction to Overseas Training for Global Scientists and Engineers 1D"
+    },
+    "LAW.X117": {
+        "日本語": "グローバル理工人研修入門4B",
+        "英語": "Introduction to Overseas Training for Global Scientists and Engineers4B"
+    },
+    "LAW.X104": {
+        "日本語": "グローバル理工人研修入門１Ｃ a",
+        "英語": "Introduction to Overseas Training for Global Scientists and Engineers 1C"
+    },
+    "LAW.X112": {
+        "日本語": "グローバル理工人研修入門３Ｃ",
+        "英語": "Introduction to Overseas Training for Global Scientists and Engineers 3C"
+    },
+    "LAW.X106": {
+        "日本語": "グローバル理工人研修入門２Ａ",
+        "英語": "Introduction to Overseas Training for Global Scientists and Engineers 2A"
+    },
+    "LAW.X116": {
+        "日本語": "グローバル理工人研修入門4Ａ",
+        "英語": "Introduction to Overseas Training for Global Scientists and Engineers4A"
+    },
+    "LAW.X107": {
+        "日本語": "グローバル理工人研修入門２Ｂ",
+        "英語": "Introduction to Overseas Training for Global Scientists and Engineers 2B"
+    },
+    "LAW.X111": {
+        "日本語": "グローバル理工人研修入門３Ｂ",
+        "英語": "Introduction to Overseas Training for Global Scientists and Engineers 3B"
+    },
+    "LAW.X118": {
+        "日本語": "グローバル理工人研修入門4C",
+        "英語": "Introduction to Overseas Training for Global Scientists and Engineers4C"
+    },
+    "LAW.X119": {
+        "日本語": "グローバル理工人研修入門4D",
+        "英語": "Introduction to Overseas Training for Global Scientists and Engineers4D"
+    },
+    "LAW.X153": {
+        "日本語": "グローバル理工人研修入門１B’ d",
+        "英語": "Introduction to Overseas Training for Global Scientists and Engineers 1B' d"
+    },
+    "LAW.X114": {
+        "日本語": "多文化主義の社会学入門",
+        "英語": "Introduction to Sociology of Multiculturalism"
+    },
+    "LAW.X203": {
+        "日本語": "技術経営Ⅰ",
+        "英語": "Introduction to Management of Technology I"
+    },
+    "LAW.W221": {
+        "日本語": "生涯スポーツ実習 D31（集中）",
+        "英語": "Advanced Sports Exercise"
+    },
+    "LAW.X202": {
+        "日本語": "囲碁で学ぶ実践力",
+        "英語": "Cultivating the Power of Execution by Go Game"
+    },
+    "LAW.X201": {
+        "日本語": "グローバル理工人概論 3",
+        "英語": "Advanced Course for Global Scientists and Engineers"
+    },
+    "LAW.X205": {
+        "日本語": "技術経営Ⅲ",
+        "英語": "Introduction to Management of Technology III"
+    },
+    "LAW.X204": {
+        "日本語": "技術経営Ⅱ",
+        "英語": "Introduction to Management of Technology II"
+    },
+    "LAW.X328": {
+        "日本語": "英語で学ぶ日本事情 Ⅱ",
+        "英語": "Topics on Japan II"
+    },
+    "LAW.X316": {
+        "日本語": "クリエイティブ表現論",
+        "英語": "Approaches to Creative Expression"
+    },
+    "LAW.X317": {
+        "日本語": "創発先端テクノロジー：環境とエネルギー１",
+        "英語": "Advanced Technology in Emerging Fields: Environment & Energy 1"
+    },
+    "LAW.X301": {
+        "日本語": "グローバル理工人研修１Ａ r",
+        "英語": "Overseas Training for Global Scientists and Engineers 1A"
+    },
+    "LAW.X318": {
+        "日本語": "創発先端テクノロジー：環境とエネルギー２",
+        "英語": "Advanced Technology in Emerging Fields: Environment & Energy 2"
+    },
+    "LAW.X327": {
+        "日本語": "英語で学ぶ日本事情Ⅰ",
+        "英語": "Topics on Japan I"
+    },
+    "LAW.X314": {
+        "日本語": "メディア編集デザイニング",
+        "英語": "Editorial Designing in the Media"
+    },
+    "LAW.X302": {
+        "日本語": "グローバル理工人研修１Ｂ e",
+        "英語": "Overseas Training for Global Scientists and Engineers 1B"
+    },
+    "LAW.X307": {
+        "日本語": "グローバル理工人研修２Ｃ a",
+        "英語": "Overseas Training for Global Scientists and Engineers 2C"
+    },
+    "LAW.X303": {
+        "日本語": "グローバル理工人研修１Ｃ b",
+        "英語": "Overseas Training for Global Scientists and Engineers 1C"
+    },
+    "LAW.W320": {
+        "日本語": "トータル・ウェルネス実習 D1",
+        "英語": "Total Wellness Exercise"
+    },
+    "LAW.X351": {
+        "日本語": "グローバル理工人研修１A' a",
+        "英語": "Overseas Training for Global Scientists and Engineers 1A' a"
+    },
+    "LAW.X312": {
+        "日本語": "グローバル理工人研修３Ｄ",
+        "英語": "Overseas Training for Global Scientists and Engineers 3D"
+    },
+    "LAW.X352": {
+        "日本語": "グローバル理工人研修１B’ b",
+        "英語": "Overseas Training for Global Scientists and Engineers 1B' b"
+    },
+    "LAW.X313": {
+        "日本語": "アジア交流派遣学習（Tokyo Tech-AYSEAS）",
+        "英語": "Study abroad program for international communication in Asia (Tokyo Tech-AYSEAS)"
+    },
+    "LAW.X322": {
+        "日本語": "英語で語る科学・技術・社会",
+        "英語": "Communicating Science and Engineering in Society"
+    },
+    "LAW.X335": {
+        "日本語": "創発先端テクノロジー 4：先端物質理工学",
+        "英語": "Advanced Technology in Emerging Fields 4: Advanced Materials Science & Engineering"
+    },
+    "LAW.X304": {
+        "日本語": "グローバル理工人研修１Ｄ b",
+        "英語": "Overseas Training for Global Scientists and Engineers 1D"
+    },
+    "LAW.X306": {
+        "日本語": "グローバル理工人研修２Ｂ",
+        "英語": "Overseas Training for Global Scientists and Engineers 2B"
+    },
+    "LAW.X310": {
+        "日本語": "グローバル理工人研修３Ｂ",
+        "英語": "Oversea Training for Global Scientists and Engineers 3B"
+    },
+    "LAW.X308": {
+        "日本語": "グローバル理工人研修２Ｄ a",
+        "英語": "Overseas Training for Global Scientists and Engineers 2D"
+    },
+    "LAW.X311": {
+        "日本語": "グローバル理工人研修３Ｃ",
+        "英語": "Overseas Training for Global Scientists and Engineers 3C"
+    },
+    "LAW.X331": {
+        "日本語": "グローバル理工人研修4C",
+        "英語": "Introduction to Overseas Training for Global Scientists and Engineers4C"
+    },
+    "LAW.X305": {
+        "日本語": "グローバル理工人研修２Ａ",
+        "英語": "Overseas Training for Global Scientists and Engineers 2A"
+    },
+    "LAW.X309": {
+        "日本語": "グローバル理工人研修３Ａ",
+        "英語": "Overseas Training for Global Scientists and Engineers 3A"
+    },
+    "LAW.X329": {
+        "日本語": "グローバル理工人研修4Ａ",
+        "英語": "Introduction to Overseas Training for Global Scientists and Engineers4A"
+    },
+    "LAW.X334": {
+        "日本語": "創発先端テクノロジー 3：地球の生命と科学",
+        "英語": "Advanced Technology in Emerging Fields 3:Earth Life & Science"
+    },
+    "LAW.X332": {
+        "日本語": "グローバル理工人研修4D",
+        "英語": "Introduction to Overseas Training for Global Scientists and Engineers4D"
+    },
+    "LAW.X330": {
+        "日本語": "グローバル理工人研修4B",
+        "英語": "Introduction to Overseas Training for Global Scientists and Engineers4B"
+    },
+    "LAL.G204": {
+        "日本語": "ドイツ語初級４ D44",
+        "英語": "German: Basic Course 4 D44"
+    },
+    "LAL.R201": {
+        "日本語": "ロシア語初級１ a",
+        "英語": "Russian: Basic Course 1 a"
+    },
+    "LAL.C204": {
+        "日本語": "中国語初級４ m",
+        "英語": "Chinese: Basic Course 4 m"
+    },
+    "LAL.G232": {
+        "日本語": "ドイツ語セミナー（入門・基礎）２",
+        "英語": "German Conversation: Basic Course 2"
+    },
+    "LAL.C203": {
+        "日本語": "中国語初級３ l",
+        "英語": "Chinese: Basic Course 3 l"
+    },
+    "LAL.C202": {
+        "日本語": "中国語初級２ n",
+        "英語": "Chinese: Basic Course 2 n"
+    },
+    "LAL.F202": {
+        "日本語": "フランス語初級２ g",
+        "英語": "French: Basic Course 2 g"
+    },
+    "LAL.G202": {
+        "日本語": "ドイツ語初級２ D46",
+        "英語": "German: Basic Course 2 D46"
+    },
+    "LAL.R202": {
+        "日本語": "ロシア語初級２ c",
+        "英語": "Russian: Basic Course 2 c"
+    },
+    "LAL.G203": {
+        "日本語": "ドイツ語初級３ D44",
+        "英語": "German: Basic Course 3 D44"
+    },
+    "LAL.C201": {
+        "日本語": "中国語初級１ g",
+        "英語": "Chinese: Basic Course 1 g"
+    },
+    "LAL.F201": {
+        "日本語": "フランス語初級１ i",
+        "英語": "French: Basic Course 1 i"
+    },
+    "LAL.G201": {
+        "日本語": "ドイツ語初級１ D46",
+        "英語": "German: Basic Course 1 D46"
+    },
+    "LAL.R203": {
+        "日本語": "ロシア語初級３ a",
+        "英語": "Russian: Basic Course 3 a"
+    },
+    "LAL.F234": {
+        "日本語": "フランス語セミナー（入門・基礎）４",
+        "英語": "French Conversation: Basic Course 4"
+    },
+    "LAL.R204": {
+        "日本語": "ロシア語初級４ c",
+        "英語": "Russian: Basic Course 4 c"
+    },
+    "LAL.F203": {
+        "日本語": "フランス語初級３ i",
+        "英語": "French: Basic Course 3 i"
+    },
+    "LAL.R234": {
+        "日本語": "ロシア語セミナー（入門・基礎）４",
+        "英語": "Russian Conversation: Basic Course 4"
+    },
+    "LAL.R231": {
+        "日本語": "ロシア語セミナー（入門・基礎）１",
+        "英語": "Russian Conversation: Basic Course 1"
+    },
+    "LAL.R232": {
+        "日本語": "ロシア語セミナー（入門・基礎）２",
+        "英語": "Russian Conversation: Basic Course 2"
+    },
+    "LAL.G234": {
+        "日本語": "ドイツ語セミナー（入門・基礎）４",
+        "英語": "German Conversation: Basic Course 4"
+    },
+    "LAL.C231": {
+        "日本語": "中国語セミナー（入門・基礎）１",
+        "英語": "Chinese Conversation: Basic Course 1"
+    },
+    "LAL.F232": {
+        "日本語": "フランス語セミナー（入門・基礎）２",
+        "英語": "French Conversation: Basic Course 2"
+    },
+    "LAL.F204": {
+        "日本語": "フランス語初級４ g",
+        "英語": "French: Basic Course 4 g"
+    },
+    "LAL.G231": {
+        "日本語": "ドイツ語セミナー（入門・基礎）１",
+        "英語": "German Conversation: Basic Course 1"
+    },
+    "LAL.F231": {
+        "日本語": "フランス語セミナー（入門・基礎）１",
+        "英語": "French Conversation: Basic Course 1"
+    },
+    "LAL.C232": {
+        "日本語": "中国語セミナー（入門・基礎）２",
+        "英語": "Chinese Conversation: Basic Course 2"
+    },
+    "LAL.G233": {
+        "日本語": "ドイツ語セミナー（入門・基礎）３",
+        "英語": "German Conversation: Basic Course 3"
+    },
+    "LAL.F233": {
+        "日本語": "フランス語セミナー（入門・基礎）３",
+        "英語": "French Conversation: Basic Course 3"
+    },
+    "LAL.R233": {
+        "日本語": "ロシア語セミナー（入門・基礎）３",
+        "英語": "Russian Conversation: Basic Course 3"
+    },
+    "LAL.C233": {
+        "日本語": "中国語セミナー（入門・基礎）３",
+        "英語": "Chinese Conversation: Basic Course 3"
+    },
+    "LAL.C234": {
+        "日本語": "中国語セミナー（入門・基礎）４",
+        "英語": "Chinese Conversation: Basic Course 4"
+    },
+    "LAL.L302": {
+        "日本語": "古典ラテン語２",
+        "英語": "Classical Latin 2"
+    },
+    "LAL.R343": {
+        "日本語": "ロシア語上級３",
+        "英語": "Russian: Advanced Course 3"
+    },
+    "LAL.C343": {
+        "日本語": "中国語上級３",
+        "英語": "Chinese: Advanced Course 3"
+    },
+    "LAL.R364": {
+        "日本語": "ロシア語セミナー（応用・留学）４",
+        "英語": "Russian Conversation: Advanced Course 4"
+    },
+    "LAL.R331": {
+        "日本語": "ロシア語中級１",
+        "英語": "Russian: Intermediate Course 1"
+    },
+    "LAL.A301": {
+        "日本語": "古典ギリシア語１",
+        "英語": "Classical Greek 1"
+    },
+    "LAL.L301": {
+        "日本語": "古典ラテン語１",
+        "英語": "Classical Latin 1"
+    },
+    "LAL.C332": {
+        "日本語": "中国語中級２",
+        "英語": "Chinese: Intermediate Course 2"
+    },
+    "LAL.G342": {
+        "日本語": "ドイツ語上級２",
+        "英語": "German: Advanced Course 2"
+    },
+    "LAL.F342": {
+        "日本語": "フランス語上級２",
+        "英語": "French: Advanced Course 2"
+    },
+    "LAL.R342": {
+        "日本語": "ロシア語上級２",
+        "英語": "Russian: Advanced Course 2"
+    },
+    "LAL.A302": {
+        "日本語": "古典ギリシア語２",
+        "英語": "Classical Greek 2"
+    },
+    "LAL.R333": {
+        "日本語": "ロシア語中級３",
+        "英語": "Russian: Intermediate Course 3"
+    },
+    "LAL.R334": {
+        "日本語": "ロシア語中級４",
+        "英語": "Russian: Intermediate Course 4"
+    },
+    "LAL.R332": {
+        "日本語": "ロシア語中級２",
+        "英語": "Russian: Intermediate Course 2"
+    },
+    "LAL.C342": {
+        "日本語": "中国語上級２",
+        "英語": "Chinese: Advanced Course 2"
+    },
+    "LAL.C362": {
+        "日本語": "中国語セミナー（応用・留学）２",
+        "英語": "Chinese Conversation: Advanced Course 2"
+    },
+    "LAL.G333": {
+        "日本語": "ドイツ語中級３",
+        "英語": "German: Intermediate Course 3"
+    },
+    "LAL.F333": {
+        "日本語": "フランス語中級３",
+        "英語": "French: Intermediate Course 3"
+    },
+    "LAL.G343": {
+        "日本語": "ドイツ語上級３",
+        "英語": "German: Advanced Course 3"
+    },
+    "LAL.G363": {
+        "日本語": "ドイツ語セミナー（応用・留学）３",
+        "英語": "German Conversation: Advanced Course 3"
+    },
+    "LAL.F363": {
+        "日本語": "フランス語セミナー（応用・留学）３",
+        "英語": "French Conversation: Advanced Course 3"
+    },
+    "LAL.G334": {
+        "日本語": "ドイツ語中級４",
+        "英語": "German: Intermediate Course 4"
+    },
+    "LAL.G344": {
+        "日本語": "ドイツ語上級４",
+        "英語": "German: Advanced Course 4"
+    },
+    "LAL.L304": {
+        "日本語": "古典ラテン語４",
+        "英語": "Classical Latin 4"
+    },
+    "LAL.G341": {
+        "日本語": "ドイツ語上級１",
+        "英語": "German: Advanced Course 1"
+    },
+    "LAL.C341": {
+        "日本語": "中国語上級１",
+        "英語": "Chinese: Advanced Course 1"
+    },
+    "LAL.A303": {
+        "日本語": "古典ギリシア語３",
+        "英語": "Classical Greek 3"
+    },
+    "LAL.L303": {
+        "日本語": "古典ラテン語３",
+        "英語": "Classical Latin 3"
+    },
+    "LAL.F341": {
+        "日本語": "フランス語上級１",
+        "英語": "French: Advanced Course 1"
+    },
+    "LAL.G361": {
+        "日本語": "ドイツ語セミナー（応用・留学）１",
+        "英語": "German Conversation: Advanced Course 1"
+    },
+    "LAL.R361": {
+        "日本語": "ロシア語セミナー（応用・留学）１",
+        "英語": "Russian Conversation: Advanced Course 1"
+    },
+    "LAL.C361": {
+        "日本語": "中国語セミナー（応用・留学）１",
+        "英語": "Chinese Conversation: Advanced Course 1"
+    },
+    "LAL.C363": {
+        "日本語": "中国語セミナー（応用・留学）３",
+        "英語": "Chinese Conversation: Advanced Course 3"
+    },
+    "LAL.F334": {
+        "日本語": "フランス語中級４",
+        "英語": "French: Intermediate Course 4"
+    },
+    "LAL.C334": {
+        "日本語": "中国語中級４",
+        "英語": "Chinese: Intermediate Course 4"
+    },
+    "LAL.F344": {
+        "日本語": "フランス語上級４",
+        "英語": "French: Advanced Course 4"
+    },
+    "LAL.A304": {
+        "日本語": "古典ギリシア語４",
+        "英語": "Classical Greek 4"
+    },
+    "LAL.G331": {
+        "日本語": "ドイツ語中級１",
+        "英語": "German: Intermediate Course 1"
+    },
+    "LAL.F331": {
+        "日本語": "フランス語中級１",
+        "英語": "French: Intermediate Course 1"
+    },
+    "LAL.C331": {
+        "日本語": "中国語中級１",
+        "英語": "Chinese: Intermediate Course 1"
+    },
+    "LAL.R341": {
+        "日本語": "ロシア語上級１",
+        "英語": "Russian: Advanced Course 1"
+    },
+    "LAL.F361": {
+        "日本語": "フランス語セミナー（応用・留学）１",
+        "英語": "French Conversation: Advanced Course 1"
+    },
+    "LAL.G332": {
+        "日本語": "ドイツ語中級２",
+        "英語": "German: Intermediate Course 2"
+    },
+    "LAL.F332": {
+        "日本語": "フランス語中級２",
+        "英語": "French: Intermediate Course 2"
+    },
+    "LAL.G362": {
+        "日本語": "ドイツ語セミナー（応用・留学）２",
+        "英語": "German Conversation: Advanced Course 2"
+    },
+    "LAL.F362": {
+        "日本語": "フランス語セミナー（応用・留学）２",
+        "英語": "French Conversation: Advanced Course 2"
+    },
+    "LAL.R362": {
+        "日本語": "ロシア語セミナー（応用・留学）２",
+        "英語": "Russian Conversation: Advanced Course 2"
+    },
+    "LAL.C333": {
+        "日本語": "中国語中級３",
+        "英語": "Chinese: Intermediate Course 3"
+    },
+    "LAL.F343": {
+        "日本語": "フランス語上級３",
+        "英語": "French: Advanced Course 3"
+    },
+    "LAL.R363": {
+        "日本語": "ロシア語セミナー（応用・留学）３",
+        "英語": "Russian Conversation: Advanced Course 3"
+    },
+    "LAL.R344": {
+        "日本語": "ロシア語上級４",
+        "英語": "Russian: Advanced Course 4"
+    },
+    "LAL.C344": {
+        "日本語": "中国語上級４",
+        "英語": "Chinese: Advanced Course 4"
+    },
+    "LAL.G364": {
+        "日本語": "ドイツ語セミナー（応用・留学）４",
+        "英語": "German Conversation: Advanced Course 4"
+    },
+    "LAL.F364": {
+        "日本語": "フランス語セミナー（応用・留学）４",
+        "英語": "French Conversation: Advanced Course 4"
+    },
+    "LAL.C364": {
+        "日本語": "中国語セミナー（応用・留学）４",
+        "英語": "Chinese Conversation: Advanced Course 4"
+    },
+    "MCS.T203": {
+        "日本語": "応用線形代数",
+        "英語": "Linear Algebra and Its Applications"
+    },
+    "MCS.T232": {
+        "日本語": "複素解析",
+        "英語": "Complex Analysis"
+    },
+    "MCS.T213": {
+        "日本語": "アルゴリズムとデータ構造",
+        "英語": "Introduction to Algorithms and Data Structures"
+    },
+    "MCS.T231": {
+        "日本語": "代数系",
+        "英語": "Algebra"
+    },
+    "MCS.T221": {
+        "日本語": "集合と位相第二",
+        "英語": "Set and Topology II"
+    },
+    "MCS.T201": {
+        "日本語": "集合と位相第一",
+        "英語": "Set and Topology I"
+    },
+    "MCS.T223": {
+        "日本語": "数理統計学",
+        "英語": "Mathematical Statistics"
+    },
+    "MCS.T211": {
+        "日本語": "応用微分積分",
+        "英語": "Applied Calculus"
+    },
+    "MCS.T212": {
+        "日本語": "確率論基礎",
+        "英語": "Fundamentals of Probability"
+    },
+    "MCS.T214": {
+        "日本語": "オートマトンと数理言語論",
+        "英語": "Theory of Automata and Languages"
+    },
+    "MCS.T233": {
+        "日本語": "計算機システム",
+        "英語": "Computer Systems"
+    },
+    "MCS.T204": {
+        "日本語": "計算機科学概論",
+        "英語": "Introduction to Computer Science"
+    },
+    "MCS.T224": {
+        "日本語": "プログラミング第一",
+        "英語": "Programming I"
+    },
+    "MCS.T222": {
+        "日本語": "集合と位相第二演習",
+        "英語": "Exercises in Set and Topology II"
+    },
+    "MCS.T202": {
+        "日本語": "集合と位相第一演習",
+        "英語": "Exercises in Set and Topology I"
+    },
+    "MCS.T313": {
+        "日本語": "数理論理学",
+        "英語": "Mathematical Logic"
+    },
+    "MCS.T332": {
+        "日本語": "データ解析",
+        "英語": "Data Analysis"
+    },
+    "MCS.T321": {
+        "日本語": "数値解析学",
+        "英語": "Numerical Analysis"
+    },
+    "MCS.T312": {
+        "日本語": "マルコフ解析",
+        "英語": "Markov Analysis"
+    },
+    "MCS.T333": {
+        "日本語": "情報理論",
+        "英語": "Information Theory"
+    },
+    "MCS.T334": {
+        "日本語": "プログラミング言語処理系",
+        "英語": "Compiler Construction"
+    },
+    "MCS.T302": {
+        "日本語": "数理最適化",
+        "英語": "Mathematical Optimization"
+    },
+    "MCS.T322": {
+        "日本語": "組合せアルゴリズム",
+        "英語": "Combinatorial Algorithms"
+    },
+    "MCS.T315": {
+        "日本語": "モデリングの数理",
+        "英語": "Mathematical Modeling"
+    },
+    "MCS.T303": {
+        "日本語": "プログラミング第二",
+        "英語": "Programming II"
+    },
+    "MCS.T301": {
+        "日本語": "ベクトル解析と関数解析",
+        "英語": "Vector and Functional analysis"
+    },
+    "MCS.T314": {
+        "日本語": "オペレーティングシステム",
+        "英語": "Operating Systems"
+    },
+    "MCS.T323": {
+        "日本語": "計算の理論",
+        "英語": "Theory of Computation"
+    },
+    "MCS.T311": {
+        "日本語": "応用微分方程式論",
+        "英語": "Applied Theory on Differential Equations"
+    },
+    "MCS.T331": {
+        "日本語": "離散構造",
+        "英語": "Discrete Mathematics"
+    },
+    "LAJ.J301": {
+        "日本語": "日本語５A GSEP",
+        "英語": "Japanese 5A GSEP"
+    },
+    "LAJ.C301": {
+        "日本語": "日本文化演習：ことばと文学",
+        "英語": "Japanese Culture: Language and literature"
+    },
+    "LAJ.C302": {
+        "日本語": "日本文化演習：ことばと社会",
+        "英語": "Japanese Culture: Language and society"
+    },
+    "TSE.C205": {
+        "日本語": "グローバル開発入門",
+        "英語": "Introduction to Global Development"
+    },
+    "TSE.C211": {
+        "日本語": "多文化主義の社会学",
+        "英語": "Sociology of Multiculturalism"
+    },
+    "CAP.C334": {
+        "日本語": "プロセス安全",
+        "英語": "Safety for the Chemical Process"
+    },
+    "TSE.A341": {
+        "日本語": "国際エンジニアリングデザインプロジェクト基礎F",
+        "英語": "International Engineering Design Experiences (Fall Semester)"
+    },
+    "TSE.C313": {
+        "日本語": "グローバルリーダーシップ＆マネジメント",
+        "英語": "Global Leadership and Management"
+    },
+    "TSE.C315": {
+        "日本語": "エネルギー、環境、政策",
+        "英語": "Energy, Environment, and Policy"
+    },
+    "TSE.A342": {
+        "日本語": "国際エンジニアリングデザインプロジェクト基礎S",
+        "英語": "International Engineering Design Experiences (Spring Semester)"
+    },
+    "TSE.C314": {
+        "日本語": "環境と社会",
+        "英語": "Environment and Society"
+    },
+    "LAT.A101": {
+        "日本語": "教職概論Ａ",
+        "英語": "Introduction to the Teaching Profession A"
+    },
+    "LAT.A102": {
+        "日本語": "教職概論Ｂ",
+        "英語": "Introduction to the Teaching Profession B"
+    },
+    "LAT.A103": {
+        "日本語": "教育基礎A",
+        "英語": "Educational Foundations A"
+    },
+    "LAT.S102": {
+        "日本語": "理科教育法Ⅱ",
+        "英語": "Method of Teaching Science  II"
+    },
+    "LAT.A104": {
+        "日本語": "発達と学習Ⅰ",
+        "英語": "Development and Learning I"
+    },
+    "LAT.A109": {
+        "日本語": "生徒・進路指導論",
+        "英語": "Student and Career Guidance"
+    },
+    "LAT.A105": {
+        "日本語": "発達と学習Ⅱ",
+        "英語": "Development and Learning II"
+    },
+    "LAT.A110": {
+        "日本語": "教育相談論",
+        "英語": "Educational Counseling"
+    },
+    "LAT.M102": {
+        "日本語": "数学科教育法Ⅱ",
+        "英語": "Method of Teaching Mathematics II"
+    },
+    "LAT.A111": {
+        "日本語": "生徒・進路指導と教育相談",
+        "英語": "Educational Guidance and Counseling"
+    },
+    "LAT.A106": {
+        "日本語": "発達と学習Ⅲ",
+        "英語": "Development and Learning III"
+    },
+    "LAT.A107": {
+        "日本語": "教育制度",
+        "英語": "Educational System"
+    },
+    "LAT.A108": {
+        "日本語": "教育行財政",
+        "英語": "Educational Administration and Finance"
+    },
+    "LAT.M101": {
+        "日本語": "数学科教育法Ⅰ",
+        "英語": "Method of Teaching Mathematics I"
+    },
+    "LAT.S101": {
+        "日本語": "理科教育法Ⅰ",
+        "英語": "Method of Teaching Science I"
+    },
+    "LAT.A209": {
+        "日本語": "これからの経営管理とプロフェッショナル育成（工学）",
+        "英語": "Organizational Management and Professional Development (Engineering)"
+    },
+    "LAT.A207": {
+        "日本語": "学習メカニズムと授業設計Ａ",
+        "英語": "Learning Mechanisms and Instructional Design A"
+    },
+    "LAT.A206": {
+        "日本語": "教育の課程・方法の設計と改善B",
+        "英語": "Educational Technology for Curriculum and Lesson Design B"
+    },
+    "LAT.A205": {
+        "日本語": "マルチメディアと表現技法",
+        "英語": "Multimedia and Representation Techniques"
+    },
+    "LAT.A211": {
+        "日本語": "これからの経営管理とプロフェッショナル育成（環境・社会理工学）",
+        "英語": "Organizational Management and Professional Development (Environment and Society)"
+    },
+    "LAT.A210": {
+        "日本語": "これからの経営管理とプロフェッショナル育成（物質理工学）",
+        "英語": "Organizational Management and Professional Development (Materials and Chemical Technology)"
+    },
+    "LAT.I201": {
+        "日本語": "情報科教育法Ⅰ",
+        "英語": "Method of Teaching Informatics I"
+    },
+    "LAT.A203": {
+        "日本語": "教育の課程・方法の設計と改善A",
+        "英語": "Educational Technology for Curriculum and Lesson DesignA"
+    },
+    "LAT.T201": {
+        "日本語": "工業科教育法Ⅰ",
+        "英語": "Method of Teaching Industrial Subjects I"
+    },
+    "LAT.T202": {
+        "日本語": "工業科教育法Ⅱ",
+        "英語": "Method of Teaching Industrial Subjects II"
+    },
+    "LAT.A202": {
+        "日本語": "特別活動の運営",
+        "英語": "Management of Extracurricular Activities"
+    },
+    "LAT.A204": {
+        "日本語": "情報機器およびデジタル教材の活用",
+        "英語": "Studies on Teaching Method using ICT"
+    },
+    "LAT.I202": {
+        "日本語": "情報科教育法Ⅱ",
+        "英語": "Method of Teaching Informatics II"
+    },
+    "LAT.T203": {
+        "日本語": "工業科教育法Ⅲ",
+        "英語": "Method of Teaching Industrial Subjects III"
+    },
+    "LAT.A201": {
+        "日本語": "道徳の指導法",
+        "英語": "Studies of Moral Education"
+    },
+    "LAT.A212": {
+        "日本語": "情報と職業",
+        "英語": "Professional Development in Information Society"
+    },
+    "LAT.A301": {
+        "日本語": "マルチメディアと学習環境",
+        "英語": "Multimedia and Learning Environment"
+    },
+    "LAT.I302": {
+        "日本語": "情報科教育法Ⅳ",
+        "英語": "Method of Teaching Informatics IV"
+    },
+    "LAT.T301": {
+        "日本語": "工業科教育法Ⅳ",
+        "英語": "Method of Teaching Industrial Subjects IV"
+    },
+    "LAT.P306": {
+        "日本語": "教育実習第二Ｂ",
+        "英語": "Teaching Practice II-B"
+    },
+    "LAT.S301": {
+        "日本語": "理科教育法Ⅲ",
+        "英語": "Method of Teaching Science  III"
+    },
+    "LAT.S302": {
+        "日本語": "理科教育法Ⅳ",
+        "英語": "Method of Teaching Science  IV"
+    },
+    "LAT.S303": {
+        "日本語": "理科教育法実践演習",
+        "英語": "Exercise of Practical Research on Science Education"
+    },
+    "LAT.P304": {
+        "日本語": "教育実習第一Ｂ",
+        "英語": "Teaching Practice I-B"
+    },
+    "LAT.P309": {
+        "日本語": "教育実習第三Ａ",
+        "英語": "Teaching Practice III-A"
+    },
+    "LAT.M303": {
+        "日本語": "数学科教育法実践演習",
+        "英語": "Exercise of Practical Research on Mathematics Education"
+    },
+    "LAT.I301": {
+        "日本語": "情報科教育法Ⅲ",
+        "英語": "Method of Teaching Informatics III"
+    },
+    "LAT.P301": {
+        "日本語": "教育実習基礎Ａ",
+        "英語": "Foundation of Teaching Practice A"
+    },
+    "LAT.P305": {
+        "日本語": "教育実習第二Ａ",
+        "英語": "Teaching Practice II-A"
+    },
+    "LAT.P307": {
+        "日本語": "教育実習第二Ｃ",
+        "英語": "Teaching Practice II-C"
+    },
+    "LAT.M301": {
+        "日本語": "数学科教育法Ⅲ",
+        "英語": "Method of Teaching Mathematics III"
+    },
+    "LAT.P308": {
+        "日本語": "教育実習第二Ｄ",
+        "英語": "Teaching Practice II-D"
+    },
+    "LAT.P312": {
+        "日本語": "教育実習第四Ｂ",
+        "英語": "Teaching Practice IV-B"
+    },
+    "LAT.P303": {
+        "日本語": "教育実習第一Ａ",
+        "英語": "Teaching Practice I-A"
+    },
+    "LAT.P302": {
+        "日本語": "教育実習基礎Ｂ",
+        "英語": "Foundation of Teaching Practice B"
+    },
+    "LAT.P311": {
+        "日本語": "教育実習第四Ａ",
+        "英語": "Teaching Practice IV-A"
+    },
+    "LAT.M302": {
+        "日本語": "数学科教育法Ⅳ",
+        "英語": "Method of Teaching Mathematics IV"
+    },
+    "LAT.P310": {
+        "日本語": "教育実習第三Ｂ",
+        "英語": "Teaching Practice III-B"
+    },
+    "LAT.P313": {
+        "日本語": "教職実践演習",
+        "英語": "Educational Practice Seminar"
+    },
+    "LAT.A208": {
+        "日本語": "学習者特性に基づく指導方法の設計",
+        "英語": "Designing Learner-centered Instruction"
+    },
+    "TSE.C316": {
+        "日本語": "グローバル開発キャップストーン",
+        "英語": "Global Development Capstone"
+    },
+    "TSE.C311": {
+        "日本語": "持続的都市・生産・消費",
+        "英語": "Smart & Sustainable Megaregion"
+    },
+    "EEE.T281": {
+        "日本語": "B2D研究基礎a（電気電子系） E",
+        "英語": "B2D Research Basic A in EEE E"
+    },
+    "EEE.D332": {
+        "日本語": "光物性基礎とデバイス応用",
+        "英語": "Optical physics of semiconductors and device applications"
+    },
+    "EEE.L311": {
+        "日本語": "電気電子工学実験第三A",
+        "英語": "Electrical and Electronic Engineering Laboratory IIIA"
+    },
+    "EEE.L312": {
+        "日本語": "電気電子工学実験第三B",
+        "英語": "Electrical and Electronic Engineering Laboratory IIIB"
+    },
+    "EEE.Z382": {
+        "日本語": "電気電子プロジェクト",
+        "英語": "Electrical and Electronic Project"
+    },
+    "LAW.W220": {
+        "日本語": "生涯ウェルネス実習 B27",
+        "英語": "Advanced Wellness Exercise"
+    },
+    "LAL.Z102": {
+        "日本語": "第二外国語海外研修1B 1",
+        "英語": "Study Abroad Program in Second Foreign Languages IB 1"
+    },
+    "LAL.Z101": {
+        "日本語": "第二外国語海外研修1A 1",
+        "英語": "Study Abroad Program in Second Foreign Languages IA 1"
+    },
+    "LAL.S201": {
+        "日本語": "スペイン語初級１ S09",
+        "英語": "Spanish: Basic Course 1 S09"
+    },
+    "LAL.S202": {
+        "日本語": "スペイン語初級２ S04",
+        "英語": "Spanish: Basic Course 2 S04"
+    },
+    "LAL.S204": {
+        "日本語": "スペイン語初級４ S01",
+        "英語": "Spanish: Basic Course 4 S01"
+    },
+    "LAL.S203": {
+        "日本語": "スペイン語初級３ S10",
+        "英語": "Spanish: Basic Course 3 S10"
+    },
+    "LAL.S301": {
+        "日本語": "スペイン語１",
+        "英語": "Spanish 1"
+    },
+    "LAL.S341": {
+        "日本語": "スペイン語上級１",
+        "英語": "Spanish: Advanced Course 1"
+    },
+    "LAL.K301": {
+        "日本語": "韓国語１",
+        "英語": "Korean 1"
+    },
+    "LAL.S342": {
+        "日本語": "スペイン語上級２",
+        "英語": "Spanish: Advanced Course 2"
+    },
+    "LAL.S354": {
+        "日本語": "スペイン語４",
+        "英語": "Spanish 4"
+    },
+    "LAL.I301": {
+        "日本語": "イタリア語１",
+        "英語": "Italian 1"
+    },
+    "LAL.S302": {
+        "日本語": "スペイン語２",
+        "英語": "Spanish 2"
+    },
+    "LAL.S353": {
+        "日本語": "スペイン語３",
+        "英語": "Spanish 3"
+    },
+    "LAL.K354": {
+        "日本語": "韓国語４",
+        "英語": "Korean 4"
+    },
+    "LAL.K302": {
+        "日本語": "韓国語２",
+        "英語": "Korean 2"
+    },
+    "LAL.S332": {
+        "日本語": "スペイン語中級２",
+        "英語": "Spanish: Intermediate Course 2"
+    },
+    "LAL.I353": {
+        "日本語": "イタリア語３",
+        "英語": "Italian 3"
+    },
+    "LAL.K353": {
+        "日本語": "韓国語３",
+        "英語": "Korean 3"
+    },
+    "LAL.S343": {
+        "日本語": "スペイン語上級３",
+        "英語": "Spanish: Advanced Course 3"
+    },
+    "LAL.I354": {
+        "日本語": "イタリア語４",
+        "英語": "Italian 4"
+    },
+    "LAL.S331": {
+        "日本語": "スペイン語中級１",
+        "英語": "Spanish: Intermediate Course 1"
+    },
+    "LAL.I302": {
+        "日本語": "イタリア語２",
+        "英語": "Italian 2"
+    },
+    "LAL.S333": {
+        "日本語": "スペイン語中級３",
+        "英語": "Spanish: Intermediate Course 3"
+    },
+    "LAL.S334": {
+        "日本語": "スペイン語中級４",
+        "英語": "Spanish: Intermediate Course 4"
+    },
+    "LAL.S344": {
+        "日本語": "スペイン語上級４",
+        "英語": "Spanish: Advanced Course 4"
+    },
+    "LAH.H160": {
+        "日本語": "人文学系ゼミ（哲学）導入１",
+        "英語": "Seminar on Humanities (Philosophy) Introduction1"
+    },
+    "LAH.S157": {
+        "日本語": "社会科学系ゼミ（心理学）導入２",
+        "英語": "Seminar on Social Sciences(Psychology) Introduction 2"
+    },
+    "LAH.T113": {
+        "日本語": "教養特論：未来社会デザイン入門",
+        "英語": "Special Lecture: Introduction to the Design of Future Society"
+    },
+    "LAH.H161": {
+        "日本語": "人文学系ゼミ（哲学）導入2",
+        "英語": "Seminar on Humanities (Philosophy) Introduction2"
+    },
+    "LAH.S156": {
+        "日本語": "社会科学系ゼミ（心理学）導入１",
+        "英語": "Seminar on Social Sciences(Psychology) Introduction 1"
+    },
+    "LAH.T156": {
+        "日本語": "融合系ゼミ（社会科学への量的アプローチ入門）導入１",
+        "英語": "Seminar on Transdisciplinary Studies (Introduction to Quantitative Approach to Social Science)Introduction1"
+    },
+    "LAH.H260": {
+        "日本語": "人文学系ゼミ（哲学）１",
+        "英語": "(Seminar on Humanities(Philosophy) 1"
+    },
+    "LAH.S214": {
+        "日本語": "ジェンダー論Ｂ",
+        "英語": "Gender Studies B"
+    },
+    "LAH.T213": {
+        "日本語": "教養特論：生物学史",
+        "英語": "Special Lecture: History of biology"
+    },
+    "LAH.T258": {
+        "日本語": "融合系ゼミ（社会科学への量的アプローチ入門）１",
+        "英語": "Seminar on Transdisciplinary Studies (Introduction to Quantitative Approach to Social Science)1"
+    },
+    "LAH.S256": {
+        "日本語": "社会科学系ゼミ（心理学）１",
+        "英語": "Seminar on Social Sciences(Psychology) 1"
+    },
+    "LAH.S257": {
+        "日本語": "社会科学系ゼミ（心理学）２",
+        "英語": "Seminar on Social Sciences(Psychology) 2"
+    },
+    "LAH.H261": {
+        "日本語": "人文学系ゼミ（哲学）２",
+        "英語": "Seminar on Humanities (Philosophy) 2"
+    },
+    "LAH.H370": {
+        "日本語": "人文学系ゼミ（哲学）３",
+        "英語": "Seminar on Humanities (Philosophy) 3"
+    },
+    "LAH.S363": {
+        "日本語": "社会科学系ゼミ（心理学）４",
+        "英語": "Seminar on Social Sciences(Psychology) 4"
+    },
+    "LAH.H372": {
+        "日本語": "人文学系ゼミ（哲学）５",
+        "英語": "Seminar on Humanities (Philosophy) 5"
+    },
+    "LAH.H373": {
+        "日本語": "人文学系ゼミ（哲学）６",
+        "英語": "Seminar on Humanities (Philosophy) 6"
+    },
+    "LAH.T368": {
+        "日本語": "融合系ゼミ（社会科学への量的アプローチ入門）５",
+        "英語": "Seminar on Transdisciplinary Studies (Introduction to Quantitative Approach to Social Science)5"
+    },
+    "LAH.S362": {
+        "日本語": "社会科学系ゼミ（心理学）３",
+        "英語": "Seminar on Social Sciences(Psychology) 3"
+    },
+    "LAH.T366": {
+        "日本語": "融合系ゼミ（社会科学への量的アプローチ入門）３",
+        "英語": "Seminar on Transdisciplinary Studies (Introduction to Quantitative Approach to Social Science)3"
+    },
+    "LAH.S364": {
+        "日本語": "社会科学系ゼミ（心理学）５",
+        "英語": "Seminar on Social Sciences(Psychology) 5"
+    },
+    "LAH.H315": {
+        "日本語": "人間文化論Ｃ",
+        "英語": "Human Studies C"
+    },
+    "LAH.H371": {
+        "日本語": "人文学系ゼミ（哲学）４",
+        "英語": "Seminar on Humanities (Philosophy) 4"
+    },
+    "LAH.S365": {
+        "日本語": "社会科学系ゼミ（心理学）６",
+        "英語": "Seminar on Social Sciences(Psychology) 6"
+    },
+    "LAT.A133": {
+        "日本語": "特別支援の理論と教育的配慮",
+        "英語": "Inclusive and Individual Education"
+    },
+    "LAT.I101": {
+        "日本語": "情報科教育法Ⅰ",
+        "英語": "Method of Teaching Informatics I"
+    },
+    "LAT.A112": {
+        "日本語": "教育基礎B",
+        "英語": "(Educational Foundations B)"
+    },
+    "LAT.A233": {
+        "日本語": "特別活動及び総合的な学習の時間の指導法",
+        "英語": "Method of Teaching Extracurricular Activities and Period for Integrated Studies"
+    },
+    "LAT.M304": {
+        "日本語": "数学科教育法実践演習 II",
+        "英語": "Exercise of Practical Research on Mathematics Education II"
+    },
+    "LAT.S304": {
+        "日本語": "理科教育法実践演習 II",
+        "英語": "Exercise of Practical Research on Science Education II"
+    },
+    "TSE.C321": {
+        "日本語": "エネルギーと環境（融合理工）",
+        "英語": "Energy&Environment (TSE)"
+    },
+    "CVE.Y230": {
+        "日本語": "B2D研究基礎a（土木・環境工学系）",
+        "英語": "B2D Research Basic A in CVE"
+    },
+    "LAW.X115": {
+        "日本語": "科学技術と社会学入門",
+        "英語": "Introduction to Society and Technology"
+    },
+    "LAW.X323": {
+        "日本語": "近代日本の建築",
+        "英語": "Modern Japanese Architecture"
+    },
+    "LAW.X315": {
+        "日本語": "グローバル人材のための科学技術デザイン−海外研修プログラム",
+        "英語": "Science & Engineering Design for Global Talents -Overseas Programme"
+    },
+    "LAW.X333": {
+        "日本語": "循環社会と工学",
+        "英語": "Circular economy and engineering"
+    },
+    "LAH.S158": {
+        "日本語": "社会科学系ゼミ（政治と社会）導入１",
+        "英語": "Seminar on Social Sciences(Politics and Society) Introduction 1"
+    },
+    "LAH.S215": {
+        "日本語": "教養特論：データとトピックで知る日本経済",
+        "英語": "Special Lecture: Japan's economy, from the point of view of data and various topics"
+    },
+    "LAH.S258": {
+        "日本語": "社会科学系ゼミ（政治と社会）１",
+        "英語": "Seminar on Social Sciences(Politics and Society)  1"
+    },
+    "LAH.H317": {
+        "日本語": "教養特論 ： 日本伝統芸能と音楽（歌舞伎と文楽）",
+        "英語": "Special Lecture: Traditional Japanese Theater and Music(Kabuki and Bunraku)"
+    },
+    "LAH.S366": {
+        "日本語": "社会科学系ゼミ（政治と社会）３",
+        "英語": "Seminar on Social Sciences(Politics and Society)  3"
+    },
+    "LAH.H316": {
+        "日本語": "教養特論 ： 日本伝統芸能と音楽（能と狂言）",
+        "英語": "Special Lecture: Traditional Japanese Theater and Music(Noh and Kyogen)"
+    },
+    "LAH.S368": {
+        "日本語": "社会科学系ゼミ（政治と社会）５",
+        "英語": "Seminar on Social Sciences(Politics and Society)  5"
+    },
+    "LAH.S106": {
+        "日本語": "教育学Ａ",
+        "英語": "Pedagogy A"
+    },
+    "LAH.T152": {
+        "日本語": "融合系ゼミ（歴史における科学・技術）導入１",
+        "英語": "Seminar on Transdisciplinary Studies(Science and Technology in History)Introduction1"
+    },
+    "LAH.S210": {
+        "日本語": "現代ジャーナリズムＢ",
+        "英語": "Journalism B"
+    },
+    "LAH.S206": {
+        "日本語": "教育学Ｂ",
+        "英語": "Pedagogy B"
+    },
+    "LAH.T254": {
+        "日本語": "融合系ゼミ（歴史における科学・技術）１",
+        "英語": "Seminar on Transdisciplinary Studies(Science and Technology in History)1"
+    },
+    "LAH.T314": {
+        "日本語": "教養特論：環境",
+        "英語": "Special Lecture: Environment"
+    },
+    "LAH.S309": {
+        "日本語": "現代社会論Ｃ",
+        "英語": "Contemporary Society C"
+    },
+    "LAH.T310": {
+        "日本語": "教養特論：テキスト解釈論",
+        "英語": "Special Lecture: Text Hermeneutics"
+    },
+    "LAH.H309": {
+        "日本語": "教養特論：音楽",
+        "英語": "Special Lecture: Music"
+    },
+    "LAH.T358": {
+        "日本語": "融合系ゼミ（歴史における科学・技術）３",
+        "英語": "Seminar on Transdisciplinary Studies(Science and Technology in History)3"
+    },
+    "LAH.T316": {
+        "日本語": "教養特論：医療",
+        "英語": "Special Lecture: Medical Care"
+    },
+    "LAH.S307": {
+        "日本語": "教育学Ｃ",
+        "英語": "Pedagogy C"
+    },
+    "LAH.T360": {
+        "日本語": "融合系ゼミ（歴史における科学・技術）５",
+        "英語": "Seminar on Transdisciplinary Studies(Science and Technology in History)5"
+    },
+    "LAH.T315": {
+        "日本語": "教養特論：都市",
+        "英語": "Special Lecture: Cities"
+    },
+    "MEC.B241": {
+        "日本語": "工業数学演習",
+        "英語": "Exercises in Engineering Mathematics"
+    },
+    "MEC.C241": {
+        "日本語": "材料力学演習",
+        "英語": "Exercises in Mechanics of Materials"
+    },
+    "MEC.E241": {
+        "日本語": "熱力学演習",
+        "英語": "Exercises in Thermodynamics"
+    },
+    "MEC.O231": {
+        "日本語": "理工系のための作文技術",
+        "英語": "Japanese Composition for Engineering Students"
+    },
+    "MEC.D241": {
+        "日本語": "機械力学演習",
+        "英語": "Exercise in Mechanical Vibration"
+    },
+    "MEC.B242": {
+        "日本語": "応用数学演習",
+        "英語": "Exercises in Applied Mathematics"
+    },
+    "MEC.G331": {
+        "日本語": "生産システム工学",
+        "英語": "Production System Engineering"
+    },
+    "MEC.R331": {
+        "日本語": "オフキャンパスプロジェクトB1c",
+        "英語": "Off-campus Project B1c"
+    },
+    "MEC.R332": {
+        "日本語": "オフキャンパスプロジェクトB2c",
+        "英語": "Off-campus Project B2c"
+    },
+    "LAJ.C201": {
+        "日本語": "日本文化演習：日本学",
+        "英語": "Japanese Culture:Japanology"
+    },
+    "LAH.S212": {
+        "日本語": "教養特論：紛争と平和構築",
+        "英語": "Special Lecture: Conflicts and Peace Agreement"
+    },
+    "LAH.H214": {
+        "日本語": "教養特論：日本文化入門",
+        "英語": "Special Lecture: Fundamentals of Japanese Cultur"
+    },
+    "LAH.T317": {
+        "日本語": "人文社会学系ワークショップ",
+        "英語": "Workshop on Humanities and Sociology"
+    },
+    "LAW.X353": {
+        "日本語": "伝統技術と国際共修",
+        "英語": "Traditional Technology and Intercultural Co-learning"
+    },
+    "LAW.X356": {
+        "日本語": "グローバル理工人国内研修１D",
+        "英語": "Domestic Training for Global Scientists and Engineers 1D"
+    },
+    "LAW.X358": {
+        "日本語": "アイディアが飛び交う遠隔議論",
+        "英語": "Bringing Ideas in Remote Discussion"
+    },
+    "LAW.X357": {
+        "日本語": "融合技術論（国際）",
+        "英語": "Methodology of Transdisciplinary Research (Global)"
+    },
+    "LAW.X355": {
+        "日本語": "グローバル理工人国内研修１C",
+        "英語": "Domestic Training for Global Scientists and Engineers 1C"
+    },
+    "LAW.X321": {
+        "日本語": "科学者倫理と危機の時代",
+        "英語": "The Age of Ethical Crisis for Professional Scientists"
+    },
+    "LAW.X320": {
+        "日本語": "環境・エネルギー学特論",
+        "英語": "Environment & Energy"
+    },
+    "MAT.P203": {
+        "日本語": "物理化学(化学反応速度論）",
+        "英語": "Physical Chemistry (Reaction Dynamics)"
+    },
+    "MAT.C311": {
+        "日本語": "欠陥の動力学",
+        "英語": "Kinetics of Defect and Diffusion in Solid"
+    },
+    "LST.A325": {
+        "日本語": "生命理工学特別講義5",
+        "英語": "LST Seminar 5"
+    },
+    "ARC.Z201": {
+        "日本語": "B2D研究基礎a（建築学系）",
+        "英語": "B2D Research Basic A in ARC"
+    },
+    "CAP.A231": {
+        "日本語": "有機化学上級第一（有機反応化学）",
+        "英語": "Advanced Organic Chemistry I (Organic Reactions)"
+    },
+    "CAP.P372": {
+        "日本語": "先進高分子科学第二",
+        "英語": "Advances and Applications in Polymer Science II"
+    },
+    "CAP.C323": {
+        "日本語": "先進化学工学第二",
+        "英語": "Advances and Applications in Chemical Engineering II"
+    },
+    "CAP.C331": {
+        "日本語": "化工文献講読",
+        "英語": "Literature Review in Chemical Engineering"
+    },
+    "MAT.P206": {
+        "日本語": "有機材料概論",
+        "英語": "Introduction to Organic Materials"
+    },
+    "MAT.D201": {
+        "日本語": "B2D研究基礎a（材料系） E",
+        "英語": "B2D Research Basic A in Materials Science and Engineering E"
+    },
+    "PHY.Q216": {
+        "日本語": "解析力学(演習） B",
+        "英語": "Analytical Mechanics (Exercise) B"
+    },
+    "PHY.E222": {
+        "日本語": "電磁気学II(演習） B",
+        "英語": "Electromagnetism II (Exercise) B"
+    },
+    "PHY.M214": {
+        "日本語": "物理数学I(演習） A",
+        "英語": "Mathematical Methods in Physics I(Exercise) A"
+    },
+    "PHY.Q217": {
+        "日本語": "量子力学入門(演習） B",
+        "英語": "Introduction to Quantum Mechanics(Exercise) B"
+    },
+    "PHY.S219": {
+        "日本語": "熱力学（物理）(演習） B",
+        "英語": "Thermodynamics (Physics) (Exercise) B"
+    },
+    "PHY.E215": {
+        "日本語": "電磁気学(演習） A",
+        "英語": "Electromagnetism (Exercise) A"
+    },
+    "PHY.Q218": {
+        "日本語": "量子力学II(演習） A",
+        "英語": "Quantum Mechanics II(Exercise) A"
+    },
+    "PHY.M221": {
+        "日本語": "物理数学II(演習） B",
+        "英語": "Mathematical Methods in Physics II(Exercise) B"
+    },
+    "PHY.Z201": {
+        "日本語": "B2D 研究基礎a（物理学系） E",
+        "英語": "B2D Research Basic A in Physics E"
+    },
+    "PHY.S311": {
+        "日本語": "統計力学(演習） B",
+        "英語": "Statistical Mechanics(Exercise) B"
+    },
+    "PHY.S322": {
+        "日本語": "統計力学II(演習） A",
+        "英語": "Statistical Mechanics II(Exercise) A"
+    },
+    "PHY.E320": {
+        "日本語": "電磁気学III(演習） B",
+        "英語": "Electromagnetism III(Exercise) B"
+    },
+    "PHY.Q321": {
+        "日本語": "量子力学III(演習） B",
+        "英語": "Quantum Mechanics III(Exercise) B"
+    },
+    "EPS.L331": {
+        "日本語": "地球物質学実験",
+        "英語": "Experiments in Earth Material Science"
+    },
+    "CAP.D201": {
+        "日本語": "B2D研究基礎a（応用化学系）",
+        "英語": "B2D Research Basic A in CAP"
+    },
+    "MAT.P313": {
+        "日本語": "有機材料合成化学A-1",
+        "英語": "Organic Synthetic Chemistry A-1"
+    },
+    "MAT.P394": {
+        "日本語": "分子間力と凝集力",
+        "英語": "Intermolecular Force and Aggregation"
+    },
+    "MAT.P316": {
+        "日本語": "有機材料合成化学C",
+        "英語": "Organic Synthetic Chemistry C"
+    },
+    "MAT.P393": {
+        "日本語": "生体材料",
+        "英語": "Biomaterials"
+    }
+}
