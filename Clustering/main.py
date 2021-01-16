@@ -26,18 +26,25 @@ for word in similar_words:
 # print(keyword)
 ################################
 
-vectorizer = TfidfVectorizer(use_idf=True, token_pattern=u'(?u)\\b\\w+\\b')
+# vectorizer = TfidfVectorizer(use_idf=True, token_pattern=u'(?u)\\b\\w+\\b')
 
-path_open = open('path_clustering.json', 'r')
-paths = json.load(path_open)
-train_docs = []
-train_codes = []
-for lec_code, path in paths.items():
-    train_df = pd.read_csv(path)
-    train_words = " ".join(train_df['原型'].dropna(how='all'))
-    train_docs.append(train_words)
-    train_codes.append(lec_code)
-train_vecs = vectorizer.fit_transform(train_docs)
+# path_open = open('path_clustering.json', 'r')
+# paths = json.load(path_open)
+# train_docs = []
+# train_codes = []
+# for lec_code, path in paths.items():
+#     train_df = pd.read_csv(path)
+#     train_words = " ".join(train_df['原型'].dropna(how='all'))
+#     train_docs.append(train_words)
+#     train_codes.append(lec_code)
+# train_vecs = vectorizer.fit_transform(train_docs)
+
+import pickle
+with open('pkl/vec.pkl', 'rb') as f1:
+    vec = pickle.load(f)
+with open('pkl/vectorizer.pkl', 'rb') as f2:
+    vectorizer = pickle.load(f)
+train_vecs = vec
 
 test_df = parse2df(keyword)
 test_docs = [" ".join(test_df['原型'].dropna(how='all'))]
