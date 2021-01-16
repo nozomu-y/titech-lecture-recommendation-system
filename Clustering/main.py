@@ -9,6 +9,22 @@ from sklearn.cluster import AffinityPropagation
 from getname import GetNameJ
 
 keyword = input('キーワード: ')
+
+#########ワードネット#############
+split_words = keyword.split()
+similar_words = split_words.copy()
+for word in split_words:
+#     print(word)
+    tmp = SearchSimilarWords(word)
+    for tmp_word in tmp:
+        similar_words.append(tmp_word)
+#     print(similar_words)
+# print(similar_words)
+for word in similar_words:
+    keyword += word+" "
+# print(keyword)
+################################
+
 vectorizer = TfidfVectorizer(use_idf=True, token_pattern=u'(?u)\\b\\w+\\b')
 
 path_open = open('path_clustering.json', 'r')

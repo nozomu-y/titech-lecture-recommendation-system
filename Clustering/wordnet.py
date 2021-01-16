@@ -1,9 +1,9 @@
 import sqlite3
 conn = sqlite3.connect("./wnjpn.db")
 # 含まれるテーブルの確認
-cur = conn.execute("select name from sqlite_master where type='table'")
-for row in cur:
-    print(row)
+# cur = conn.execute("select name from sqlite_master where type='table'")
+# for row in cur:
+#     print(row)
 # 特定の単語を入力とした時に、類義語を検索する関数
 def SearchSimilarWords(word):
 
@@ -17,7 +17,7 @@ def SearchSimilarWords(word):
     if word_id==99999999:
 #         print("「%s」は、Wordnetに存在しない単語です。" % word)
         return
-    else:
+#     else:
 #         print("【「%s」の類似語を出力します】\n" % word)
 
     # 入力された単語を含む概念を検索する
@@ -28,9 +28,10 @@ def SearchSimilarWords(word):
 
     # 概念に含まれる単語を検索して画面出力する
     no = 1
+    similar_words = []
     for synset in synsets:
         cur1 = conn.execute("select name from synset where synset='%s'" % synset)
-        for row1 in cur1:
+#         for row1 in cur1:
 #             print("%sつめの概念 : %s" %(no, row1[0]))
         cur2 = conn.execute("select def from synset_def where (synset='%s' and lang='jpn')" % synset)
         sub_no = 1
@@ -44,9 +45,10 @@ def SearchSimilarWords(word):
             cur3_1 = conn.execute("select lemma from word where wordid=%s" % target_word_id)
             for row3_1 in cur3_1:
 #                 print("類義語%s : %s" % (sub_no, row3_1[0]))
+                similar_words.append(row3_1[0])
                 sub_no += 1
 #         print("\n")
         no += 1
-    return synsets
-lis = SearchSimilarWords('猫')
-print(lis)
+    return similar_words
+# lis = SearchSimilarWords('猫')
+# print(lis)
