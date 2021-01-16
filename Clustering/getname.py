@@ -26,29 +26,36 @@ def GetNameE(code):
 
 def GetRelaSub(code):
     import json
-    syllabus_paths = '../DataCollection/syllabus.json'
-    str = ''
-    for path in syllabus_paths:
-        with open(path) as f:
-            lectures = json.load(f)
-        for lecture in lectures:
-            str = lecture['科目コード']
-            if(code == str):
-                if '関連する科目' in lecture.keys():
-                    relaSubs = lecture['関連する科目']
-                    lis = []
-                    for sub in relaSubs:
-                        if '科目コード' in sub.keys():
-                            lis.append(sub['科目コード'])
+    lecture_codes = '../DataCollection/lecture_codes.json'
+    with open(lecture_codes) as f:
+        lectures = json.load(f)
+    output = []
+    if code in lectures.keys():
+        for lecture in lectures[code]['関連する科目']:
+            if GetNameJ(lecture) is None:
+                continue
+            output.append(GetNameJ(lecture))
+    return output
 
-                    return lis
-    return []
+    #  for path in syllabus_paths:
+    #  with open(path) as f:
+    #  lectures = json.load(f)
+    #  for lecture in lectures:
+    #  str = lecture['科目コード']
+    #  if(code == str):
+    #  if '関連する科目' in lecture.keys():
+    #  relaSubs = lecture['関連する科目']
+    #  lis = []
+    #  for sub in relaSubs:
+    #  if '科目コード' in sub.keys():
+    #  lis.append(sub['科目コード'])
+
+    #  return lis
+    #  return []
 
 
-"""
 if __name__ == '__main__':
-    GetNameJ(code)
-"""
+    print(GetRelaSub('CAP.P211'))
 
 """
 import getname
