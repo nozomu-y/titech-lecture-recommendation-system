@@ -31,10 +31,9 @@ def GetRelaSub(code):
         lectures = json.load(f)
     output = []
     if code in lectures.keys():
-        for lecture in lectures[code]['関連する科目']:
-            if GetNameJ(lecture) is None:
-                continue
-            output.append(GetNameJ(lecture))
+        if '関連する科目' in lectures[code].keys():
+            for lecture in lectures[code]['関連する科目']:
+                output.append(lecture)
     return output
 
     #  for path in syllabus_paths:
@@ -56,9 +55,3 @@ def GetRelaSub(code):
 
 if __name__ == '__main__':
     print(GetRelaSub('CAP.P211'))
-
-"""
-import getname
-getname.GetNameJ('CSC.T352')
-のように使う
-"""

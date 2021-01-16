@@ -1,5 +1,5 @@
 import json
-path_open = open('path_clustering.json', 'r')
+path_open = open('path_clusteringJK.json', 'r')
 paths = json.load(path_open)
 
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -57,4 +57,7 @@ for doc, cls in zip(paths.keys(), gmm):
 
 lis.sort()
 print(lis)
-    
+print(len(gmm))
+print(len(paths.keys()))
+import getscore
+#print(getscore.GetScoreClus(paths.keys(), gmm))
