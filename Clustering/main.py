@@ -1,38 +1,39 @@
+import json
 from morpheme import parse2df
 from sklearn.feature_extraction.text import TfidfVectorizer
 import pandas as pd
-from sklearn import mixture, cluster
-from sklearn.model_selection import GridSearchCV
-from sklearn import model_selection
+#  from sklearn import mixture, cluster
+#  from sklearn.model_selection import GridSearchCV
+#  from sklearn import model_selection
 from sklearn.cluster import AffinityPropagation
 from getname import GetNameJ
 
 keyword = input('キーワード: ')
-df = parse2df(keyword)
-doc = [" ".join(df['原型'])]
 vectorizer = TfidfVectorizer(use_idf=True, token_pattern=u'(?u)\\b\\w+\\b')
-vec = vectorizer.fit_transform(doc)
 
-import json
 path_open = open('path_clustering.json', 'r')
-paths = json.load(path_open) 
-docs=[]
-for path in paths.values():
-    df = pd.read_csv(path)
-#     print(df.columns)
-    words = " ".join(df['原型'])
-    docs.append(words)
-#     print(path)
-vecs = vectorizer.fit_transform(docs)
+paths = json.load(path_open)
+train_docs = []
+train_codes = []
+for lec_code, path in paths.items():
+    train_df = pd.read_csv(path)
+    train_words = " ".join(train_df['原型'].dropna(how='all'))
+    train_docs.append(train_words)
+    train_codes.append(lec_code)
+train_vecs = vectorizer.fit_transform(train_docs)
 
-gmm = AffinityPropagation(random_state=0).fit(vecs.toarray())  #最初の４文書をクラスタリング
+test_df = parse2df(keyword)
+test_docs = [" ".join(test_df['原型'].dropna(how='all'))]
+test_vecs = vectorizer.transform(test_docs)
 
-lis = gmm.predict(vec.toarray())
-# for doc, cls in zip(paths.keys(), gmm):
-# #     print(cls, GetNameJ(doc))
-#     if GetNameJ(doc) is None:
-#         continue
-#     lis.append((cls, GetNameJ(doc)))
+gmm = AffinityPropagation(random_state=0).fit(train_vecs.toarray())
+train_predict = gmm.predict(train_vecs.toarray())
+test_predict = gmm.predict(test_vecs.toarray())
 
-lis.sort()
-print(lis)
+similar_lectures = []
+for index, lecture in enumerate(train_predict):
+    if lecture == test_predict[0]:
+        similar_lectures.append(train_codes[index])
+
+for lecture in similar_lectures:
+    print(GetNameJ(lecture))
