@@ -17,7 +17,7 @@ path_open = open('path_clustering.json', 'r')
 paths = json.load(path_open)
 for path in paths.values():
     df = pd.read_csv(path)
-    words = " ".join(str(df['原型']))
+    words = " ".join(df['原型'].dropna(how='all'))
     docs.append(words)
 vectorizer = TfidfVectorizer(use_idf=True, token_pattern=u'(?u)\\b\\w+\\b')
 vecs = vectorizer.fit_transform(docs)
@@ -29,9 +29,9 @@ gmm = hierarchy_cluster.hierarchy_cluster(df)
 
 print('end')
 lis = []
-plt.figure(num=None, figsize=(16, 9), dpi=200, facecolor='w', edgecolor='k')
-dendrogram(gmm, labels=df.index)
-plt.show()
+#  plt.figure(num=None, figsize=(16, 9), dpi=200, facecolor='w', edgecolor='k')
+#  dendrogram(gmm, labels=df.index)
+#  plt.show()
 clusters = fcluster(gmm, 1.2 * numpy.average(gmm[:, 2]), criterion='distance')
 for doc, cls in zip(paths.keys(), clusters):
     lis.append((cls, GetNameJ(doc)))
