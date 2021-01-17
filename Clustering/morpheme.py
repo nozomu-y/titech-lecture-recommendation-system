@@ -3,12 +3,6 @@ import pandas as pd
 from natto import MeCab
 import logging
 import re
-logger = logging.getLogger()
-logger.setLevel(logging.DEBUG)  # DEBUG を INFOに変えるとlogging.debugが出力されなくなる
-# logger.setLevel(logging.INFO)  # DEBUG を INFOに変えるとlogging.debugが出力されなくなる
-
-# sysdicの初期値は環境によって書き換えること
-# 辞書のパス(適用されている辞書のパス）はコマンドラインで　`medab -D`で調べられる
 
 
 def parse2df(text, sysdic="/usr/local/lib/mecab/dic/naist-jdic"):
@@ -53,10 +47,13 @@ def parse2df(text, sysdic="/usr/local/lib/mecab/dic/naist-jdic"):
 
 
 if __name__ == '__main__':
+    logger = logging.getLogger()
+    logger.setLevel(logging.DEBUG)  # DEBUG を INFOに変えるとlogging.debugが出力されなくなる
+    # logger.setLevel(logging.INFO)
+
     text = ''
     output = {}
 
-    # syllabus_path = '../DataCollection/output.json'
     syllabus_path = 'chunk.json'
     import os
     with open(syllabus_path) as f:
