@@ -1,3 +1,4 @@
+### 参考：https://qiita.com/pocket_kyoto/items/1e5d464b693a8b44eda5
 import sqlite3
 conn = sqlite3.connect("./wnjpn.db")
 # 含まれるテーブルの確認
