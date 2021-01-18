@@ -243,7 +243,7 @@ if __name__ == "__main__":
     d = json.load(f)
     subject_codes = []
     for i in range(len(d)):
-        if d[i]["開講元"] == "情報工学系":
+        if d[i]["開講元"] == "数学系":
             subject_codes.append(d[i]["科目コード"])
 
     fs = feature_search(subject_codes)  
