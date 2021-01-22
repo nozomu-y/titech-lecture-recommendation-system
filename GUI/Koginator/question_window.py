@@ -53,12 +53,20 @@ class MainWindow(QWidget):
         self.question.setText(newQ)
 
     def btnNextClicked(self):
-        change_window('window changed')
+        if(self.yes.isChecked()):
+            self.ans = 5
+        elif(self.mid.isChecked()):
+            self.ans = 3
+        elif(self.no.isChecked()):
+            self.ans = 1
+        else:
+            return
+        print('answer : ' + str(self.ans))
+        change_window('質問')
 
 def change_window(newQ):
     global main_window
-    main_window = MainWindow()
-    main_window.setQuestion(newQ)
+    main_window = MainWindow(None, newQ)
     main_window.show()
 
 
@@ -66,7 +74,7 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
 
     try:
-        styleFile = os.path.join(os.path.dirname(__file__), 'style.qss')
+        styleFile = os.path.join(os.path.dirname(__file__), '../style.qss')
         with open(styleFile, 'r') as f:
             style = f.read()
     except:
