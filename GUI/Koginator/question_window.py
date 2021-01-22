@@ -4,8 +4,11 @@ from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5 import QtGui
 import sip
+sys.path.append('../../Koginator')
+import koginator
 
 APP_TITLE = "コギネーター"
+kg = koginator.koginator()
 
 class MainWindow(QWidget):
     def __init__(self, parent = None, newQ = ''):
@@ -54,21 +57,26 @@ class MainWindow(QWidget):
 
     def btnNextClicked(self):
         if(self.yes.isChecked()):
-            self.ans = 5
+            self.ans = '5'
         elif(self.mid.isChecked()):
-            self.ans = 3
+            self.ans = '3'
         elif(self.no.isChecked()):
-            self.ans = 1
+            self.ans = '1'
         else:
             return
-        print('answer : ' + str(self.ans))
-        change_window('質問')
+        print('answer : ' + self.ans)
+        if(kg.getAnswer(self.ans)):
+            kg.printAnswer()
+            return
+        change_window()
 
-def change_window(newQ):
+def change_window():
     global main_window
-    main_window = MainWindow(None, newQ)
+    main_window = MainWindow(None, kg.getQuestion())
     main_window.show()
-
+    
+def initKoginator():
+    kg = koginator.koginator()
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
@@ -80,7 +88,7 @@ if __name__ == '__main__':
     except:
         style = ''
     app.setStyleSheet(style)
-    main_window = MainWindow(None, '質問')
+    main_window = MainWindow(None, kg.getQuestion())
     main_window.show()
     sys.exit(app.exec_())
         

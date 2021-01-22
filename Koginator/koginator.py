@@ -2,59 +2,45 @@
 import sys
 import classification
 
-def main():
-    clf = classification.classification()
-
-    #データファイルを読み込む
-    clf.load()
-
-#    while True:
-#        str = input()
-#        print(str)
-#        if str == "1":
-#            break
-
-
+class koginator:
+    def __init__(self):
+        self.clf = classification.classification()
+        self.clf.load()
+        self.queation_list = []
+        self.input_list = []
 
 ##################################################
 #ここから
 
 #問題を出力
-#print(clf.queation([0, 1, 2], [1, 3, 5]))
-    queation_list = []
-    input_list = []
-    while True:
+#print(clf.queation([0, 1, 2], [1, 3, 5])
+    def getQuestion(self):
         
-        queation = clf.queation(queation_list, input_list)
-        queation_list.append(queation)
-
-        print("ーーーーーーーーーーーーーーーーーーーー")
-        print(queation)
-        print("┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓") 
-        print("┃ 「YES」なら 5 、「NO」なら 1	┃")
-        print("┃ 「わからない場合」は 3 を入力 ┃") 
-        print("┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛") 
-
+        question = self.clf.queation(self.queation_list, self.input_list)
+        self.queation_list.append(question)
+        return question
 
 #回答を受け取る
 #input()
-        str = input()
-        input_list.append(str)
-        answer = clf.answer(queation_list, input_list)
+    def getAnswer(self, newAns='0'):
+        self.input_list.append(newAns)
+        self.answer = self.clf.answer(self.queation_list, self.input_list)
 
 #回答があるかどうかを調べる
 #str = clf.answer([0, 1, 2], [1, 3, 5])
 #もし～ならば(if, else, elsif)
 
-        if answer == "":
-            pass
+        if self.answer == "":
+            return False
         else:
-            print("******************************************") 
-            answer = answer.split(',')
-            for ans in answer:
-                print(ans)
-            print("******************************************") 
-            break
+            self.answer = self.answer.split(',')
+            return True
+
+    def printAnswer(self):
+        print('***************************')
+        for ans in self.answer:
+            print(ans)
+        print('***************************')
 
 #回答があったら出力してループを抜ける
 #print
@@ -89,5 +75,19 @@ def main():
 #ここまで
 ##################################################
 if __name__ == "__main__":
-    sys.exit(int(main() or 0))
+    kg = koginator()
+    while True:
+        question = kg.getQuestion()
+
+        print("ーーーーーーーーーーーーーーーーーーーー")
+        print(question)
+        print("┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓") 
+        print("┃ 「YES」なら 5 、「NO」なら 1	┃")
+        print("┃ 「わからない場合」は 3 を入力 ┃") 
+        print("┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛") 
+
+        if(kg.getAnswer(input())):
+            break
+
+    kg.printAnswer()
 
