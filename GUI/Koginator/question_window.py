@@ -40,7 +40,7 @@ class MainWindow(QWidget):
 
         self.btnLayout = QHBoxLayout()
         self.btnNext = QPushButton('次へ', self)
-        self.btnNext.setObjectName('btnNext')
+        self.btnNext.setObjectName('btnKoginator')
         self.btnNext.setFont(QtGui.QFont('メイリオ', 14, QtGui.QFont.Bold))
 
         self.btnLayout.addWidget(self.btnNext)
@@ -67,12 +67,60 @@ class MainWindow(QWidget):
         print('answer : ' + self.ans)
         if(kg.getAnswer(self.ans)):
             kg.printAnswer()
+            show_answer()
             return
         change_window()
+
+class AnswerWindow(QWidget):
+    def __init__(self, parent=None):
+        super(AnswerWindow, self).__init__(parent)
+        self.setGeometry(300, 50, 400, 350)
+        self.setWindowTitle(APP_TITLE)
+        self.answer = QLabel(self)
+        ans = ''
+        for kgans in kg.answer:
+            if ans == '':
+                ans = ans + kgans
+            else:
+                ans = ans + '\n\n' + kgans
+        self.answer.setText(ans)
+        self.answer.setAlignment(Qt.AlignCenter)
+        self.answer.setFont(QtGui.QFont("メイリオ", 14, QtGui.QFont.Bold))
+        self.answer.setFixedHeight(100)
+
+        self.title = QLabel(self)
+        self.title.setText('推薦講義')
+        self.title.setAlignment(Qt.AlignCenter)
+        self.title.setFont(QtGui.QFont("メイリオ", 14, QtGui.QFont.Bold))
+        self.title.setFixedHeight(50)
+
+        self.btnExit = QPushButton('終了', self)
+        self.btnExit.setObjectName('btnKoginator')
+        self.btnExit.setFont(QtGui.QFont('メイリオ', 14, QtGui.QFont.Bold))
+        self.btnExit.clicked.connect(sys.exit)
+        self.btnLayout = QHBoxLayout()
+        self.btnLayout.addWidget(self.btnExit)
+
+
+        self.vertical = QVBoxLayout()
+        self.horizon = QHBoxLayout()
+        self.horizon.addWidget(self.answer)
+        self.vertical.addWidget(self.title)
+        self.vertical.addLayout(self.horizon)
+        self.vertical.addLayout(self.btnLayout)
+        self.setLayout(self.vertical)
+
+
+    
 
 def change_window():
     global main_window
     main_window = MainWindow(None, kg.getQuestion())
+    main_window.show()
+
+def show_answer():
+    global main_window
+    main_window = AnswerWindow()
     main_window.show()
     
 def initKoginator():

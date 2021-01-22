@@ -1,15 +1,15 @@
-QPushButton#btnNext{
+QPushButton#btnKoginator{
     background-color: #5382ff;
     max-width: 80px;
     max-height: 30px;
     padding: 4px;
     border-radius: 4px;
 }
-QPushButton#btnNext:hover{
+QPushButton#btnKoginator:hover{
     background-color: #ffffff;
     color: #5382ff;
 }
-QPushButton#btnNext:pressed{
+QPushButton#btnKoginator:pressed{
     background-color:#5382ff;
     color: #000000
 }
