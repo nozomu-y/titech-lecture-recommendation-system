@@ -27,14 +27,14 @@ class feature_search:
               "生命理工学系",
               "建築学系","土木・環境工学系","融合理工学系",
               "日本語・日本文化科目","第二外国語科目","理工系教養科目","教職科目","英語科目","文系教養科目","広域教養科目"]
-    day = ["月","火","水","木","金","土","日"]
+    day = ["月","火","水","木","金","土","日", "集中講義等"]
     period = ["1-","2-","3-","4-","5-","6-","7-","8-","9-","10-"]#講義室の番号と被らないためのハイフン
     quarter = ["1","2","3","4","1-2","3-4","2-3","2・4","2-4","1-4"]
     textbook = ["なし","ない","配布", "スライド", "資料"]
     assessment = [["試験","テスト"],["レポート","report"],["プレゼン","発表"]]
     #########初期値############
     course_num= 0 #情報工学系のみを許容
-    day_select=[0,1,1,1,1,1,1]#月曜以外を許容
+    day_select=[0,1,1,1,1,1,1,1]#月曜以外を許容
     period_select=[0,1,1,1,1,1,1,1,1,1]#1限以外を許容
 
     quarter_select=[0,0,1,1,0,1,0,0,0,0]#3Q,4Q,3-4Qのみを許容
@@ -213,10 +213,11 @@ class feature_search:
                 for x in reversed(self.nums):
                     is_remove = False
                     for j in range(len(self.assessment[i])):
-                        if("成績評価の基準及び方法" not in self.d[x] or (self.assessment[i][j] in self.d[x]["成績評価の基準及び方法"] or self.assessment[i][j] in self.d[x]["成績評価の基準及び方法"])):
+                        if("成績評価の基準及び方法" not in self.d[x] or self.assessment[i][j] in self.d[x]["成績評価の基準及び方法"]):
                             is_remove = True
                             break
-                    self.nums.remove(x)
+                    if(is_remove):
+                        self.nums.remove(x)
             elif self.is_need_assessment[i]==1:
                 for x in reversed(self.nums):
                     is_remove = True
@@ -243,7 +244,7 @@ if __name__ == "__main__":
     d = json.load(f)
     subject_codes = []
     for i in range(len(d)):
-        if d[i]["開講元"] == "数学系":
+        if d[i]["開講元"] == "情報工学系":
             subject_codes.append(d[i]["科目コード"])
 
     fs = feature_search(subject_codes)  
