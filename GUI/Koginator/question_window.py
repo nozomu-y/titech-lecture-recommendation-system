@@ -4,8 +4,9 @@ from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5 import QtGui
 import sip
-sys.path.append('../../Koginator')
-import koginator
+rootFile = os.path.join(os.path.dirname(__file__), '../..')
+sys.path.append(rootFile)
+import Koginator.koginator as koginator
 
 APP_TITLE = "コギネーター"
 kg = koginator.koginator()

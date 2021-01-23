@@ -1,6 +1,11 @@
 # -*- coding: utf-8 -*-
 import sys
-import classification
+import os
+rootFile = os.path.join(os.path.dirname(__file__), '../..')
+sys.path.append(rootFile)
+import Koginator.classification as classification
+
+
 
 class koginator:
     def __init__(self):
