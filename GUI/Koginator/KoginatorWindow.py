@@ -8,7 +8,8 @@ rootFile = os.path.join(os.path.dirname(__file__), '../..')
 sys.path.append(rootFile)
 import Koginator.koginator as koginator
 
-APP_TITLE = "コギネーター"
+
+APP_TITLE = "東工大講義推薦システム | コギネーター"
 kg = koginator.koginator()
 
 class MainWindow(QWidget):

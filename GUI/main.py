@@ -8,6 +8,7 @@ sys.path.append('..')
 from Clustering.main import search_lectures
 from Clustering.getname import GetNameJ
 from FeatureSearch.feature_search import FeatureSearch
+from GUI.Koginator import KoginatorWindow as kgWindow
 
 APP_TITLE = "東工大講義推薦システム"
 
@@ -335,7 +336,7 @@ class AnswerWindow(QWidget):
 def change_window(w):
     global main_window
     if w == "koginator":
-        main_window = KoginatorWindow()
+        main_window = kgWindow.MainWindow(None, kgWindow.kg.getQuestion())
     elif w == "search":
         main_window = KeywordSearchWindow()
     main_window.show()
