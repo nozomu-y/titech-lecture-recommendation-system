@@ -13,3 +13,19 @@ QPushButton#btnKoginator:pressed{
     background-color:#5382ff;
     color: #000000
 }
+QPushButton#btn-koginator {
+    background-color: #28a745;
+    /* max-width: 100px; */
+    max-height: 150px;
+    padding: 4px;
+    border-radius: 4px;
+    margin: 4px;
+}
+QPushButton#btn-search {
+    background-color: #17a2b8;
+    /* max-width: 100px; */
+    max-height: 150px;
+    padding: 4px;
+    border-radius: 4px;
+    margin: 4px;
+}

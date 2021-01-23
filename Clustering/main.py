@@ -1,24 +1,26 @@
-#  from sklearn.pipeline import make_pipeline
-#  from sklearn.preprocessing import StandardScaler
-from sklearn.linear_model import SGDClassifier
-import json
-from morpheme import parse2df
 import pandas as pd
-#  from sklearn import mixture, cluster
-#  from sklearn.model_selection import GridSearchCV
-#  from sklearn import model_selection
-#  from sklearn.cluster import AffinityPropagation
-from getname import GetNameJ
-#  from sklearn.feature_extraction.text import TfidfVectorizer
-from wordnet import SearchSimilarWords
-
+import json
+from sklearn.linear_model import SGDClassifier
+import sys
+sys.path.append('..')
+from Clustering.wordnet import SearchSimilarWords
+from Clustering.getname import GetNameJ
+from Clustering.morpheme import parse2df
 
 def search_lectures(keyword):
+    if keyword == '':
+        path_open = open('../Clustering/path_clustering.json', 'r')
+        paths = json.load(path_open)
+
+        simlec = []
+        for doc in paths.keys():
+            simlec.append(doc)
+        return simlec
+
     #########ワードネット#############
     split_words = keyword.split()
     similar_words = split_words.copy()
     for word in split_words:
-        #     print(word)
         tmp = SearchSimilarWords(word)
         if tmp is None:
             continue
@@ -44,12 +46,13 @@ def search_lectures(keyword):
     #  train_codes.append(lec_code)
     #  train_vecs = vectorizer.fit_transform(train_docs)
 
-    vec = pd.read_pickle('pkl/vec.pkl')
-    vectorizer = pd.read_pickle('pkl/vectorizer.pkl')
+    vec = pd.read_pickle('../Clustering/pkl/vec.pkl')
+    vectorizer = pd.read_pickle('../Clustering/pkl/vectorizer.pkl')
     train_vecs = vec
 
     test_df = parse2df(keyword, sysdic="/usr/local/lib/mecab/dic/mecab-ipadic-neologd")
-    test_df = test_df[test_df["posID"].isin([36, 37, 38, 40, 41, 42, 43, 44, 45, 46, 47, 50, 51, 52, 66, 67, 2, 31, 10, 34])]
+    test_df = test_df[test_df["posID"].isin(
+        [36, 37, 38, 40, 41, 42, 43, 44, 45, 46, 47, 50, 51, 52, 66, 67, 2, 31, 10, 34])]
     test_docs = [" ".join(test_df['原型'].dropna(how='all'))]
     test_vecs = vectorizer.transform(test_docs)
 
@@ -57,7 +60,7 @@ def search_lectures(keyword):
     # train_predict = gmm.predict(train_vecs.toarray())
     # test_predict = gmm.predict(test_vecs.toarray())
 
-    clusters = pd.read_pickle('pkl/clusters.pkl')
+    clusters = pd.read_pickle('../Clustering/pkl/clusters.pkl')
     # clf = make_pipeline(StandardScaler(), SGDClassifier(max_iter=1000, tol=1e-3))
     clf = SGDClassifier(max_iter=1000, tol=1e-3, random_state=1)
     clf.fit(train_vecs, clusters)
@@ -66,7 +69,7 @@ def search_lectures(keyword):
     #  print(test_predict)
     #  print(train_predict)
     #  print(clusters)
-    path_open = open('path_clustering.json', 'r')
+    path_open = open('../Clustering/path_clustering.json', 'r')
     paths = json.load(path_open)
 
     simlec = []
