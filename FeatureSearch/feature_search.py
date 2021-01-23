@@ -2,14 +2,14 @@
 #Description:
 #特徴量検索用コード。output.jsonを参照し、入力に完全一致する講義名を出力する。
 #コマンドライン引数がない場合には全科目から、ある場合には引数の科目コードの中から検索して出力。
-#Last update:1/23
+#Last update:1/13
 #実装していないもの 残りはUIのみ
 #その他メモ
 #・(newnums=numsとかするとポインタの値が同じになる危険)
 #・reversedで後ろから要素削除が良さそう。要素0を削除してindex1に2がきて次は2を見るとかが起こらない。setだとそういうforループ内での削除ができない
 #・periodについては開始時限で管理。1限開始か、3か5かと考えるのみ。偶数時限開始授業には未対応。開始時限以外での管理もできそう
 #・参考書、講義資料等が空白の場合には出力しない。出力したいなら80,85行目not in d[x] orをin d[x] andに変更する
-#・UIには表示されていないが試験の有無のところで2を選択するとその項目のない科目を表示できる
+
 #################settings#################
 import numpy as np
 import pandas as pd
@@ -126,25 +126,25 @@ class feature_search:
 
         print("教科書の有無  1:あり, 0:なし, -1:選択しない")
         self.is_need_textbook = int(input())
-        if(not(self.is_need_textbook == 0 or self.is_need_textbook == 1 or self.is_need_textbook == 2 or self.is_need_textbook == -1)):
+        if(not(self.is_need_textbook == 0 or self.is_need_textbook == 1 or self.is_need_textbook == -1)):
             print("入力が不正です。")
             sys.exit(1)
 
         print("試験の有無  1:あり, 0:なし, -1:選択しない")
         self.is_need_assessment[0] = int(input())
-        if(not(self.is_need_assessment[0] == 0 or self.is_need_assessment[0] == 1 or self.is_need_assessment[0] == 2 or self.is_need_assessment[0] == -1)):
+        if(not(self.is_need_assessment[0] == 0 or self.is_need_assessment[0] == 1 or self.is_need_assessment[0] == -1)):
             print("入力が不正です。")
             sys.exit(1)
 
         print("レポートの有無  1:あり, 0:なし, -1:選択しない")
         self.is_need_assessment[1] = int(input())
-        if(not(self.is_need_assessment[1] == 0 or self.is_need_assessment[1] == 1 or self.is_need_assessment[1] == 2 or self.is_need_assessment[1] == -1)):
+        if(not(self.is_need_assessment[1] == 0 or self.is_need_assessment[1] == 1 or self.is_need_assessment[1] == -1)):
             print("入力が不正です。")
             sys.exit(1)
 
         print("プレゼン・発表の有無  1:あり, 0:なし, -1:選択しない")
         self.is_need_assessment[2] = int(input())
-        if(not(self.is_need_assessment[2] == 0 or self.is_need_assessment[2] == 1 self.is_need_assessment[2] == 2 or self.is_need_assessment[2] == -1)):
+        if(not(self.is_need_assessment[2] == 0 or self.is_need_assessment[2] == 1 or self.is_need_assessment[2] == -1)):
             print("入力が不正です。")
             sys.exit(1)
 
@@ -195,15 +195,6 @@ class feature_search:
                         break
                 if(is_remove):
                     self.nums.remove(x)
-        elif self.is_need_textbook == 2:
-            for x in reversed(self.nums):
-                is_remove = False
-                for i in range(len(self.textbook)):
-                    if("教科書" in self.d[x] ):
-                        is_remove = True
-                        break
-                if(is_remove):
-                    self.nums.remove(x)
 
         for i in range(len(self.is_need_assessment)):
             if self.is_need_assessment[i]==0:
@@ -213,8 +204,7 @@ class feature_search:
                         if("成績評価の基準及び方法" not in self.d[x] or (self.assessment[i][j] in self.d[x]["成績評価の基準及び方法"] or self.assessment[i][j] in self.d[x]["成績評価の基準及び方法"])):
                             is_remove = True
                             break
-                    if(is_remove):
-                        self.nums.remove(x)
+                    self.nums.remove(x)
             elif self.is_need_assessment[i]==1:
                 for x in reversed(self.nums):
                     is_remove = True
@@ -222,15 +212,6 @@ class feature_search:
                         if("成績評価の基準及び方法" not in self.d[x]):
                             break
                         if((self.assessment[i][j] in self.d[x]["成績評価の基準及び方法"] or self.assessment[i][j] in self.d[x]["成績評価の基準及び方法"])):
-                            is_remove = False
-                            break
-                    if(is_remove):
-                        self.nums.remove(x)
-            elif self.is_need_assessment[i]==2:
-                for x in reversed(self.nums):
-                    is_remove = True
-                    for j in range(len(self.assessment[i])):
-                        if("成績評価の基準及び方法" not in self.d[x]):
                             is_remove = False
                             break
                     if(is_remove):
