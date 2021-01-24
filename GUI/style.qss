@@ -21,6 +21,14 @@ QPushButton#btn-koginator {
     border-radius: 4px;
     margin: 4px;
 }
+QPushButton#btn-koginator:hover{
+    background-color: #ffffff;
+    color: #28a745;
+}
+QPushButton#btn-koginator:pressed{
+    background-color: #28a745;
+    color: #000000;
+}
 QPushButton#btn-search {
     background-color: #17a2b8;
     /* max-width: 100px; */
@@ -28,4 +36,12 @@ QPushButton#btn-search {
     padding: 4px;
     border-radius: 4px;
     margin: 4px;
+}
+QPushButton#btn-search:hover{
+    background-color: #ffffff;
+    color: #17a2b8;
+}
+QPushButton#btn-search:pressed{
+    background-color: #17a2b8;
+    color: #000000
 }

@@ -8,9 +8,10 @@ sys.path.append('..')
 from Clustering.main import search_lectures
 from Clustering.getname import GetNameJ
 from FeatureSearch.feature_search import FeatureSearch
-from GUI.Koginator import KoginatorWindow as kgWindow
+from Koginator import koginator
 
 APP_TITLE = "東工大講義推薦システム"
+kg = None
 
 
 class MainWindow(QWidget):
@@ -332,13 +333,125 @@ class AnswerWindow(QWidget):
         self.vertical.addLayout(self.btnLayout)
         self.setLayout(self.vertical)
 
+class KoginatorQuestionWindow(QWidget):
+    def __init__(self, parent = None, newQ = ''):
+        super(KoginatorQuestionWindow, self).__init__(parent)
+
+        self.vertical = QVBoxLayout()
+        self.setLayout(self.vertical)
+
+        self.setGeometry(300, 50, 400, 350)
+        self.setWindowTitle(APP_TITLE)
+
+        self.question = QLabel(self)
+        self.setQuestion(newQ)
+        self.question.setAlignment(Qt.AlignCenter)
+        self.question.setFont(QtGui.QFont("メイリオ", 14, QtGui.QFont.Bold))
+        self.question.setFixedHeight(20)
+
+        self.layoutAns = QHBoxLayout()
+        self.yes = QCheckBox('はい', self)
+        self.mid = QCheckBox('わからない', self)
+        self.no = QCheckBox('いいえ', self)
+        self.groupAns = QButtonGroup()
+        self.groupAns.addButton(self.yes)
+        self.groupAns.addButton(self.mid)
+        self.groupAns.addButton(self.no)
+        self.layoutAns.addWidget(self.yes)
+        self.layoutAns.addWidget(self.mid)
+        self.layoutAns.addWidget(self.no)   
+
+        self.btnLayout = QHBoxLayout()
+        self.btnNext = QPushButton('次へ', self)
+        self.btnNext.setObjectName('btnKoginator')
+        self.btnNext.setFont(QtGui.QFont('メイリオ', 14, QtGui.QFont.Bold))
+
+        self.btnLayout.addWidget(self.btnNext)
+        self.btnNext.clicked.connect(self.btnNextClicked)
+
+
+        self.vertical.addWidget(self.question)
+        self.vertical.addLayout(self.layoutAns)
+        self.vertical.addLayout(self.btnLayout)
+
+    
+    def setQuestion(self, newQ):
+        self.question.setText(newQ)
+
+    def btnNextClicked(self):
+        if(self.yes.isChecked()):
+            self.ans = '5'
+        elif(self.mid.isChecked()):
+            self.ans = '3'
+        elif(self.no.isChecked()):
+            self.ans = '1'
+        else:
+            return
+        print('answer : ' + self.ans)
+        if(kg.getAnswer(self.ans)):
+            kg.printAnswer()
+            show_answer()
+            return
+        next_koginator_window()
+
+class KoginatorAnswerWindow(QWidget):
+    def __init__(self, parent=None):
+        super(KoginatorAnswerWindow, self).__init__(parent)
+        self.setGeometry(300, 50, 400, 350)
+        self.setWindowTitle(APP_TITLE)
+        self.answer = QLabel(self)
+        ans = ''
+        for kgans in kg.answer:
+            if ans == '':
+                ans = ans + kgans
+            else:
+                ans = ans + '\n\n' + kgans
+        self.answer.setText(ans)
+        self.answer.setAlignment(Qt.AlignCenter)
+        self.answer.setFont(QtGui.QFont("メイリオ", 14, QtGui.QFont.Bold))
+        self.answer.setFixedHeight(100)
+
+        self.title = QLabel(self)
+        self.title.setText('推薦講義')
+        self.title.setAlignment(Qt.AlignCenter)
+        self.title.setFont(QtGui.QFont("メイリオ", 14, QtGui.QFont.Bold))
+        self.title.setFixedHeight(50)
+
+        self.btnExit = QPushButton('終了', self)
+        self.btnExit.setObjectName('btnKoginator')
+        self.btnExit.setFont(QtGui.QFont('メイリオ', 14, QtGui.QFont.Bold))
+        self.btnExit.clicked.connect(sys.exit)
+        self.btnLayout = QHBoxLayout()
+        self.btnLayout.addWidget(self.btnExit)
+
+
+        self.vertical = QVBoxLayout()
+        self.horizon = QHBoxLayout()
+        self.horizon.addWidget(self.answer)
+        self.vertical.addWidget(self.title)
+        self.vertical.addLayout(self.horizon)
+        self.vertical.addLayout(self.btnLayout)
+        self.setLayout(self.vertical)
+
 
 def change_window(w):
     global main_window
+    global kg
     if w == "koginator":
-        main_window = kgWindow.MainWindow(None, kgWindow.kg.getQuestion())
+        kg = koginator.koginator()
+        main_window = KoginatorQuestionWindow(None, kg.getQuestion())
     elif w == "search":
         main_window = KeywordSearchWindow()
+    main_window.show()
+
+def next_koginator_window():
+    global main_window
+    main_window = KoginatorQuestionWindow(None, kg.getQuestion())
+    main_window.show()
+
+def show_answer():
+    global main_window
+    main_window = KoginatorAnswerWindow()
     main_window.show()
 
 
