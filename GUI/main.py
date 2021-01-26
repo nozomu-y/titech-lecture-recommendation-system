@@ -9,6 +9,7 @@ sys.path.append(sysFile + '/..')
 from Clustering.main import search_lectures
 from Clustering.getname import GetNameJ
 from FeatureSearch.feature_search import FeatureSearch
+
 from Koginator import koginator
 
 APP_TITLE = "東工大講義推薦システム"
@@ -164,9 +165,8 @@ class FeatureSearchWindow(QWidget):
         self.textbook_title.setText('教科書の有無')
         self.textbook_title.setFixedHeight(15)
         self.textbook = []
-        self.textbook.append(QRadioButton("あり", self))
-        self.textbook.append(QRadioButton("なし", self))
-        self.textbook.append(QRadioButton("選択しない", self))
+        self.textbook.append(QCheckBox("あり", self))
+        self.textbook.append(QCheckBox("なし", self))
         self.textbook_group = QButtonGroup()
         for btn in self.textbook:
             self.textbook_group.addButton(btn)
@@ -179,9 +179,8 @@ class FeatureSearchWindow(QWidget):
         self.exam_title.setText('試験の有無')
         self.exam_title.setFixedHeight(15)
         self.exam = []
-        self.exam.append(QRadioButton("あり", self))
-        self.exam.append(QRadioButton("なし", self))
-        self.exam.append(QRadioButton("選択しない", self))
+        self.exam.append(QCheckBox("あり", self))
+        self.exam.append(QCheckBox("なし", self))
         self.exam_group = QButtonGroup()
         for btn in self.exam:
             self.exam_group.addButton(btn)
@@ -194,9 +193,8 @@ class FeatureSearchWindow(QWidget):
         self.report_title.setText('レポートの有無')
         self.report_title.setFixedHeight(15)
         self.report = []
-        self.report.append(QRadioButton("あり", self))
-        self.report.append(QRadioButton("なし", self))
-        self.report.append(QRadioButton("選択しない", self))
+        self.report.append(QCheckBox("あり", self))
+        self.report.append(QCheckBox("なし", self))
         self.report_group = QButtonGroup()
         for btn in self.report:
             self.report_group.addButton(btn)
@@ -209,9 +207,8 @@ class FeatureSearchWindow(QWidget):
         self.presentation_title.setText('プレゼンの有無')
         self.presentation_title.setFixedHeight(15)
         self.presentation = []
-        self.presentation.append(QRadioButton("あり", self))
-        self.presentation.append(QRadioButton("なし", self))
-        self.presentation.append(QRadioButton("選択しない", self))
+        self.presentation.append(QCheckBox("あり", self))
+        self.presentation.append(QCheckBox("なし", self))
         self.presentation_group = QButtonGroup()
         for btn in self.presentation:
             self.presentation_group.addButton(btn)
@@ -259,33 +256,30 @@ class FeatureSearchWindow(QWidget):
                 self.fs.quarter_select.append(1)
             else:
                 self.fs.quarter_select.append(0)
+
+        self.fs.is_need_textbook = -1
         if self.textbook[0].isChecked():
             self.fs.is_need_textbook = 1
         elif self.textbook[1].isChecked():
             self.fs.is_need_textbook = 0
-        elif self.textbook[2].isChecked():
-            self.fs.is_need_textbook = -1
 
+        self.fs.is_need_assessment[0] = -1
         if self.exam[0].isChecked():
             self.fs.is_need_assessment[0] = 1
         elif self.exam[1].isChecked():
             self.fs.is_need_assessment[0] = 0
-        elif self.exam[2].isChecked():
-            self.fs.is_need_assessment[0] = -1
 
+        self.fs.is_need_assessment[1] = -1
         if self.report[0].isChecked():
             self.fs.is_need_assessment[1] = 1
         elif self.report[1].isChecked():
             self.fs.is_need_assessment[1] = 0
-        elif self.report[2].isChecked():
-            self.fs.is_need_assessment[1] = -1
 
+        self.fs.is_need_assessment[2] = -1
         if self.presentation[0].isChecked():
             self.fs.is_need_assessment[2] = 1
         elif self.presentation[1].isChecked():
             self.fs.is_need_assessment[2] = 0
-        elif self.presentation[2].isChecked():
-            self.fs.is_need_assessment[2] = -1
 
         self.result = self.fs.get_index_list()
         self.show_answer()
@@ -307,7 +301,7 @@ class AnswerWindow(QWidget):
             if ans == '':
                 ans = fs.d[x]['講義名']['日本語']
             else:
-                ans = ans + '\n' +fs.d[x]['講義名']['日本語']
+                ans = ans + '\n' + fs.d[x]['講義名']['日本語']
         self.answer.setText(ans)
         self.answer.setAlignment(Qt.AlignCenter)
         self.answer.setFont(QtGui.QFont("Meiryo", 14))
@@ -334,8 +328,9 @@ class AnswerWindow(QWidget):
         self.vertical.addLayout(self.btnLayout)
         self.setLayout(self.vertical)
 
+
 class KoginatorQuestionWindow(QWidget):
-    def __init__(self, parent = None, newQ = ''):
+    def __init__(self, parent=None, newQ=''):
         super(KoginatorQuestionWindow, self).__init__(parent)
 
         self.vertical = QVBoxLayout()
@@ -354,6 +349,7 @@ class KoginatorQuestionWindow(QWidget):
         self.mid = QPushButton('わからない', self)
         self.no = QPushButton('いいえ', self)
 
+
         self.yes.setObjectName('btnSelect')
         self.mid.setObjectName('btnSelect')
         self.no.setObjectName('btnSelect')
@@ -366,15 +362,14 @@ class KoginatorQuestionWindow(QWidget):
         self.mid.clicked.connect(self.btnMidClicked)
         self.no.clicked.connect(self.btnNoClicked)
 
+
         self.vertical.addWidget(self.question)
-        '''
-        self.vertical.addLayout(self.layoutAns)
-        self.vertical.addLayout(self.btnLayout)
-        '''
+
         self.vertical.addWidget(self.yes)
         self.vertical.addWidget(self.mid)
         self.vertical.addWidget(self.no)
     
+
     def setQuestion(self, newQ):
         self.question.setText(newQ)
 
@@ -404,6 +399,7 @@ class KoginatorQuestionWindow(QWidget):
             show_answer()
             return
         next_koginator_window()
+
 
 class KoginatorAnswerWindow(QWidget):
     def __init__(self, parent=None):
@@ -435,7 +431,6 @@ class KoginatorAnswerWindow(QWidget):
         self.btnLayout = QHBoxLayout()
         self.btnLayout.addWidget(self.btnExit)
 
-
         self.vertical = QVBoxLayout()
         self.horizon = QHBoxLayout()
         self.horizon.addWidget(self.answer)
@@ -455,10 +450,12 @@ def change_window(w):
         main_window = KeywordSearchWindow()
     main_window.show()
 
+
 def next_koginator_window():
     global main_window
     main_window = KoginatorQuestionWindow(None, kg.getQuestion())
     main_window.show()
+
 
 def show_answer():
     global main_window
