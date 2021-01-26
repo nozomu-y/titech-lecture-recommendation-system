@@ -18,3 +18,8 @@ rm -r mecab-ipadic-neologd
 curl http://compling.hss.ntu.edu.sg/wnja/data/1.1/wnjpn.db.gz --output "Clustering/wnjpn.db.gz"
 gzip -d Clustering/wnjpn.db.gz
 ```
+
+# アプリケーションの実行
+```bash
+make main
+```
