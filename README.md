@@ -28,6 +28,19 @@ gzip -d Clustering/wnjpn.db.gz
 ```
 
 # アプリケーションの実行
+## GUI
 ```bash
 make main
+```
+## キーワード検索
+```bash
+make ks
+```
+## 特徴量検索
+```bash
+make fs
+```
+## コギネーター
+```bash
+make kg
 ```

@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 import sys
 import os
-rootFile = os.path.join(os.path.dirname(__file__), '../..')
+rootFile = os.path.join(os.path.dirname(__file__), '..')
 sys.path.append(rootFile)
-import Koginator.classification as classification
+from Koginator import classification
 
 
 

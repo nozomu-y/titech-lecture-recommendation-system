@@ -408,7 +408,8 @@ class feature_search:
 
 
 if __name__ == "__main__":
-    f = open("../DataCollection/syllabus_2020.json")
+    sysFile = os.path.dirname(os.path.abspath(__file__))
+    f = open(sysFile + "/../DataCollection/syllabus_2020.json")
     d = json.load(f)
     subject_codes = []
     for i in range(len(d)):
