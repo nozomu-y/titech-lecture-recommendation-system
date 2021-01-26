@@ -1,6 +1,6 @@
 QPushButton#btnSelect{
     background-color: #4698ff;
-    width: 200px;
+    width: 150px;
     height: 50px;
     padding: 4px;
     border-radius: 4px;
@@ -12,7 +12,7 @@ QPushButton#btnSelect:hover{
 }
 QPushButton#btnSelect:pressed{
     background-color:#4698ff;
-    color: #ffffff
+    color: #ffffff;
 }
 
 QPushButton#btnKoginator{
@@ -29,11 +29,10 @@ QPushButton#btnKoginator:hover{
 }
 QPushButton#btnKoginator:pressed{
     background-color:#4698ff;
-    color: #ffffff
+    color: #ffffff;
 }
 QPushButton#btn-koginator {
     background-color: #28a745;
-    /* max-width: 100px; */
     max-height: 150px;
     padding: 4px;
     border-radius: 4px;
@@ -49,7 +48,6 @@ QPushButton#btn-koginator:pressed{
 }
 QPushButton#btn-search {
     background-color: #17a2b8;
-    /* max-width: 100px; */
     max-height: 150px;
     padding: 4px;
     border-radius: 4px;
@@ -61,5 +59,20 @@ QPushButton#btn-search:hover{
 }
 QPushButton#btn-search:pressed{
     background-color: #17a2b8;
-    color: #000000
+    color: #000000;
+}
+QPushButton#btnTop{
+    max-width: 50px;
+    max-height: 30px;
+    background-color: #000000;
+    border-radius: 4px; 
+    color: #ffffff;
+}
+QPushButton#btnTop:hover{
+    background-color: #c4c4c4;
+    color: #ffffff;
+}
+QPushButton#btnTop:pressed{
+    background-color: #000000;
+    color: #ffffff;
 }

@@ -16,6 +16,8 @@ APP_TITLE = "東工大講義推薦システム"
 kg = None
 window_x = 500
 window_y = 200
+window_w = 500
+window_h = 350
 
 class MainWindow(QWidget):
 
@@ -41,7 +43,7 @@ class MainWindow(QWidget):
         self.vertical.addLayout(self.horizontal)
         self.setLayout(self.vertical)
 
-        self.setGeometry(window_x, window_y, 400, 350)
+        self.setGeometry(window_x, window_y, window_w, window_h)
         self.setWindowTitle(APP_TITLE)
 
     def exec_koginator(self):
@@ -49,18 +51,6 @@ class MainWindow(QWidget):
 
     def exec_search(self):
         change_window("search")
-
-
-class KoginatorWindow(QWidget):
-
-    def __init__(self, parent=None):
-        super(KoginatorWindow, self).__init__(parent)
-
-        self.horizontal = QHBoxLayout()
-        self.vertical = QVBoxLayout()
-
-        self.setGeometry(window_x, window_y, 400, 350)
-        self.setWindowTitle(APP_TITLE + "｜コギネーター")
 
 
 class KeywordSearchWindow(QWidget):
@@ -86,7 +76,7 @@ class KeywordSearchWindow(QWidget):
         self.horizontal.addLayout(self.vertical)
         self.setLayout(self.horizontal)
 
-        self.setGeometry(window_x, window_y, 400, 350)
+        self.setGeometry(window_x, window_y, window_w, window_h)
         self.setWindowTitle(APP_TITLE + "｜講義検索")
 
     def exec_search(self):
@@ -106,8 +96,8 @@ class FeatureSearchWindow(QWidget):
     def __init__(self, parent=None, lec_code=[]):
         super(FeatureSearchWindow, self).__init__(parent)
         self.fs = FeatureSearch(lec_code)
-        self.setGeometry(window_x, window_y, 400, 350)
-        self.setWindowTitle(APP_TITLE)
+        self.setGeometry(window_x, window_y, window_w, window_h)
+        self.setWindowTitle(APP_TITLE + ' | 講義検索')
 
         self.title = QLabel(self)
         self.title.setText('特徴量検索')
@@ -302,8 +292,8 @@ class FeatureSearchWindow(QWidget):
 class AnswerWindow(QWidget):
     def __init__(self, parent=None, fs=None):
         super(AnswerWindow, self).__init__(parent)
-        self.setGeometry(window_x, window_y, 400, 350)
-        self.setWindowTitle(APP_TITLE)
+        self.setGeometry(window_x, window_y, window_w, window_h)
+        self.setWindowTitle(APP_TITLE + ' | 講義検索')
         self.answer = QLabel(self)
         ans = ''
         for x in fs.get_index_list():
@@ -342,11 +332,12 @@ class KoginatorQuestionWindow(QWidget):
     def __init__(self, parent=None, newQ=''):
         super(KoginatorQuestionWindow, self).__init__(parent)
 
+        self.setWindowTitle(APP_TITLE + ' | コギネーター')
+
         self.vertical = QVBoxLayout()
         self.setLayout(self.vertical)
 
-        self.setGeometry(window_x, window_y, 400, 350)
-        self.setWindowTitle(APP_TITLE)
+        self.setGeometry(window_x, window_y, window_w, window_h)
 
         self.question = QLabel(self)
         self.setQuestion(newQ)
@@ -413,8 +404,8 @@ class KoginatorQuestionWindow(QWidget):
 class KoginatorAnswerWindow(QWidget):
     def __init__(self, parent=None):
         super(KoginatorAnswerWindow, self).__init__(parent)
-        self.setGeometry(window_x, window_y, 400, 350)
-        self.setWindowTitle(APP_TITLE)
+        self.setGeometry(window_x, window_y, window_w, window_h)
+        self.setWindowTitle(APP_TITLE + ' | コギネーター')
         self.answer = QLabel(self)
         ans = ''
         for kgans in kg.answer:
@@ -439,6 +430,12 @@ class KoginatorAnswerWindow(QWidget):
         self.btnExit.clicked.connect(sys.exit)
         self.btnLayout = QHBoxLayout()
         self.btnLayout.addWidget(self.btnExit)
+
+        self.btnTop = QPushButton('TOP', self)
+        self.btnTop.setObjectName('btnTop')
+        self.btnTop.setFont(QtGui.QFont('メイリオ', 10, QtGui.QFont.Bold))
+        self.btnTop.move(window_w-55, 5)
+        self.btnTop.clicked.connect(returnTop)
 
         self.vertical = QVBoxLayout()
         self.horizon = QHBoxLayout()
@@ -482,6 +479,15 @@ def show_answer():
     window_y = main_window.y() + 22
     main_window = KoginatorAnswerWindow()
     main_window.show()
+
+def returnTop():
+    global kg, main_window, window_x, window_y
+    kg = None
+    window_x = main_window.x()
+    window_y = main_window.y() + 22
+    main_window = MainWindow()
+    main_window.show()
+    print('return to top')
 
 
 if __name__ == '__main__':
