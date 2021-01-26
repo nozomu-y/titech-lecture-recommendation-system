@@ -91,6 +91,10 @@ class KeywordSearchWindow(QWidget):
 
     def exec_search(self):
         global main_window
+        global window_x
+        global window_y
+        window_x = main_window.x()
+        window_y = main_window.y() + 22
         result = search_lectures(self.textbox.text())
         main_window = FeatureSearchWindow(lec_code=result)
         main_window.show()
@@ -287,6 +291,10 @@ class FeatureSearchWindow(QWidget):
 
     def show_answer(self):
         global main_window
+        global window_x
+        global window_y
+        window_x = main_window.x()
+        window_y = main_window.y() + 22
         main_window = AnswerWindow(fs=self.fs)
         main_window.show()
 
@@ -444,6 +452,10 @@ class KoginatorAnswerWindow(QWidget):
 def change_window(w):
     global main_window
     global kg
+    global window_x
+    global window_y
+    window_x = main_window.x()
+    window_y = main_window.y() + 22
     if w == "koginator":
         kg = koginator.koginator()
         main_window = KoginatorQuestionWindow(None, kg.getQuestion())
@@ -454,12 +466,20 @@ def change_window(w):
 
 def next_koginator_window():
     global main_window
+    global window_x
+    global window_y
+    window_x = main_window.x()
+    window_y = main_window.y() +22
     main_window = KoginatorQuestionWindow(None, kg.getQuestion())
     main_window.show()
 
 
 def show_answer():
     global main_window
+    global window_x
+    global window_y
+    window_x = main_window.x()
+    window_y = main_window.y() + 22
     main_window = KoginatorAnswerWindow()
     main_window.show()
 
