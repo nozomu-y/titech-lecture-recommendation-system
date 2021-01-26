@@ -80,6 +80,12 @@ class KeywordSearchWindow(QWidget):
         self.setGeometry(window_x, window_y, window_w, window_h)
         self.setWindowTitle(APP_TITLE + "｜講義検索")
 
+        self.btnTop = QPushButton('TOP', self)
+        self.btnTop.setObjectName('btnTop')
+        self.btnTop.setFont(QtGui.QFont('メイリオ', 10, QtGui.QFont.Bold))
+        self.btnTop.move(5, 5)
+        self.btnTop.clicked.connect(returnTop)
+
     def exec_search(self):
         global main_window
         global window_x
@@ -249,6 +255,12 @@ class FeatureSearchWindow(QWidget):
         self.vertical.addLayout(self.presentation_layout)
         self.vertical.addLayout(self.btnLayout)
         self.setLayout(self.vertical)
+
+        self.btnTop = QPushButton('TOP', self)
+        self.btnTop.setObjectName('btnTop')
+        self.btnTop.setFont(QtGui.QFont('メイリオ', 10, QtGui.QFont.Bold))
+        self.btnTop.move(5, 5)
+        self.btnTop.clicked.connect(returnTop)
 
     def selectAll_day(self, state):
         if state == Qt.Checked:
@@ -424,6 +436,12 @@ class AnswerWindow(QWidget):
         self.vertical.addLayout(self.btnLayout)
         self.setLayout(self.vertical)
 
+        self.btnTop = QPushButton('TOP', self)
+        self.btnTop.setObjectName('btnTop')
+        self.btnTop.setFont(QtGui.QFont('メイリオ', 10, QtGui.QFont.Bold))
+        self.btnTop.move(5, 5)
+        self.btnTop.clicked.connect(returnTop)
+
 
 class KoginatorQuestionWindow(QWidget):
     def __init__(self, parent=None, newQ=''):
@@ -463,6 +481,12 @@ class KoginatorQuestionWindow(QWidget):
         self.vertical.addWidget(self.yes)
         self.vertical.addWidget(self.mid)
         self.vertical.addWidget(self.no)
+
+        self.btnTop = QPushButton('TOP', self)
+        self.btnTop.setObjectName('btnTop')
+        self.btnTop.setFont(QtGui.QFont('メイリオ', 10, QtGui.QFont.Bold))
+        self.btnTop.move(5, 5)
+        self.btnTop.clicked.connect(returnTop)
 
     def setQuestion(self, newQ):
         self.question.setText(newQ)
@@ -528,7 +552,7 @@ class KoginatorAnswerWindow(QWidget):
         self.btnTop = QPushButton('TOP', self)
         self.btnTop.setObjectName('btnTop')
         self.btnTop.setFont(QtGui.QFont('メイリオ', 10, QtGui.QFont.Bold))
-        self.btnTop.move(window_w-55, 5)
+        self.btnTop.move(5, 5)
         self.btnTop.clicked.connect(returnTop)
 
         self.vertical = QVBoxLayout()
