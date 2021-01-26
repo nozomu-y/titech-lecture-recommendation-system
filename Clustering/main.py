@@ -2,14 +2,17 @@ import pandas as pd
 import json
 from sklearn.linear_model import SGDClassifier
 import sys
-sys.path.append('..')
+import os
+sysFile = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(sysFile + '/..')
 from Clustering.wordnet import SearchSimilarWords
 from Clustering.getname import GetNameJ
 from Clustering.morpheme import parse2df
 
+
 def search_lectures(keyword):
     if keyword == '':
-        path_open = open('../Clustering/path_clustering.json', 'r')
+        path_open = open(sysFile + '/path_clustering.json', 'r')
         paths = json.load(path_open)
 
         simlec = []
@@ -46,8 +49,8 @@ def search_lectures(keyword):
     #  train_codes.append(lec_code)
     #  train_vecs = vectorizer.fit_transform(train_docs)
 
-    vec = pd.read_pickle('../Clustering/pkl/vec.pkl')
-    vectorizer = pd.read_pickle('../Clustering/pkl/vectorizer.pkl')
+    vec = pd.read_pickle(sysFile + '/pkl/vec.pkl')
+    vectorizer = pd.read_pickle(sysFile + '/pkl/vectorizer.pkl')
     train_vecs = vec
 
     test_df = parse2df(keyword, sysdic="/usr/local/lib/mecab/dic/mecab-ipadic-neologd")
@@ -60,7 +63,7 @@ def search_lectures(keyword):
     # train_predict = gmm.predict(train_vecs.toarray())
     # test_predict = gmm.predict(test_vecs.toarray())
 
-    clusters = pd.read_pickle('../Clustering/pkl/clusters.pkl')
+    clusters = pd.read_pickle(sysFile + '/pkl/clusters.pkl')
     # clf = make_pipeline(StandardScaler(), SGDClassifier(max_iter=1000, tol=1e-3))
     clf = SGDClassifier(max_iter=1000, tol=1e-3, random_state=1)
     clf.fit(train_vecs, clusters)
@@ -69,7 +72,7 @@ def search_lectures(keyword):
     #  print(test_predict)
     #  print(train_predict)
     #  print(clusters)
-    path_open = open('../Clustering/path_clustering.json', 'r')
+    path_open = open(sysFile + '/path_clustering.json', 'r')
     paths = json.load(path_open)
 
     simlec = []
