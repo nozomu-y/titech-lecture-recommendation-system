@@ -167,8 +167,8 @@ class FeatureSearchWindow(QWidget):
         self.quarter_layout.addLayout(self.quarter_layout1)
         self.quarter_layout2 = QHBoxLayout()
         self.quarter = []
-        for quarter in range(len(self.fs.quarter)):
-            self.quarter.append(QCheckBox(str(quarter + 1) + "限", self))
+        for quarter in self.fs.quarter:
+            self.quarter.append(QCheckBox(quarter + "Q", self))
         for widget in self.quarter:
             widget.stateChanged.connect(self.quarter_checked)
             self.quarter_layout2.addWidget(widget)
