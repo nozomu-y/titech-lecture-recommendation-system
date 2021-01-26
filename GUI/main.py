@@ -9,8 +9,8 @@ sys.path.append(sysFile + '/..')
 from Clustering.main import search_lectures
 from Clustering.getname import GetNameJ
 from FeatureSearch.feature_search import FeatureSearch
-
 from Koginator import koginator
+
 
 APP_TITLE = "東工大講義推薦システム"
 kg = None
@@ -18,6 +18,7 @@ window_x = 500
 window_y = 200
 window_w = 500
 window_h = 350
+
 
 class MainWindow(QWidget):
 
@@ -117,42 +118,60 @@ class FeatureSearchWindow(QWidget):
         self.course_layout.addWidget(self.course)
 
         self.day_layout = QVBoxLayout()
+        self.day_layout1 = QHBoxLayout()
         self.day_title = QLabel(self)
         self.day_title.setText("曜日")
         self.day_title.setFixedHeight(15)
+        self.day_selectAll = QCheckBox("全選択", self)
+        self.day_selectAll.stateChanged.connect(self.selectAll_day)
+        self.day_layout1.addWidget(self.day_title)
+        self.day_layout1.addWidget(self.day_selectAll)
+        self.day_layout.addLayout(self.day_layout1)
         self.day_layout2 = QHBoxLayout()
         self.day = []
         for day in self.fs.day:
             self.day.append(QCheckBox(day, self))
         for widget in self.day:
+            widget.stateChanged.connect(self.day_checked)
             self.day_layout2.addWidget(widget)
-        self.day_layout.addWidget(self.day_title)
         self.day_layout.addLayout(self.day_layout2)
 
         self.period_layout = QVBoxLayout()
+        self.period_layout1 = QHBoxLayout()
         self.period_title = QLabel(self)
         self.period_title.setText("開講時限")
         self.period_title.setFixedHeight(15)
+        self.period_selectAll = QCheckBox("全選択", self)
+        self.period_selectAll.stateChanged.connect(self.selectAll_period)
+        self.period_layout1.addWidget(self.period_title)
+        self.period_layout1.addWidget(self.period_selectAll)
+        self.period_layout.addLayout(self.period_layout1)
         self.period_layout2 = QHBoxLayout()
         self.period = []
         for period in range(len(self.fs.period)):
             self.period.append(QCheckBox(str(period + 1) + "限", self))
         for widget in self.period:
+            widget.stateChanged.connect(self.period_checked)
             self.period_layout2.addWidget(widget)
-        self.period_layout.addWidget(self.period_title)
         self.period_layout.addLayout(self.period_layout2)
 
         self.quarter_layout = QVBoxLayout()
+        self.quarter_layout1 = QHBoxLayout()
         self.quarter_title = QLabel(self)
         self.quarter_title.setText("開講クォーター")
         self.quarter_title.setFixedHeight(15)
+        self.quarter_selectAll = QCheckBox("全選択", self)
+        self.quarter_selectAll.stateChanged.connect(self.selectAll_quarter)
+        self.quarter_layout1.addWidget(self.quarter_title)
+        self.quarter_layout1.addWidget(self.quarter_selectAll)
+        self.quarter_layout.addLayout(self.quarter_layout1)
         self.quarter_layout2 = QHBoxLayout()
         self.quarter = []
-        for quarter in self.fs.quarter:
-            self.quarter.append(QCheckBox(quarter + "Q", self))
+        for quarter in range(len(self.fs.quarter)):
+            self.quarter.append(QCheckBox(str(quarter + 1) + "限", self))
         for widget in self.quarter:
+            widget.stateChanged.connect(self.quarter_checked)
             self.quarter_layout2.addWidget(widget)
-        self.quarter_layout.addWidget(self.quarter_title)
         self.quarter_layout.addLayout(self.quarter_layout2)
 
         self.textbook_layout = QHBoxLayout()
@@ -230,6 +249,84 @@ class FeatureSearchWindow(QWidget):
         self.vertical.addLayout(self.presentation_layout)
         self.vertical.addLayout(self.btnLayout)
         self.setLayout(self.vertical)
+
+    def selectAll_day(self, state):
+        if state == Qt.Checked:
+            for checkbox in self.day:
+                checkbox.stateChanged.disconnect()
+                checkbox.setChecked(True)
+            for checkbox in self.day:
+                checkbox.stateChanged.connect(self.day_checked)
+        elif state == Qt.Unchecked:
+            for checkbox in self.day:
+                checkbox.setChecked(False)
+
+    def day_checked(self):
+        all_checked = True
+        all_unchecked = True
+        for checkbox in self.day:
+            if checkbox.isChecked():
+                all_unchecked = False
+            else:
+                all_checked = False
+        if all_checked:
+            self.day_selectAll.setCheckState(Qt.Checked)
+        elif all_unchecked:
+            self.day_selectAll.setCheckState(Qt.Unchecked)
+        else:
+            self.day_selectAll.setCheckState(Qt.PartiallyChecked)
+
+    def selectAll_period(self, state):
+        if state == Qt.Checked:
+            for checkbox in self.period:
+                checkbox.stateChanged.disconnect()
+                checkbox.setChecked(True)
+            for checkbox in self.period:
+                checkbox.stateChanged.connect(self.period_checked)
+        elif state == Qt.Unchecked:
+            for checkbox in self.period:
+                checkbox.setChecked(False)
+
+    def period_checked(self):
+        all_checked = True
+        all_unchecked = True
+        for checkbox in self.period:
+            if checkbox.isChecked():
+                all_unchecked = False
+            else:
+                all_checked = False
+        if all_checked:
+            self.period_selectAll.setCheckState(Qt.Checked)
+        elif all_unchecked:
+            self.period_selectAll.setCheckState(Qt.Unchecked)
+        else:
+            self.period_selectAll.setCheckState(Qt.PartiallyChecked)
+
+    def selectAll_quarter(self, state):
+        if state == Qt.Checked:
+            for checkbox in self.quarter:
+                checkbox.stateChanged.disconnect()
+                checkbox.setChecked(True)
+            for checkbox in self.quarter:
+                checkbox.stateChanged.connect(self.quarter_checked)
+        elif state == Qt.Unchecked:
+            for checkbox in self.quarter:
+                checkbox.setChecked(False)
+
+    def quarter_checked(self):
+        all_checked = True
+        all_unchecked = True
+        for checkbox in self.quarter:
+            if checkbox.isChecked():
+                all_unchecked = False
+            else:
+                all_checked = False
+        if all_checked:
+            self.quarter_selectAll.setCheckState(Qt.Checked)
+        elif all_unchecked:
+            self.quarter_selectAll.setCheckState(Qt.Unchecked)
+        else:
+            self.quarter_selectAll.setCheckState(Qt.PartiallyChecked)
 
     def set_variables(self):
         self.fs.course_num = self.course.currentIndex() - 1
@@ -349,7 +446,6 @@ class KoginatorQuestionWindow(QWidget):
         self.mid = QPushButton('わからない', self)
         self.no = QPushButton('いいえ', self)
 
-
         self.yes.setObjectName('btnSelect')
         self.mid.setObjectName('btnSelect')
         self.no.setObjectName('btnSelect')
@@ -362,13 +458,11 @@ class KoginatorQuestionWindow(QWidget):
         self.mid.clicked.connect(self.btnMidClicked)
         self.no.clicked.connect(self.btnNoClicked)
 
-
         self.vertical.addWidget(self.question)
 
         self.vertical.addWidget(self.yes)
         self.vertical.addWidget(self.mid)
         self.vertical.addWidget(self.no)
-    
 
     def setQuestion(self, newQ):
         self.question.setText(newQ)
@@ -381,7 +475,7 @@ class KoginatorQuestionWindow(QWidget):
             show_answer()
             return
         next_koginator_window()
-    
+
     def btnMidClicked(self):
         self.ans = '3'
         print('answer : ' + self.ans)
@@ -466,7 +560,7 @@ def next_koginator_window():
     global window_x
     global window_y
     window_x = main_window.x()
-    window_y = main_window.y() +22
+    window_y = main_window.y() + 22
     main_window = KoginatorQuestionWindow(None, kg.getQuestion())
     main_window.show()
 
