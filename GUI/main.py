@@ -4,7 +4,8 @@ from PyQt5.QtWidgets import *
 from PyQt5 import QtGui
 import sip
 import os
-sys.path.append('..')
+sysFile = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(sysFile + '/..')
 from Clustering.main import search_lectures
 from Clustering.getname import GetNameJ
 from FeatureSearch.feature_search import FeatureSearch
@@ -349,44 +350,54 @@ class KoginatorQuestionWindow(QWidget):
         self.question.setFont(QtGui.QFont("メイリオ", 14, QtGui.QFont.Bold))
         self.question.setFixedHeight(20)
 
-        self.layoutAns = QHBoxLayout()
-        self.yes = QCheckBox('はい', self)
-        self.mid = QCheckBox('わからない', self)
-        self.no = QCheckBox('いいえ', self)
-        self.groupAns = QButtonGroup()
-        self.groupAns.addButton(self.yes)
-        self.groupAns.addButton(self.mid)
-        self.groupAns.addButton(self.no)
-        self.layoutAns.addWidget(self.yes)
-        self.layoutAns.addWidget(self.mid)
-        self.layoutAns.addWidget(self.no)   
+        self.yes = QPushButton('はい', self)
+        self.mid = QPushButton('わからない', self)
+        self.no = QPushButton('いいえ', self)
 
-        self.btnLayout = QHBoxLayout()
-        self.btnNext = QPushButton('次へ', self)
-        self.btnNext.setObjectName('btnKoginator')
-        self.btnNext.setFont(QtGui.QFont('メイリオ', 14, QtGui.QFont.Bold))
+        self.yes.setObjectName('btnSelect')
+        self.mid.setObjectName('btnSelect')
+        self.no.setObjectName('btnSelect')
 
-        self.btnLayout.addWidget(self.btnNext)
-        self.btnNext.clicked.connect(self.btnNextClicked)
+        self.yes.setFont(QtGui.QFont('メイリオ', 20, QtGui.QFont.Bold))
+        self.mid.setFont(QtGui.QFont('メイリオ', 20, QtGui.QFont.Bold))
+        self.no.setFont(QtGui.QFont('メイリオ', 20, QtGui.QFont.Bold))
 
+        self.yes.clicked.connect(self.btnYesClicked)
+        self.mid.clicked.connect(self.btnMidClicked)
+        self.no.clicked.connect(self.btnNoClicked)
 
         self.vertical.addWidget(self.question)
+        '''
         self.vertical.addLayout(self.layoutAns)
         self.vertical.addLayout(self.btnLayout)
-
+        '''
+        self.vertical.addWidget(self.yes)
+        self.vertical.addWidget(self.mid)
+        self.vertical.addWidget(self.no)
     
     def setQuestion(self, newQ):
         self.question.setText(newQ)
 
-    def btnNextClicked(self):
-        if(self.yes.isChecked()):
-            self.ans = '5'
-        elif(self.mid.isChecked()):
-            self.ans = '3'
-        elif(self.no.isChecked()):
-            self.ans = '1'
-        else:
+    def btnYesClicked(self):
+        self.ans = '5'
+        print('answer : ' + self.ans)
+        if(kg.getAnswer(self.ans)):
+            kg.printAnswer()
+            show_answer()
             return
+        next_koginator_window()
+    
+    def btnMidClicked(self):
+        self.ans = '3'
+        print('answer : ' + self.ans)
+        if(kg.getAnswer(self.ans)):
+            kg.printAnswer()
+            show_answer()
+            return
+        next_koginator_window()
+
+    def btnNoClicked(self):
+        self.ans = '1'
         print('answer : ' + self.ans)
         if(kg.getAnswer(self.ans)):
             kg.printAnswer()
