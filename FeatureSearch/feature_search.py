@@ -27,7 +27,7 @@ class FeatureSearch:
               "生命理工学系",
               "建築学系", "土木・環境工学系", "融合理工学系",
               "日本語・日本文化科目", "第二外国語科目", "理工系教養科目", "教職科目", "英語科目", "文系教養科目", "広域教養科目"]
-    day = ["月", "火", "水", "木", "金", "土", "日"]
+    day = ["月", "火", "水", "木", "金", "土", "日", "集中講義等"]
     period = ["1-", "2-", "3-", "4-", "5-", "6-", "7-", "8-", "9-", "10-"]  # 講義室の番号と被らないためのハイフン
     quarter = ["1", "2", "3", "4", "1-2", "3-4", "2-3", "2・4", "2-4", "1-4"]
     textbook = ["なし", "ない", "配布", "スライド", "資料"]
@@ -174,7 +174,8 @@ class FeatureSearch:
                         if("成績評価の基準及び方法" not in self.d[x] or (self.assessment[i][j] in self.d[x]["成績評価の基準及び方法"] or self.assessment[i][j] in self.d[x]["成績評価の基準及び方法"])):
                             is_remove = True
                             break
-                    self.nums.remove(x)
+                    if(is_remove):
+                        self.nums.remove(x)
             elif self.is_need_assessment[i] == 1:
                 for x in reversed(self.nums):
                     is_remove = True
