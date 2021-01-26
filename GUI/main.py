@@ -14,7 +14,8 @@ from Koginator import koginator
 
 APP_TITLE = "東工大講義推薦システム"
 kg = None
-
+window_x = 500
+window_y = 200
 
 class MainWindow(QWidget):
 
@@ -40,7 +41,7 @@ class MainWindow(QWidget):
         self.vertical.addLayout(self.horizontal)
         self.setLayout(self.vertical)
 
-        self.setGeometry(300, 50, 400, 350)
+        self.setGeometry(window_x, window_y, 400, 350)
         self.setWindowTitle(APP_TITLE)
 
     def exec_koginator(self):
@@ -58,7 +59,7 @@ class KoginatorWindow(QWidget):
         self.horizontal = QHBoxLayout()
         self.vertical = QVBoxLayout()
 
-        self.setGeometry(300, 50, 400, 350)
+        self.setGeometry(window_x, window_y, 400, 350)
         self.setWindowTitle(APP_TITLE + "｜コギネーター")
 
 
@@ -85,7 +86,7 @@ class KeywordSearchWindow(QWidget):
         self.horizontal.addLayout(self.vertical)
         self.setLayout(self.horizontal)
 
-        self.setGeometry(300, 50, 400, 350)
+        self.setGeometry(window_x, window_y, 400, 350)
         self.setWindowTitle(APP_TITLE + "｜講義検索")
 
     def exec_search(self):
@@ -101,7 +102,7 @@ class FeatureSearchWindow(QWidget):
     def __init__(self, parent=None, lec_code=[]):
         super(FeatureSearchWindow, self).__init__(parent)
         self.fs = FeatureSearch(lec_code)
-        self.setGeometry(300, 50, 400, 350)
+        self.setGeometry(window_x, window_y, 400, 350)
         self.setWindowTitle(APP_TITLE)
 
         self.title = QLabel(self)
@@ -293,7 +294,7 @@ class FeatureSearchWindow(QWidget):
 class AnswerWindow(QWidget):
     def __init__(self, parent=None, fs=None):
         super(AnswerWindow, self).__init__(parent)
-        self.setGeometry(300, 50, 400, 350)
+        self.setGeometry(window_x, window_y, 400, 350)
         self.setWindowTitle(APP_TITLE)
         self.answer = QLabel(self)
         ans = ''
@@ -336,7 +337,7 @@ class KoginatorQuestionWindow(QWidget):
         self.vertical = QVBoxLayout()
         self.setLayout(self.vertical)
 
-        self.setGeometry(300, 50, 400, 350)
+        self.setGeometry(window_x, window_y, 400, 350)
         self.setWindowTitle(APP_TITLE)
 
         self.question = QLabel(self)
@@ -404,7 +405,7 @@ class KoginatorQuestionWindow(QWidget):
 class KoginatorAnswerWindow(QWidget):
     def __init__(self, parent=None):
         super(KoginatorAnswerWindow, self).__init__(parent)
-        self.setGeometry(300, 50, 400, 350)
+        self.setGeometry(window_x, window_y, 400, 350)
         self.setWindowTitle(APP_TITLE)
         self.answer = QLabel(self)
         ans = ''
