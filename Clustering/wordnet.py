@@ -1,6 +1,7 @@
 # 参考：https://qiita.com/pocket_kyoto/items/1e5d464b693a8b44eda5
 import sqlite3
 import os
+sysFile = os.path.dirname(os.path.abspath(__file__))
 
 # 含まれるテーブルの確認
 # cur = conn.execute("select name from sqlite_master where type='table'")
@@ -10,10 +11,10 @@ import os
 
 
 def SearchSimilarWords(word):
-    if os.path.exists("../Clustering/wnjpn.db"):
-        conn = sqlite3.connect("../Clustering/wnjpn.db")
+    if os.path.exists(sysFile + "/wnjpn.db"):
+        conn = sqlite3.connect(sysFile + "/wnjpn.db")
     else:
-        print("./wnjpn.db does not exist")
+        print("wnjpn.db does not exist")
     # 問い合わせしたい単語がWordnetに存在するか確認する
     cur = conn.execute("select wordid from word where lemma='%s'" % word)
     word_id = 99999999  # temp
