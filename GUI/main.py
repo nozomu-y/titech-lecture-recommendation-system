@@ -73,7 +73,12 @@ class KeywordSearchWindow(QWidget):
 
         self.btn = QPushButton('検索', self)
         self.btn.clicked.connect(self.exec_search)
-        self.vertical.addWidget(self.btn)
+        self.btn.setObjectName('btnKoginator')
+        self.btnLayout = QHBoxLayout()
+        self.btnLayout.addWidget(self.btn)
+        self.vertical.addLayout(self.btnLayout)
+        #self.vertical.addWidget(self.btn)
+
 
         self.horizontal.addLayout(self.vertical)
         self.setLayout(self.horizontal)
