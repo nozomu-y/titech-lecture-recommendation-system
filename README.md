@@ -23,6 +23,7 @@ rm -r mecab-ipadic-neologd
 ```
 ## download wnjpn.db
 ```bash
+# at TLRS(TitechLectureResearchSystem) directory
 curl http://compling.hss.ntu.edu.sg/wnja/data/1.1/wnjpn.db.gz --output "Clustering/wnjpn.db.gz"
 gzip -d Clustering/wnjpn.db.gz
 ```
@@ -30,17 +31,21 @@ gzip -d Clustering/wnjpn.db.gz
 # exec application
 ## GUI
 ```bash
+# at TLRS directory
 make main
 ```
 ## keyword search
 ```bash
+# at TLRS directory
 make ks
 ```
 ## feature search
 ```bash
+# at TLRS directory
 make fs
 ```
 ## koginator
 ```bash
+# at TLRS directory
 make kg
 ```
