@@ -2,7 +2,15 @@
 python: 3.9
 
 # package
-
+```bash
+python3 -m pip install PyQt5
+python3 -m pip install natto-py
+python3 -m pip install mecab
+python3 -m pip install pandas
+python3 -m pip install json
+python3 -m pip install sklearn
+python3 -m pip install numpy
+```
 # setup
 
 ## mecab-ipadicのインストール
