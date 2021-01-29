@@ -1,6 +1,5 @@
-import pandas as pd
-import json
-from sklearn.linear_model import SGDClassifier
+#  from sklearn.pipeline import make_pipeline
+#  from sklearn.preprocessing import StandardScaler
 import sys
 import os
 sysFile = os.path.dirname(os.path.abspath(__file__))
@@ -8,6 +7,15 @@ sys.path.append(sysFile + '/..')
 from Clustering.wordnet import SearchSimilarWords
 from Clustering.getname import GetNameJ
 from Clustering.morpheme import parse2df
+
+from sklearn.linear_model import SGDClassifier
+import json
+import pandas as pd
+#  from sklearn import mixture, cluster
+#  from sklearn.model_selection import GridSearchCV
+#  from sklearn import model_selection
+#  from sklearn.cluster import AffinityPropagation
+#  from sklearn.feature_extraction.text import TfidfVectorizer
 
 
 def search_lectures(keyword):
@@ -27,8 +35,20 @@ def search_lectures(keyword):
         tmp = SearchSimilarWords(word)
         if tmp is None:
             continue
-        for tmp_word in tmp:
-            similar_words.append(tmp_word)
+        if split_words.index(word)==0:
+            for i in range(3):
+                #print(split_words.index(word))
+                for tmp_word in tmp:
+                    similar_words.append(tmp_word)
+        elif split_words.index(word)==1:
+            for i in range(2):
+                #print(split_words.index(word))
+                for tmp_word in tmp:
+                    similar_words.append(tmp_word)
+        else:
+            #print(split_words.index(word))
+            for tmp_word in tmp:
+                similar_words.append(tmp_word)
     #     print(similar_words)
     # print(similar_words)
     for word in similar_words:
@@ -54,8 +74,7 @@ def search_lectures(keyword):
     train_vecs = vec
 
     test_df = parse2df(keyword, sysdic="/usr/local/lib/mecab/dic/mecab-ipadic-neologd")
-    test_df = test_df[test_df["posID"].isin(
-        [36, 37, 38, 40, 41, 42, 43, 44, 45, 46, 47, 50, 51, 52, 66, 67, 2, 31, 10, 34])]
+    test_df = test_df[test_df["posID"].isin([36, 37, 38, 40, 41, 42, 43, 44, 45, 46, 47, 50, 51, 52, 66, 67, 2, 31, 10, 34])]
     test_docs = [" ".join(test_df['原型'].dropna(how='all'))]
     test_vecs = vectorizer.transform(test_docs)
 
