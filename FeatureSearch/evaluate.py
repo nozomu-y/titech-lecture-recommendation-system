@@ -16,6 +16,7 @@ for i in range(len(subject_codes)):
     print(str(i) + ":" + subject_codes[i])
 '''
 fs = feature_search.feature_search()
+fs.course_num=17
 indexList=copy.deepcopy(fs.nums)
 for ev in range(4):
     if(ev == 0):#教科書評価
