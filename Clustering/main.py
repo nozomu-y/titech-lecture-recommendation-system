@@ -82,12 +82,17 @@ def search_lectures(keyword):
     # train_predict = gmm.predict(train_vecs.toarray())
     # test_predict = gmm.predict(test_vecs.toarray())
 
-    clusters = pd.read_pickle(sysFile + '/pkl/clusters.pkl')
+    clusters2 = pd.read_pickle(sysFile + '/pkl/clusters1.2.pkl')
+    clusters7 = pd.read_pickle(sysFile + '/pkl/clusters1.7.pkl')
     # clf = make_pipeline(StandardScaler(), SGDClassifier(max_iter=1000, tol=1e-3))
-    clf = SGDClassifier(max_iter=1000, tol=1e-3, random_state=1)
-    clf.fit(train_vecs, clusters)
-    test_predict = clf.predict(test_vecs)
-    train_predict = clf.predict(train_vecs)
+    clf2 = SGDClassifier(max_iter=1000, tol=1e-3, random_state=1)
+    clf7 = SGDClassifier(max_iter=1000, tol=1e-3, random_state=1)
+    clf2.fit(train_vecs, clusters2)
+    clf7.fit(train_vecs, clusters7)
+    test_predict2 = clf2.predict(test_vecs)
+    train_predict2 = clf2.predict(train_vecs)
+    test_predict7 = clf7.predict(test_vecs)
+    train_predict7 = clf7.predict(train_vecs)
     #  print(test_predict)
     #  print(train_predict)
     #  print(clusters)
@@ -95,10 +100,15 @@ def search_lectures(keyword):
     paths = json.load(path_open)
 
     simlec = []
-    for doc, cls in zip(paths.keys(), clusters):
-        if test_predict[0] == cls:
+    for doc, cls in zip(paths.keys(), clusters2):
+        if test_predict2[0] == cls:
             #  print(doc)
             simlec.append(doc)
+    for doc, cls in zip(paths.keys(), clusters7):
+        if test_predict7[0] == cls:
+            #  print(doc)
+            simlec.append(doc)
+
 
     return simlec
 
