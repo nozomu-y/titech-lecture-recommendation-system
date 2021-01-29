@@ -1,8 +1,9 @@
-
+import os
+sysFile = os.path.dirname(os.path.abspath(__file__))
 # 科目コードから講義名(日本語)をえる
 def GetNameJ(code):
     import json
-    lecture_codes = '../DataCollection/lecture_codes.json'
+    lecture_codes = sysFile + '/../DataCollection/lecture_codes.json'
     with open(lecture_codes) as f:
         lectures = json.load(f)
     if code in lectures.keys():
@@ -14,7 +15,7 @@ def GetNameJ(code):
 
 def GetNameE(code):
     import json
-    lecture_codes = '../DataCollection/lecture_codes.json'
+    lecture_codes = sysFile + '/../DataCollection/lecture_codes.json'
     with open(lecture_codes) as f:
         lectures = json.load(f)
     if code in lectures.keys():
@@ -26,7 +27,7 @@ def GetNameE(code):
 
 def GetRelaSub(code):
     import json
-    lecture_codes = '../DataCollection/lecture_codes.json'
+    lecture_codes = sysFile + '/../DataCollection/lecture_codes.json'
     with open(lecture_codes) as f:
         lectures = json.load(f)
     output = []

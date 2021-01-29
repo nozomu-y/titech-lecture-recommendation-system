@@ -1,12 +1,19 @@
 ### 参考：https://qiita.com/pocket_kyoto/items/1e5d464b693a8b44eda5
 import sqlite3
-conn = sqlite3.connect("./wnjpn.db")
+import os
+sysFile = os.path.dirname(os.path.abspath(__file__))
+
+
 # 含まれるテーブルの確認
 # cur = conn.execute("select name from sqlite_master where type='table'")
 # for row in cur:
 #     print(row)
 # 特定の単語を入力とした時に、類義語を検索する関数
 def SearchSimilarWords(word):
+    if os.path.exists(sysFile + "/wnjpn.db"):
+        conn = sqlite3.connect(sysFile + "/wnjpn.db")
+    else:
+        print("wnjpn.db does not exist")
 
     # 問い合わせしたい単語がWordnetに存在するか確認する
     cur = conn.execute("select wordid from word where lemma='%s'" % word)
@@ -38,6 +45,7 @@ def SearchSimilarWords(word):
         sub_no = 1
         for row2 in cur2:
 #             print("意味%s : %s" %(sub_no, row2[0]))
+            similar_words.append(row2[0])
             sub_no += 1
         cur3 = conn.execute("select wordid from sense where (synset='%s' and wordid!=%s)" % (synset,word_id))
         sub_no = 1

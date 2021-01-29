@@ -1,29 +1,54 @@
 #  from sklearn.pipeline import make_pipeline
 #  from sklearn.preprocessing import StandardScaler
+import sys
+import os
+sysFile = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(sysFile + '/..')
+from Clustering.wordnet import SearchSimilarWords
+from Clustering.getname import GetNameJ
+from Clustering.morpheme import parse2df
+
 from sklearn.linear_model import SGDClassifier
 import json
-from morpheme import parse2df
 import pandas as pd
 #  from sklearn import mixture, cluster
 #  from sklearn.model_selection import GridSearchCV
 #  from sklearn import model_selection
 #  from sklearn.cluster import AffinityPropagation
-from getname import GetNameJ
 #  from sklearn.feature_extraction.text import TfidfVectorizer
-from wordnet import SearchSimilarWords
 
 
 def search_lectures(keyword):
+    if keyword == '':
+        path_open = open(sysFile + '/path_clustering.json', 'r')
+        paths = json.load(path_open)
+
+        simlec = []
+        for doc in paths.keys():
+            simlec.append(doc)
+        return simlec
+
     #########ワードネット#############
     split_words = keyword.split()
     similar_words = split_words.copy()
     for word in split_words:
-        #     print(word)
         tmp = SearchSimilarWords(word)
         if tmp is None:
             continue
-        for tmp_word in tmp:
-            similar_words.append(tmp_word)
+        if split_words.index(word)==0:
+            for i in range(3):
+                #print(split_words.index(word))
+                for tmp_word in tmp:
+                    similar_words.append(tmp_word)
+        elif split_words.index(word)==1:
+            for i in range(2):
+                #print(split_words.index(word))
+                for tmp_word in tmp:
+                    similar_words.append(tmp_word)
+        else:
+            #print(split_words.index(word))
+            for tmp_word in tmp:
+                similar_words.append(tmp_word)
     #     print(similar_words)
     # print(similar_words)
     for word in similar_words:
@@ -44,8 +69,8 @@ def search_lectures(keyword):
     #  train_codes.append(lec_code)
     #  train_vecs = vectorizer.fit_transform(train_docs)
 
-    vec = pd.read_pickle('pkl/vec.pkl')
-    vectorizer = pd.read_pickle('pkl/vectorizer.pkl')
+    vec = pd.read_pickle(sysFile + '/pkl/vec.pkl')
+    vectorizer = pd.read_pickle(sysFile + '/pkl/vectorizer.pkl')
     train_vecs = vec
 
     test_df = parse2df(keyword, sysdic="/usr/local/lib/mecab/dic/mecab-ipadic-neologd")
@@ -57,7 +82,7 @@ def search_lectures(keyword):
     # train_predict = gmm.predict(train_vecs.toarray())
     # test_predict = gmm.predict(test_vecs.toarray())
 
-    clusters = pd.read_pickle('pkl/clusters.pkl')
+    clusters = pd.read_pickle(sysFile + '/pkl/clusters.pkl')
     # clf = make_pipeline(StandardScaler(), SGDClassifier(max_iter=1000, tol=1e-3))
     clf = SGDClassifier(max_iter=1000, tol=1e-3, random_state=1)
     clf.fit(train_vecs, clusters)
@@ -66,7 +91,7 @@ def search_lectures(keyword):
     #  print(test_predict)
     #  print(train_predict)
     #  print(clusters)
-    path_open = open('path_clustering.json', 'r')
+    path_open = open(sysFile + '/path_clustering.json', 'r')
     paths = json.load(path_open)
 
     simlec = []

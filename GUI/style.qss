@@ -1,0 +1,78 @@
+QPushButton#btnSelect{
+    background-color: #4698ff;
+    width: 150px;
+    height: 50px;
+    padding: 4px;
+    border-radius: 4px;
+    color: #ffffff;
+}
+QPushButton#btnSelect:hover{
+    background-color: #9eccff;
+    color: #ffffff;
+}
+QPushButton#btnSelect:pressed{
+    background-color:#4698ff;
+    color: #ffffff;
+}
+
+QPushButton#btnKoginator{
+    background-color: #4698ff;
+    max-width: 80px;
+    max-height: 30px;
+    padding: 4px;
+    border-radius: 4px;
+    color: #ffffff;
+}
+QPushButton#btnKoginator:hover{
+    background-color: #9eccff;
+    color: #ffffff;
+}
+QPushButton#btnKoginator:pressed{
+    background-color:#4698ff;
+    color: #ffffff;
+}
+QPushButton#btn-koginator {
+    background-color: #28a745;
+    max-height: 150px;
+    padding: 4px;
+    border-radius: 4px;
+    margin: 4px;
+}
+QPushButton#btn-koginator:hover{
+    background-color: #ffffff;
+    color: #28a745;
+}
+QPushButton#btn-koginator:pressed{
+    background-color: #28a745;
+    color: #000000;
+}
+QPushButton#btn-search {
+    background-color: #17a2b8;
+    max-height: 150px;
+    padding: 4px;
+    border-radius: 4px;
+    margin: 4px;
+}
+QPushButton#btn-search:hover{
+    background-color: #ffffff;
+    color: #17a2b8;
+}
+QPushButton#btn-search:pressed{
+    background-color: #17a2b8;
+    color: #000000;
+}
+QPushButton#btnTop{
+    max-width: 50px;
+    max-height: 30px;
+    background-color: #000000;
+    border-radius: 4px; 
+    color: #ffffff;
+}
+QPushButton#btnTop:hover{
+    background-color: #c4c4c4;
+    color: #ffffff;
+}
+QPushButton#btnTop:pressed{
+    background-color: #000000;
+    color: #ffffff;
+}
