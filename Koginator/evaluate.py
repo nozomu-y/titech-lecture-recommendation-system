@@ -42,4 +42,4 @@ for i in range(len(testlabel)):
     if testlabel[i] in kg.answer:
         score = score+1
     N = N+1
-print('N = ' + str(N) + '\n' + 'score = ' + str(score) + '\n' + 'precision = ' + str(score/N *100.0))
+print('precision = ' + str(score/N *100.0))
