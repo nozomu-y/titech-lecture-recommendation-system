@@ -12,8 +12,8 @@ sysFile = os.path.dirname(os.path.abspath(__file__))
 def SearchSimilarWords(word):
     if os.path.exists(sysFile + "/wnjpn.db"):
         conn = sqlite3.connect(sysFile + "/wnjpn.db")
-    else:
-        print("wnjpn.db does not exist")
+#     else:
+#         print("wnjpn.db does not exist")
 
     # 問い合わせしたい単語がWordnetに存在するか確認する
     cur = conn.execute("select wordid from word where lemma='%s'" % word)
@@ -44,8 +44,8 @@ def SearchSimilarWords(word):
         cur2 = conn.execute("select def from synset_def where (synset='%s' and lang='jpn')" % synset)
         sub_no = 1
         for row2 in cur2:
-#             print("意味%s : %s" %(sub_no, row2[0]))
             similar_words.append(row2[0])
+#             print("意味%s : %s" %(sub_no, row2[0]))
             sub_no += 1
         cur3 = conn.execute("select wordid from sense where (synset='%s' and wordid!=%s)" % (synset,word_id))
         sub_no = 1
@@ -56,8 +56,8 @@ def SearchSimilarWords(word):
 #                 print("類義語%s : %s" % (sub_no, row3_1[0]))
                 similar_words.append(row3_1[0])
                 sub_no += 1
-#         print("\n")
+        print("\n")
         no += 1
     return similar_words
-# lis = SearchSimilarWords('猫')
+# lis = SearchSimilarWords('R')
 # print(lis)
