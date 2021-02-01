@@ -24,8 +24,11 @@ def search_lectures(keyword):
         paths = json.load(path_open)
 
         simlec = []
+        tmp = []
         for doc in paths.keys():
-            simlec.append(doc)
+            tmp.append(doc)
+        simlec.append(tmp)
+        simlec.append([])
         return simlec
 
     #########ワードネット#############
