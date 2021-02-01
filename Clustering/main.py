@@ -99,15 +99,20 @@ def search_lectures(keyword):
     path_open = open(sysFile + '/path_clustering.json', 'r')
     paths = json.load(path_open)
 
+    simlec1 = []
+    simlec2 = []
     simlec = []
     for doc, cls in zip(paths.keys(), clusters2):
         if test_predict2[0] == cls:
             #  print(doc)
-            simlec.append(doc)
+            simlec1.append(doc)
     for doc, cls in zip(paths.keys(), clusters7):
         if test_predict7[0] == cls:
             #  print(doc)
-            simlec.append(doc)
+            if doc not in simlec1:
+                simlec2.append(doc)
+    simlec.append(simlec1)
+    simlec.append(simlec2)
 
 
     return simlec
@@ -120,4 +125,6 @@ if __name__ == '__main__':
     print()
     print("類似科目")
     for lecture in result:
-        print(" *", GetNameJ(lecture))
+        for lec in lecture:
+            print(" *", GetNameJ(lec))
+        print()
