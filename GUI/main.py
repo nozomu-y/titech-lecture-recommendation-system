@@ -7,10 +7,10 @@ import sip
 import os
 sysFile = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(sysFile + '/..')
-from Clustering.main import search_lectures
-from Clustering.getname import GetNameJ
-from FeatureSearch.feature_search import FeatureSearch
 from Koginator import koginator
+from FeatureSearch.feature_search import FeatureSearch
+from Clustering.getname import GetNameJ
+from Clustering.main import search_lectures
 
 
 APP_TITLE = "東工大講義推薦システム"
@@ -77,8 +77,7 @@ class KeywordSearchWindow(QWidget):
         self.btnLayout = QHBoxLayout()
         self.btnLayout.addWidget(self.btn)
         self.vertical.addLayout(self.btnLayout)
-        #self.vertical.addWidget(self.btn)
-
+        # self.vertical.addWidget(self.btn)
 
         self.horizontal.addLayout(self.vertical)
         self.setLayout(self.horizontal)
@@ -88,7 +87,7 @@ class KeywordSearchWindow(QWidget):
 
         self.btnTop = QPushButton('TOP', self)
         self.btnTop.setObjectName('btnTop')
-        self.btnTop.setFont(QtGui.QFont('メイリオ', 10, QtGui.QFont.Bold))
+        self.btnTop.setFont(QtGui.QFont('Meiryo', 10, QtGui.QFont.Bold))
         self.btnTop.move(5, 5)
         self.btnTop.clicked.connect(returnTop)
 
@@ -96,9 +95,14 @@ class KeywordSearchWindow(QWidget):
         global main_window
         global window_x
         global window_y
+        global search_result
         window_x = main_window.x()
         window_y = main_window.y() + 22
-        result = search_lectures(self.textbox.text())
+        search_result = search_lectures(self.textbox.text())
+        result = []
+        for results in search_result:
+            for item in results:
+                result.append(item)
         main_window = FeatureSearchWindow(lec_code=result)
         main_window.show()
 
@@ -264,7 +268,7 @@ class FeatureSearchWindow(QWidget):
 
         self.btnTop = QPushButton('TOP', self)
         self.btnTop.setObjectName('btnTop')
-        self.btnTop.setFont(QtGui.QFont('メイリオ', 10, QtGui.QFont.Bold))
+        self.btnTop.setFont(QtGui.QFont('Meiryo', 10, QtGui.QFont.Bold))
         self.btnTop.move(5, 5)
         self.btnTop.clicked.connect(returnTop)
 
@@ -410,22 +414,39 @@ class AnswerWindow(QWidget):
         self.setGeometry(window_x, window_y, window_w, window_h)
         self.setWindowTitle(APP_TITLE + ' | 講義検索')
         self.answer = QLabel(self)
+        self.maybe = QLabel(self)
         ans = ''
+        maybe = ''
+        global search_result
         for x in fs.get_index_list():
-            if ans == '':
-                ans = fs.d[x]['講義名']['日本語']
+            if fs.d[x]['科目コード'] in search_result[0]:
+                if ans == '':
+                    ans = fs.d[x]['講義名']['日本語']
+                else:
+                    ans = ans + '\n' + fs.d[x]['講義名']['日本語']
             else:
-                ans = ans + '\n' + fs.d[x]['講義名']['日本語']
+                if maybe == '':
+                    maybe = fs.d[x]['講義名']['日本語']
+                else:
+                    maybe = maybe + '\n' + fs.d[x]['講義名']['日本語']
         self.answer.setText(ans)
         self.answer.setAlignment(Qt.AlignCenter)
         self.answer.setFont(QtGui.QFont("Meiryo", 14))
-        #  self.answer.setFixedHeight(100)
+        self.maybe.setText(maybe)
+        self.maybe.setAlignment(Qt.AlignCenter)
+        self.maybe.setFont(QtGui.QFont("Meiryo", 14))
 
         self.title = QLabel(self)
         self.title.setText('推薦講義')
         self.title.setAlignment(Qt.AlignCenter)
         self.title.setFont(QtGui.QFont("Meiryo", 14, QtGui.QFont.Bold))
         self.title.setFixedHeight(50)
+
+        self.maybe_title = QLabel(self)
+        self.maybe_title.setText('もしかして...')
+        self.maybe_title.setAlignment(Qt.AlignCenter)
+        self.maybe_title.setFont(QtGui.QFont("Meiryo", 14, QtGui.QFont.Bold))
+        self.maybe_title.setFixedHeight(50)
 
         self.btnExit = QPushButton('終了', self)
         self.btnExit.setObjectName('btnKoginator')
@@ -435,16 +456,20 @@ class AnswerWindow(QWidget):
         self.btnLayout.addWidget(self.btnExit)
 
         self.vertical = QVBoxLayout()
-        self.horizon = QHBoxLayout()
-        self.horizon.addWidget(self.answer)
+        self.horizon1 = QHBoxLayout()
+        self.horizon2 = QHBoxLayout()
+        self.horizon1.addWidget(self.answer)
+        self.horizon2.addWidget(self.maybe)
         self.vertical.addWidget(self.title)
-        self.vertical.addLayout(self.horizon)
+        self.vertical.addLayout(self.horizon1)
+        self.vertical.addWidget(self.maybe_title)
+        self.vertical.addLayout(self.horizon2)
         self.vertical.addLayout(self.btnLayout)
         self.setLayout(self.vertical)
 
         self.btnTop = QPushButton('TOP', self)
         self.btnTop.setObjectName('btnTop')
-        self.btnTop.setFont(QtGui.QFont('メイリオ', 10, QtGui.QFont.Bold))
+        self.btnTop.setFont(QtGui.QFont('Meiryo', 10, QtGui.QFont.Bold))
         self.btnTop.move(5, 5)
         self.btnTop.clicked.connect(returnTop)
 
@@ -463,7 +488,7 @@ class KoginatorQuestionWindow(QWidget):
         self.question = QLabel(self)
         self.setQuestion(newQ)
         self.question.setAlignment(Qt.AlignCenter)
-        self.question.setFont(QtGui.QFont("メイリオ", 14, QtGui.QFont.Bold))
+        self.question.setFont(QtGui.QFont("Meiryo", 14, QtGui.QFont.Bold))
         self.question.setFixedHeight(20)
 
         self.yes = QPushButton('はい', self)
@@ -474,9 +499,9 @@ class KoginatorQuestionWindow(QWidget):
         self.mid.setObjectName('btnSelect')
         self.no.setObjectName('btnSelect')
 
-        self.yes.setFont(QtGui.QFont('メイリオ', 20, QtGui.QFont.Bold))
-        self.mid.setFont(QtGui.QFont('メイリオ', 20, QtGui.QFont.Bold))
-        self.no.setFont(QtGui.QFont('メイリオ', 20, QtGui.QFont.Bold))
+        self.yes.setFont(QtGui.QFont('Meiryo', 20, QtGui.QFont.Bold))
+        self.mid.setFont(QtGui.QFont('Meiryo', 20, QtGui.QFont.Bold))
+        self.no.setFont(QtGui.QFont('Meiryo', 20, QtGui.QFont.Bold))
 
         self.yes.clicked.connect(self.btnYesClicked)
         self.mid.clicked.connect(self.btnMidClicked)
@@ -490,7 +515,7 @@ class KoginatorQuestionWindow(QWidget):
 
         self.btnTop = QPushButton('TOP', self)
         self.btnTop.setObjectName('btnTop')
-        self.btnTop.setFont(QtGui.QFont('メイリオ', 10, QtGui.QFont.Bold))
+        self.btnTop.setFont(QtGui.QFont('Meiryo', 10, QtGui.QFont.Bold))
         self.btnTop.move(5, 5)
         self.btnTop.clicked.connect(returnTop)
 
@@ -539,25 +564,25 @@ class KoginatorAnswerWindow(QWidget):
                 ans = ans + '\n\n' + kgans
         self.answer.setText(ans)
         self.answer.setAlignment(Qt.AlignCenter)
-        self.answer.setFont(QtGui.QFont("メイリオ", 14, QtGui.QFont.Bold))
+        self.answer.setFont(QtGui.QFont("Meiryo", 14, QtGui.QFont.Bold))
         self.answer.setFixedHeight(100)
 
         self.title = QLabel(self)
         self.title.setText('推薦講義')
         self.title.setAlignment(Qt.AlignCenter)
-        self.title.setFont(QtGui.QFont("メイリオ", 14, QtGui.QFont.Bold))
+        self.title.setFont(QtGui.QFont("Meiryo", 14, QtGui.QFont.Bold))
         self.title.setFixedHeight(50)
 
         self.btnExit = QPushButton('終了', self)
         self.btnExit.setObjectName('btnKoginator')
-        self.btnExit.setFont(QtGui.QFont('メイリオ', 14, QtGui.QFont.Bold))
+        self.btnExit.setFont(QtGui.QFont('Meiryo', 14, QtGui.QFont.Bold))
         self.btnExit.clicked.connect(sys.exit)
         self.btnLayout = QHBoxLayout()
         self.btnLayout.addWidget(self.btnExit)
 
         self.btnTop = QPushButton('TOP', self)
         self.btnTop.setObjectName('btnTop')
-        self.btnTop.setFont(QtGui.QFont('メイリオ', 10, QtGui.QFont.Bold))
+        self.btnTop.setFont(QtGui.QFont('Meiryo', 10, QtGui.QFont.Bold))
         self.btnTop.move(5, 5)
         self.btnTop.clicked.connect(returnTop)
 
@@ -604,6 +629,7 @@ def show_answer():
     main_window = KoginatorAnswerWindow()
     main_window.show()
 
+
 def returnTop():
     global kg, main_window, window_x, window_y
     kg = None
@@ -625,6 +651,7 @@ if __name__ == '__main__':
         style = ''
 
     app.setStyleSheet(style)
+    search_result = None
     main_window = MainWindow()
     main_window.show()
 
