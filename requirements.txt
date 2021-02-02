@@ -1,0 +1,7 @@
+PyQt5
+natto-py
+mecab
+pandas
+json
+sklearn
+numpy
