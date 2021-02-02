@@ -1,50 +1,25 @@
-# version
-python: 3.9
+Titech Lecture Recommendation System
+===
 
-# module
-```bash
-python3 -m pip install PyQt5
-python3 -m pip install natto-py
-python3 -m pip install mecab
-python3 -m pip install pandas
-python3 -m pip install json
-python3 -m pip install sklearn
-python3 -m pip install numpy
-```
-# setup
+# Requirements
+Python 3.9
 
-## install mecab-ipadic
-```bash
-brew install mecab
-brew install mecab-ipadic
-git clone https://github.com/neologd/mecab-ipadic-neologd.git
-mecab-ipadic-neologd/bin/install-mecab-ipadic-neologd -n
-rm -r mecab-ipadic-neologd
-```
-## download wnjpn.db
-```bash
-# at TLRS(TitechLectureResearchSystem) directory
-make download
+# Installation
+### Python Modules
+```console
+$ pip -r install requirements.txt
 ```
 
-# exec application
-## GUI
-```bash
-# at TLRS directory
-make main
+### MeCab
+```console
+$ brew install mecab
+$ brew install mecab-ipadic
+$ git clone https://github.com/neologd/mecab-ipadic-neologd.git
+$ mecab-ipadic-neologd/bin/install-mecab-ipadic-neologd -n
+$ rm -r mecab-ipadic-neologd
 ```
-## keyword search
-```bash
-# at TLRS directory
-make ks
-```
-## feature search
-```bash
-# at TLRS directory
-make fs
-```
-## koginator
-```bash
-# at TLRS directory
-make kg
+
+### WordNet
+```console
+$ make download
 ```
